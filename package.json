@@ -1,0 +1,40 @@
+{
+  "name": "agent-harness",
+  "version": "1.0.0",
+  "description": "Reference implementation for the Agent Harness coupling pattern (Malhotra, 2026). Companion code to the IEEE Software Feature article.",
+  "license": "MIT",
+  "author": "Suneet Malhotra",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SuneetMalhotra/agent-harness"
+  },
+  "keywords": [
+    "ai",
+    "llm",
+    "agent",
+    "test-automation",
+    "mobile-testing",
+    "self-healing-locator",
+    "visual-assertion",
+    "multi-agent-sdlc",
+    "model-context-protocol",
+    "claude",
+    "anthropic"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "example": "tsx examples/run-example.ts",
+    "harness:stub": "tsx harness.ts --provider stub",
+    "harness:anthropic": "tsx harness.ts --provider anthropic",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
