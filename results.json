@@ -1,0 +1,1375 @@
+{
+  "metadata": {
+    "runId": "run-1779812111221",
+    "provider": "stub",
+    "modelVersion": "claude-sonnet-4-6",
+    "timestamp": "2026-05-26T16:15:11.221Z",
+    "testCount": 12
+  },
+  "authoringVelocity": {
+    "medianPromptToMergeMinutes": 150,
+    "handAuthoredControlMinutes": 480,
+    "speedup": 3.2
+  },
+  "pipelineRuntime": {
+    "stubDurationSeconds": 0.001,
+    "perRun": [
+      0
+    ]
+  },
+  "healing": {
+    "cacheHitRate": 0.92,
+    "domHealerSuccessRate": 0.88,
+    "visionFallbackSuccessRate": 0.79,
+    "combinedRecoveryRate": 0.97,
+    "events": [
+      {
+        "id": "heal-1-1779812111220",
+        "testCaseId": "TC-01",
+        "semanticName": "primary action for TC-01",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier2",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "heal-2-1779812111220",
+        "testCaseId": "TC-02",
+        "semanticName": "primary action for TC-02",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier2",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "heal-3-1779812111220",
+        "testCaseId": "TC-03",
+        "semanticName": "primary action for TC-03",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier2",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "heal-4-1779812111220",
+        "testCaseId": "TC-04",
+        "semanticName": "primary action for TC-04",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier2",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "heal-5-1779812111220",
+        "testCaseId": "TC-05",
+        "semanticName": "primary action for TC-05",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier2",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "heal-6-1779812111220",
+        "testCaseId": "TC-06",
+        "semanticName": "primary action for TC-06",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier2",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "heal-7-1779812111220",
+        "testCaseId": "TC-07",
+        "semanticName": "primary action for TC-07",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier3",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "heal-8-1779812111220",
+        "testCaseId": "TC-08",
+        "semanticName": "primary action for TC-08",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier3",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "heal-9-1779812111220",
+        "testCaseId": "TC-09",
+        "semanticName": "primary action for TC-09",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier3",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "heal-10-1779812111220",
+        "testCaseId": "TC-10",
+        "semanticName": "primary action for TC-10",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier1",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "heal-11-1779812111220",
+        "testCaseId": "TC-11",
+        "semanticName": "primary action for TC-11",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier1",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "heal-12-1779812111220",
+        "testCaseId": "TC-12",
+        "semanticName": "primary action for TC-12",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier1",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      }
+    ]
+  },
+  "visualAssertion": {
+    "precision": 0.9166666666666666,
+    "recall": 0.9166666666666666,
+    "pixelComparisonPrecision": 1,
+    "pixelComparisonRecall": 0.5,
+    "events": [
+      {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-1",
+        "expectedBehavior": "Snapshot 1: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-2",
+        "expectedBehavior": "Snapshot 2: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-3",
+        "expectedBehavior": "Snapshot 3: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-4",
+        "expectedBehavior": "Snapshot 4: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-5",
+        "expectedBehavior": "Snapshot 5: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-6",
+        "expectedBehavior": "Snapshot 6: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-7",
+        "expectedBehavior": "Snapshot 7: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-8",
+        "expectedBehavior": "Snapshot 8: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-9",
+        "expectedBehavior": "Snapshot 9: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-10",
+        "expectedBehavior": "Snapshot 10: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-func-11",
+        "expectedBehavior": "Snapshot 11: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-func-12",
+        "expectedBehavior": "Snapshot 12: primary CTA visible and tappable",
+        "verdict": "pass",
+        "seededDefect": "functional",
+        "rationale": "Snapshot appears within tolerance; treated as a cosmetic variation.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-1",
+        "expectedBehavior": "Snapshot 13: layout integrity preserved",
+        "verdict": "fail",
+        "seededDefect": "cosmetic",
+        "rationale": "Layout shift exceeded the accessibility-minimum threshold; flagged as functional.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-2",
+        "expectedBehavior": "Snapshot 14: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-3",
+        "expectedBehavior": "Snapshot 15: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-4",
+        "expectedBehavior": "Snapshot 16: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-5",
+        "expectedBehavior": "Snapshot 17: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-6",
+        "expectedBehavior": "Snapshot 18: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-7",
+        "expectedBehavior": "Snapshot 19: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-8",
+        "expectedBehavior": "Snapshot 20: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-9",
+        "expectedBehavior": "Snapshot 21: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-10",
+        "expectedBehavior": "Snapshot 22: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-11",
+        "expectedBehavior": "Snapshot 23: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-12",
+        "expectedBehavior": "Snapshot 24: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      }
+    ]
+  },
+  "tierRouting": {
+    "correctOnFirstInvocation": 12,
+    "totalRouted": 12
+  },
+  "observabilityLog": [
+    {
+      "layer": "authoring",
+      "kind": "commit",
+      "payload": {
+        "sha": "abc1234",
+        "author": "agent",
+        "promptId": "feature-locator-resolver"
+      },
+      "timestamp": "2026-05-26T16:15:11.219Z"
+    },
+    {
+      "layer": "authoring",
+      "kind": "commit",
+      "payload": {
+        "sha": "def5678",
+        "author": "agent-revised",
+        "promptId": "feature-vision-fallback"
+      },
+      "timestamp": "2026-05-26T16:15:11.219Z"
+    },
+    {
+      "layer": "authoring",
+      "kind": "commit",
+      "payload": {
+        "sha": "ghi9012",
+        "author": "human"
+      },
+      "timestamp": "2026-05-26T16:15:11.219Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "product-manager-agent",
+        "toAgent": "qa-engineer-agent",
+        "modelVersion": "stub",
+        "promptId": "pm-v1",
+        "inputArtifactIds": [
+          "todomvc-mobile-1"
+        ],
+        "outputArtifactId": "PRD-001",
+        "timestamp": "2026-05-26T16:15:11.219Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.219Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "qa-engineer-agent",
+        "toAgent": "automation-engineer-agent",
+        "modelVersion": "stub",
+        "promptId": "qa-v1",
+        "inputArtifactIds": [
+          "PRD-001"
+        ],
+        "outputArtifactId": "testcases-PRD-001",
+        "timestamp": "2026-05-26T16:15:11.219Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.219Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "stub",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-01"
+        ],
+        "outputArtifactId": "AUT-TC-01",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUT-TC-01"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "stub",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-02"
+        ],
+        "outputArtifactId": "AUT-TC-02",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUT-TC-02"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "stub",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-03"
+        ],
+        "outputArtifactId": "AUT-TC-03",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUT-TC-03"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "stub",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-04"
+        ],
+        "outputArtifactId": "AUT-TC-04",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUT-TC-04"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "stub",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-05"
+        ],
+        "outputArtifactId": "AUT-TC-05",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUT-TC-05"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "stub",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-06"
+        ],
+        "outputArtifactId": "AUT-TC-06",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUT-TC-06"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "stub",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-07"
+        ],
+        "outputArtifactId": "AUT-TC-07",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUT-TC-07"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "stub",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-08"
+        ],
+        "outputArtifactId": "AUT-TC-08",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUT-TC-08"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "stub",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-09"
+        ],
+        "outputArtifactId": "AUT-TC-09",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUT-TC-09"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "stub",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-10"
+        ],
+        "outputArtifactId": "AUT-TC-10",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUT-TC-10"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "stub",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-11"
+        ],
+        "outputArtifactId": "AUT-TC-11",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUT-TC-11"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "stub",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-12"
+        ],
+        "outputArtifactId": "AUT-TC-12",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUT-TC-12"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-01",
+        "tier": "tier2"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-1-1779812111220",
+        "testCaseId": "TC-01",
+        "semanticName": "primary action for TC-01",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier2",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-02",
+        "tier": "tier2"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-2-1779812111220",
+        "testCaseId": "TC-02",
+        "semanticName": "primary action for TC-02",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier2",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-03",
+        "tier": "tier2"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-3-1779812111220",
+        "testCaseId": "TC-03",
+        "semanticName": "primary action for TC-03",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier2",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-04",
+        "tier": "tier2"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-4-1779812111220",
+        "testCaseId": "TC-04",
+        "semanticName": "primary action for TC-04",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier2",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-05",
+        "tier": "tier2"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-5-1779812111220",
+        "testCaseId": "TC-05",
+        "semanticName": "primary action for TC-05",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier2",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-06",
+        "tier": "tier2"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-6-1779812111220",
+        "testCaseId": "TC-06",
+        "semanticName": "primary action for TC-06",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier2",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-07",
+        "tier": "tier3"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-7-1779812111220",
+        "testCaseId": "TC-07",
+        "semanticName": "primary action for TC-07",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier3",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-08",
+        "tier": "tier3"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-8-1779812111220",
+        "testCaseId": "TC-08",
+        "semanticName": "primary action for TC-08",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier3",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-09",
+        "tier": "tier3"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-9-1779812111220",
+        "testCaseId": "TC-09",
+        "semanticName": "primary action for TC-09",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier3",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-10",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-10-1779812111220",
+        "testCaseId": "TC-10",
+        "semanticName": "primary action for TC-10",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier1",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-11",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-11-1779812111220",
+        "testCaseId": "TC-11",
+        "semanticName": "primary action for TC-11",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier1",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-12",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-12-1779812111220",
+        "testCaseId": "TC-12",
+        "semanticName": "primary action for TC-12",
+        "resolvedStrategy": "cache",
+        "success": true,
+        "latencyMs": 0,
+        "tier": "tier1",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-1",
+        "expectedBehavior": "Snapshot 1: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-2",
+        "expectedBehavior": "Snapshot 2: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-3",
+        "expectedBehavior": "Snapshot 3: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-4",
+        "expectedBehavior": "Snapshot 4: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-5",
+        "expectedBehavior": "Snapshot 5: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-6",
+        "expectedBehavior": "Snapshot 6: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-7",
+        "expectedBehavior": "Snapshot 7: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-8",
+        "expectedBehavior": "Snapshot 8: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-9",
+        "expectedBehavior": "Snapshot 9: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111220",
+        "testCaseId": "vis-func-10",
+        "expectedBehavior": "Snapshot 10: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.220Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.220Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-func-11",
+        "expectedBehavior": "Snapshot 11: primary CTA visible and tappable",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.221Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-func-12",
+        "expectedBehavior": "Snapshot 12: primary CTA visible and tappable",
+        "verdict": "pass",
+        "seededDefect": "functional",
+        "rationale": "Snapshot appears within tolerance; treated as a cosmetic variation.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.221Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-1",
+        "expectedBehavior": "Snapshot 13: layout integrity preserved",
+        "verdict": "fail",
+        "seededDefect": "cosmetic",
+        "rationale": "Layout shift exceeded the accessibility-minimum threshold; flagged as functional.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.221Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-2",
+        "expectedBehavior": "Snapshot 14: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.221Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-3",
+        "expectedBehavior": "Snapshot 15: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.221Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-4",
+        "expectedBehavior": "Snapshot 16: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.221Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-5",
+        "expectedBehavior": "Snapshot 17: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.221Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-6",
+        "expectedBehavior": "Snapshot 18: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.221Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-7",
+        "expectedBehavior": "Snapshot 19: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.221Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-8",
+        "expectedBehavior": "Snapshot 20: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.221Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-9",
+        "expectedBehavior": "Snapshot 21: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.221Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-10",
+        "expectedBehavior": "Snapshot 22: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.221Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-11",
+        "expectedBehavior": "Snapshot 23: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.221Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-12-1779812111221",
+        "testCaseId": "vis-cosm-12",
+        "expectedBehavior": "Snapshot 24: layout integrity preserved",
+        "verdict": "pass",
+        "seededDefect": "cosmetic",
+        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
+        "timestamp": "2026-05-26T16:15:11.221Z"
+      },
+      "timestamp": "2026-05-26T16:15:11.221Z"
+    }
+  ]
+}
