@@ -235,7 +235,7 @@ async function main(): Promise<void> {
       speedup: 3.2,
     },
     pipelineRuntime: {
-      medianMinutes: Math.round(pipelineResult.durationMs / 60_000) || 17,
+      stubDurationSeconds: pipelineResult.durationMs / 1000,
       perRun: [Math.round(pipelineResult.durationMs / 1000) / 60],
     },
     healing: reportedHealing,
