@@ -6,8 +6,6 @@ Companion code for the IEEE Software Feature article:
 
 > Malhotra, S. "An Agent Harness for Mobile Test Automation: Coupling an Agent-Authored Framework, a Multi-Agent SDLC Pipeline, and a Three-Tier Execution Plane." *IEEE Software*, 2026 (under review). Preprint: arXiv:2606.NNNNN.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ---
 
 ## What this is
@@ -132,4 +130,4 @@ The author is Senior Manager, Test Engineering at Motorola Solutions. This work,
 
 ## License
 
-MIT. See `LICENSE`.
+All rights reserved. © 2026 Suneet Malhotra. This repository is published for review and reproducibility of the companion article; no license is granted for redistribution or derivative works.
