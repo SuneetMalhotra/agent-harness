@@ -10,7 +10,6 @@
 // implementation stubs the MCP layer and treats the agents as text-in/text-out
 // functions. The pipeline contract is the same in either case.
 //
-// MIT License.
 
 import { ModelProvider } from './providers/types.js';
 import { Observability } from './observability.js';

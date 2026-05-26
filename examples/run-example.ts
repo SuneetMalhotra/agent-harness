@@ -6,7 +6,6 @@
 // Run with:
 //   npx tsx examples/run-example.ts
 //
-// MIT License.
 
 import { runPipeline } from '../pipeline.js';
 import { TierRouter } from '../tier-router.js';

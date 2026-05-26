@@ -5,7 +5,6 @@
 // fixtures so that npm-installable reproduction does not require a network
 // call or an OAuth session.
 //
-// MIT License.
 
 import { ModelProvider, GenerateOptions } from './types.js';
 

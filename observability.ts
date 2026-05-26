@@ -5,7 +5,6 @@
 // is intentionally minimal: an append-only log, a canonical schema (see types.ts),
 // and a small set of aggregation helpers.
 //
-// MIT License.
 
 import { writeFileSync } from 'node:fs';
 import {

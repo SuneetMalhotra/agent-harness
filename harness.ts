@@ -8,7 +8,6 @@
 //   npx tsx harness.ts --provider stub        # offline, deterministic, no API key
 //   npx tsx harness.ts --provider anthropic   # live, uses Claude OAuth via claude -p
 //
-// MIT License.
 
 import { writeFileSync } from 'node:fs';
 
@@ -18,6 +17,9 @@ import { Intelligence } from './intelligence.js';
 import { Observability } from './observability.js';
 import { StubProvider } from './providers/stub.js';
 import { AnthropicProvider } from './providers/anthropic.js';
+import { OllamaProvider } from './providers/ollama.js';
+import { OpenAIProvider } from './providers/openai.js';
+import { GeminiProvider } from './providers/gemini.js';
 import { ModelProvider } from './providers/types.js';
 import { DesignArtifact, EvaluationResult, AssertionEvent } from './types.js';
 
@@ -107,12 +109,26 @@ function pickProvider(): ModelProvider {
   const args = process.argv.slice(2);
   const idx = args.indexOf('--provider');
   const choice = idx >= 0 ? args[idx + 1] : 'stub';
-  if (choice === 'anthropic') {
-    console.log('Using AnthropicProvider (Claude OAuth via claude -p).');
-    return new AnthropicProvider();
+  switch (choice) {
+    case 'anthropic':
+      console.log('Using AnthropicProvider (Claude OAuth via claude -p).');
+      return new AnthropicProvider();
+    case 'ollama':
+      console.log(
+        `Using OllamaProvider (local weights at ${process.env.OLLAMA_HOST ?? 'http://localhost:11434'}, model=${process.env.OLLAMA_MODEL ?? 'llama3.2'}).`,
+      );
+      return new OllamaProvider();
+    case 'openai':
+      console.log('Using OpenAIProvider (Chat Completions API).');
+      return new OpenAIProvider();
+    case 'gemini':
+      console.log('Using GeminiProvider (Generative Language API).');
+      return new GeminiProvider();
+    case 'stub':
+    default:
+      console.log('Using StubProvider (deterministic, offline).');
+      return new StubProvider();
   }
-  console.log('Using StubProvider (deterministic, offline).');
-  return new StubProvider();
 }
 
 // ---------------------------------------------------------------------------
@@ -254,7 +270,7 @@ async function main(): Promise<void> {
   };
 
   console.log(`Authoring velocity: ${evaluation.authoringVelocity.medianPromptToMergeMinutes / 60} hr median; speedup ${evaluation.authoringVelocity.speedup}x`);
-  console.log(`Pipeline runtime: ${evaluation.pipelineRuntime.medianMinutes} min median`);
+  console.log(`Pipeline runtime (stub): ${evaluation.pipelineRuntime.stubDurationSeconds.toFixed(3)} s`);
   console.log(`Cache hit rate: ${(evaluation.healing.cacheHitRate * 100).toFixed(0)}%`);
   console.log(`DOM healer success: ${(evaluation.healing.domHealerSuccessRate * 100).toFixed(0)}%`);
   console.log(`Vision fallback success: ${(evaluation.healing.visionFallbackSuccessRate * 100).toFixed(0)}%`);

@@ -5,7 +5,6 @@
 //   2. DOM-based LLM healer (medium)
 //   3. Vision-based LLM fallback (expensive)
 //
-// MIT License.
 
 import { ModelProvider } from './providers/types.js';
 import { Observability } from './observability.js';

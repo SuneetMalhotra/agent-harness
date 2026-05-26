@@ -3,7 +3,6 @@
 // This file is part of the companion code for the article
 // "An Agent Harness for Mobile Test Automation: Coupling an Agent-Authored
 // Framework, a Multi-Agent SDLC Pipeline, and a Three-Tier Execution Plane."
-// MIT License.
 
 /**
  * The three execution-plane tiers.
@@ -160,7 +159,7 @@ export interface EvaluationResult {
     speedup: number;
   };
   pipelineRuntime: {
-    medianMinutes: number;
+    stubDurationSeconds: number;
     perRun: number[];
   };
   healing: {

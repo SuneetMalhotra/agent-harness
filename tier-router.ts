@@ -6,7 +6,6 @@
 // virtual hardware stack). The reference implementation stubs all three.
 // The router's contract is the same in either case.
 //
-// MIT License.
 
 import { Observability } from './observability.js';
 import { Intelligence } from './intelligence.js';
