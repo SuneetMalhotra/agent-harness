@@ -1,0 +1,250 @@
+/* Minimal TodoMVC-equivalent stylesheet.
+ * Intentionally hand-rolled (not the canonical todomvc-app-css) so the
+ * defect-seeding render script can apply precise overrides without
+ * collisions with vendor CSS.
+ */
+
+:root {
+  --color-bg: #f5f5f5;
+  --color-surface: #ffffff;
+  --color-text: #111111;
+  --color-muted: #777777;
+  --color-border: #e6e6e6;
+  --color-primary: #1976d2;
+  --color-primary-text: #ffffff;
+  --color-danger: #c62828;
+  --radius: 4px;
+  --pad: 16px;
+  --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  font-family: var(--font-stack);
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.todoapp {
+  position: relative;
+  background: var(--color-surface);
+  margin: 60px auto;
+  width: 560px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.header {
+  padding: var(--pad);
+  border-bottom: 1px solid var(--color-border);
+}
+
+#brand {
+  margin: 0 0 var(--pad) 0;
+  font-size: 48px;
+  font-weight: 200;
+  text-align: center;
+  color: var(--color-primary);
+  letter-spacing: 0;
+}
+
+#new-todo-form {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.new-todo {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  outline: none;
+  font-family: inherit;
+  background: var(--color-surface);
+  color: var(--color-text);
+  min-width: 0;
+}
+
+.new-todo:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.25);
+}
+
+.add-button {
+  padding: 12px 20px;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-primary-text);
+  font-size: 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  min-width: 64px;
+  min-height: 44px;
+  font-family: inherit;
+  transition: background-color 120ms ease;
+}
+
+.add-button:hover {
+  background: #1565c0;
+}
+
+.add-button:focus-visible {
+  outline: 2px solid #0d47a1;
+  outline-offset: 2px;
+}
+
+.main {
+  position: relative;
+  padding: var(--pad);
+  border-bottom: 1px solid var(--color-border);
+}
+
+#toggle-all {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+#toggle-all-label {
+  font-size: 14px;
+  color: var(--color-muted);
+  vertical-align: middle;
+}
+
+.todo-list {
+  margin: 12px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 16px;
+}
+
+.todo-list li:last-child {
+  border-bottom: none;
+}
+
+.todo-list .toggle {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.todo-list .label {
+  flex: 1;
+  color: var(--color-text);
+}
+
+.todo-list li.completed .label {
+  color: var(--color-muted);
+  text-decoration: line-through;
+}
+
+.todo-list .destroy {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-danger);
+  padding: 6px 10px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 13px;
+  min-height: 32px;
+  min-width: 32px;
+}
+
+.todo-list .destroy:hover {
+  background: #fbeaea;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--pad);
+  font-size: 14px;
+  color: var(--color-muted);
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.todo-count strong {
+  color: var(--color-text);
+}
+
+.filters {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 6px;
+}
+
+.filters a {
+  text-decoration: none;
+  color: var(--color-muted);
+  padding: 4px 10px;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+}
+
+.filters a.selected {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.clear-completed {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.error-banner {
+  display: none;
+  margin: var(--pad);
+  padding: 10px 14px;
+  background: #fdecea;
+  border: 1px solid #f5c2c7;
+  color: #842029;
+  border-radius: var(--radius);
+}
+
+.error-banner.visible {
+  display: block;
+}

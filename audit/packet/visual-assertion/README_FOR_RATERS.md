@@ -4,16 +4,22 @@
 
 ## (a) What you are rating
 
-Twenty-four rendered screen images from a generic **TodoMVC-style task-management web application**: a single-page todo list with add / edit / complete / delete / filter / clear-completed functionality. Public reference: <https://todomvc.com>. Each image corresponds to one entry in the harness's `VISUAL_CORPUS` (defined in `harness.ts`) and is paired with:
+Twenty-four rendered screen images from a minimal **TodoMVC-equivalent task-management web application** (hand-rolled vanilla HTML/CSS/JS; source under `visual-corpus/app/` in the repo). The reference application is a single-page todo list with add / complete / delete / filter / clear-completed / mark-all functionality. Public reference design: <https://todomvc.com>. Each PNG is a real Playwright render at 1280x800 of one defect or variation injected into the otherwise-identical baseline.
+
+Each image is paired with:
 
 - a one-sentence `expected` behavior description, and
-- a three-bullet `properties` checklist.
+- a property checklist (typically three items).
+
+Both are provided in `case_descriptions.csv`. The image files live in `images/TC01.png` ... `images/TC24.png`.
 
 Your job is to judge each image *as a QA artifact*: does it PASS (every checklist property holds and the rendered screen matches the expected behavior) or FAIL (a property is violated or the screen does not match the expected behavior)?
 
 ## (b) Why
 
 IEEE Software peer review flagged the §6 visual-assertion precision/recall numbers as model-reported, not human-validated: the same LLM that authored the underlying test cases produced the verdicts. Your independent verdicts break that loop and produce a Cohen's κ inter-rater agreement number that the published article will cite (per `audit/visual-assertion-protocol.md`).
+
+A second, equally important disclosure: the reference-implementation visual-assertion service in this repo judges the *text* `expected`/`properties` pair, NOT the pixel content of the screenshot. You, as the rater, judge the *image* against the same text rubric. The audit therefore measures whether the LLM's text-only judgment generalizes to a human judgment that also sees the rendered screen. Disagreements between your verdict and the LLM verdict on a given case are a real signal — they are the point of the audit.
 
 ## (c) What you do *not* need to know
 
@@ -39,12 +45,24 @@ Plain-English guidance, in priority order:
 
 ## (e) How to record a verdict
 
-1. Open `rater_template.csv` (provided alongside this README) in Excel, Numbers, or Google Sheets.
-2. For each of the 24 rows (TC01–TC24), fill in:
-   - `verdict` — exactly one of `PASS`, `FAIL` (uppercase, as shown).
-   - `reason` — one sentence pointing at the specific checklist property (for FAIL) or confirming the checklist holds (for PASS). Example: *"CTA partially obscured by overlay; checklist property 'no obscuring overlay' violated."*
-   - `time_spent_seconds` — integer estimate; rough is fine.
-   - `notes` — anything else worth flagging (render errors, suspected duplicates, ambiguity in the checklist).
+The packet contains three files and one folder:
+
+- `images/TC01.png` ... `images/TC24.png` — the 24 rendered screenshots.
+- `case_descriptions.csv` — one row per case with the matching image path, the `expected` sentence, and the property checklist.
+- `rater_template.csv` — the blank CSV you fill in.
+- `README_FOR_RATERS.md` — this file.
+
+Procedure:
+
+1. Open `rater_template.csv` in Excel, Numbers, or Google Sheets.
+2. For each row TC01..TC24:
+   - Open the matching `images/TCxx.png` file in your image viewer of choice.
+   - Read the matching row in `case_descriptions.csv` for the `expected` sentence and the `properties` checklist (pipe-separated).
+   - Apply the rubric in section (d). Fill in:
+     - `verdict` — exactly one of `PASS`, `FAIL` (uppercase, as shown).
+     - `reason` — one sentence pointing at the specific checklist property (for FAIL) or confirming the checklist holds (for PASS). Example: *"CTA fully covered by dark overlay; checklist property 'No opaque overlay covers the new-todo form' violated."*
+     - `time_spent_seconds` — integer estimate; rough is fine.
+     - `notes` — anything else worth flagging (render errors, suspected duplicates, ambiguity in the checklist).
 3. Save the file as `rater_<your-initials>.csv` (e.g., `rater_AB.csv`).
 4. Email it back to the audit coordinator. Do not CC the other rater.
 

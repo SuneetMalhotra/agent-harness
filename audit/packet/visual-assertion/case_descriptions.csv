@@ -1,0 +1,25 @@
+case_id,image_file,expected,properties
+TC01,images/TC01.png,Each row exposes an equivalent delete affordance.,A delete affordance is present on each row | Affordance label is human-readable | Affordance touch target meets minimum size
+TC02,images/TC02.png,Application typography renders without breaking layout.,All text renders within its container | No row wrapping changes that hide content | Layout integrity preserved
+TC03,images/TC03.png,Text renders with slightly expanded letter-spacing; remains within container bounds.,No text overflow from the container | All labels remain on a single line where intended | Layout integrity preserved
+TC04,images/TC04.png,Each todo row has an interactive checkbox to toggle completion.,Row toggle is an interactive checkbox input | User can mark a todo complete by clicking the toggle | Toggle conveys checked/unchecked state
+TC05,images/TC05.png,Delete buttons meet the 24x24 px accessibility minimum touch target.,Delete button width >= 24px | Delete button height >= 24px | Touch target meets WCAG 2.5.5 minimum
+TC06,images/TC06.png,Container padding is consistent; touch targets remain reachable.,All controls remain within the visible container | Touch targets remain reachable | Layout integrity preserved
+TC07,images/TC07.png,Buttons render with a subtle shadow; remain visually identifiable as buttons.,Buttons remain identifiable | No button content obscured by the shadow | Layout integrity preserved
+TC08,images/TC08.png,The Add todo CTA is visible and tappable in the header.,Add button is visible | No opaque overlay covers the new-todo form | User can tap the Add button without interference
+TC09,images/TC09.png,Add button renders in a primary-blue color; remains identifiable.,Add button is visible | Add button color is a primary-blue palette value | Layout integrity preserved
+TC10,images/TC10.png,A visible focus indicator appears on keyboard-focused interactive elements.,Focused element shows a visible focus indicator (outline/ring) | Keyboard navigation is observable | Accessibility focus visibility preserved
+TC11,images/TC11.png,Primary CTA remains visible and visually distinct from neutral chrome.,Primary CTA visible | Primary CTA visually distinguishable from background | Layout integrity preserved
+TC12,images/TC12.png,The new-todo input field displays the full placeholder text without clipping.,New-todo input width is sufficient to show the placeholder | No mid-character text clipping in the input | Form layout preserved
+TC13,images/TC13.png,Delete buttons for each todo are visible inside the list row.,Delete button is within the visible row bounds | User can locate the delete button without scrolling | List row layout preserved
+TC14,images/TC14.png,The Add submit button is present in the header form.,Add submit button is present in the DOM | Add submit button is visible | User can submit a new todo by clicking Add
+TC15,images/TC15.png,Rounded surface treatment is consistent; no content clipped.,No content clipped at element edges | Rounded corners applied consistently | Layout integrity preserved
+TC16,images/TC16.png,Page background renders without disrupting card legibility.,Card content remains legible against the background | No text/background contrast violations introduced | Layout integrity preserved
+TC17,images/TC17.png,Footer labels render in italic; remain legible.,Footer text remains legible | No truncation of italic text | Layout integrity preserved
+TC18,images/TC18.png,The new-todo input has an associated label (visible or programmatic).,New-todo input has an associated <label> element | Screen reader can announce the field purpose | Form accessibility preserved
+TC19,images/TC19.png,Filter pills render with slightly increased height; remain on a single row.,Filter pills remain on a single row | All three filter options visible | Layout integrity preserved
+TC20,images/TC20.png,No modal blocks the application without a dismiss affordance.,No full-screen blocking overlay without close affordance | Application UI is reachable | Modal (if present) has a visible close control
+TC21,images/TC21.png,Brand wordmark renders larger but stays within the header.,Brand wordmark stays within the header container | Header form below the wordmark remains visible | Layout integrity preserved
+TC22,images/TC22.png,List items are visually separated; no row overlaps the row above it.,No row-to-row vertical overlap | Each todo label is fully readable | List item spacing preserved
+TC23,images/TC23.png,Body text contrast against the background meets 3:1 minimum.,Text/background contrast ratio >= 3:1 | Text is legible against the page background | No accessibility contrast violation
+TC24,images/TC24.png,"When the error banner is shown, it is fully visible and not occluded.",Error banner is not occluded by other elements | Error message text is fully readable | Error stacking context preserved

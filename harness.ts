@@ -22,6 +22,7 @@ import { OpenAIProvider } from './providers/openai.js';
 import { GeminiProvider } from './providers/gemini.js';
 import { ModelProvider } from './providers/types.js';
 import { DesignArtifact, EvaluationResult, AssertionEvent } from './types.js';
+import { SEEDINGS } from './visual-corpus/seedings.js';
 
 // ---------------------------------------------------------------------------
 // Public demo design
@@ -75,31 +76,31 @@ const CACHE_WARMUP_SEEDS = [
 ];
 
 // ---------------------------------------------------------------------------
-// Visual-assertion corpus: 24 seeded-defect snapshots
-// 12 functional, 12 cosmetic. The harness emits AssertionEvents tagged with
-// the seeded-defect ground truth so observability.visualAssertionMetrics()
-// can compute precision and recall against the stub or the live model.
+// Visual-assertion corpus: 24 seeded-defect snapshots, all DISTINCT.
+//
+// Sourced from visual-corpus/seedings.ts. Each entry has a unique `expected`
+// description, a unique property checklist, and an `imagePath` pointing at
+// a Playwright-rendered PNG in visual-corpus/images/. The harness emits
+// AssertionEvents tagged with the seeded-defect ground truth so
+// observability.visualAssertionMetrics() can compute precision and recall.
+//
+// 12 functional defects (should FAIL under a competent QA rubric).
+// 12 cosmetic variations (should PASS — layout integrity preserved).
 // ---------------------------------------------------------------------------
 
 const VISUAL_CORPUS: Array<{
   id: string;
+  imagePath: string;
   expected: string;
   properties: string[];
   seeded: 'functional' | 'cosmetic';
-}> = [
-  ...Array.from({ length: 12 }, (_, i) => ({
-    id: `vis-func-${i + 1}`,
-    expected: `Snapshot ${i + 1}: primary CTA visible and tappable`,
-    properties: ['primary CTA visible', 'no obscuring overlay', 'tappable'],
-    seeded: 'functional' as const,
-  })),
-  ...Array.from({ length: 12 }, (_, i) => ({
-    id: `vis-cosm-${i + 1}`,
-    expected: `Snapshot ${i + 13}: layout integrity preserved`,
-    properties: ['layout integrity preserved', 'no content clipping'],
-    seeded: 'cosmetic' as const,
-  })),
-];
+}> = SEEDINGS.map((s) => ({
+  id: s.id,
+  imagePath: `visual-corpus/images/${s.id}.png`,
+  expected: s.expected,
+  properties: s.properties,
+  seeded: s.type,
+}));
 
 // ---------------------------------------------------------------------------
 // Provider selection
@@ -191,6 +192,7 @@ async function main(): Promise<void> {
     await intel.assert(snap.expected, snap.properties, {
       testCaseId: snap.id,
       seededDefect: snap.seeded,
+      imagePath: snap.imagePath,
     });
   }
   const assertEvents: AssertionEvent[] = obs.assertionEvents().filter((e) => e.seededDefect !== undefined);
