@@ -1,4 +1,4 @@
-// providers/gemini.ts — Google Gemini provider for cross-model replication
+// providers/gemini.ts — Google Gemini provider for cross-model comparison
 // of the §6 numbers via the Generative Language API.
 //
 // Stub implementation: the interface and command surface are wired up but the
@@ -29,7 +29,7 @@ export class GeminiProvider implements ModelProvider {
   async generate(_opts: GenerateOptions): Promise<string> {
     if (!this.apiKey) {
       throw new Error(
-        'GOOGLE_API_KEY is not set. To enable the Gemini provider for cross-model replication: export GOOGLE_API_KEY=... then re-run: npx tsx harness.ts --provider gemini',
+        'GOOGLE_API_KEY is not set. To enable the Gemini provider for cross-model comparison: export GOOGLE_API_KEY=... then re-run: npx tsx harness.ts --provider gemini',
       );
     }
     // Production users replace this stub with a real HTTPS call:

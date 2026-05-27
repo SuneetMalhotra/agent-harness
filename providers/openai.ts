@@ -1,4 +1,4 @@
-// providers/openai.ts — OpenAI provider for cross-model replication of the
+// providers/openai.ts — OpenAI provider for cross-model comparison of the
 // §6 numbers via the hosted Chat Completions API.
 //
 // Stub implementation: the interface and command surface are wired up but the
@@ -31,7 +31,7 @@ export class OpenAIProvider implements ModelProvider {
   async generate(_opts: GenerateOptions): Promise<string> {
     if (!this.apiKey) {
       throw new Error(
-        'OPENAI_API_KEY is not set. To enable the OpenAI provider for cross-model replication: export OPENAI_API_KEY=sk-... then re-run: npx tsx harness.ts --provider openai',
+        'OPENAI_API_KEY is not set. To enable the OpenAI provider for cross-model comparison: export OPENAI_API_KEY=sk-... then re-run: npx tsx harness.ts --provider openai',
       );
     }
     // Production users replace this stub with a real HTTPS call:

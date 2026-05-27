@@ -81,7 +81,7 @@ OLLAMA_HOST=http://remote-gpu:11434 OLLAMA_MODEL=llama3.1:70b \
   npx tsx harness.ts --provider ollama
 ```
 
-The §6 architecture-validation walkthrough was produced against the stub provider; live runs (Anthropic, OpenAI, Gemini, or Ollama) exercise the full pipeline against real models for cross-model and cross-backend replication (deferred to the §7.2 live-hardware multi-application study).
+The §6 architecture-validation walkthrough was produced against the stub provider; live runs (Anthropic, OpenAI, Gemini, or Ollama) exercise the full pipeline against real models for cross-model and cross-backend comparison (deferred to the §7.2 live-hardware multi-application study).
 
 Results are written to `results.json` at the end of every harness run.
 
