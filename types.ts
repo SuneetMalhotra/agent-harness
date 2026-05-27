@@ -126,6 +126,13 @@ export interface AssertionEvent {
    */
   imagePath?: string;
   rationale: string;
+  /**
+   * How the judge produced its verdict.
+   *   - 'vision'   : live vision-capable LLM read the PNG via absolute path
+   *   - 'text-only': LLM judged from `expectedBehavior` + properties text only
+   *   - 'stub'     : deterministic in-process stub (no LLM call)
+   */
+  judgeModality?: 'vision' | 'text-only' | 'stub';
   timestamp: string;
 }
 
