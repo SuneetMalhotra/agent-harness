@@ -1,16 +1,16 @@
 case_id,source_id,seeded_label,llm_judge_verdict,description,expected
 TC01,vis-cosm-8,cosmetic,PASS,"Delete button text label ""Delete"" swapped for the visually equivalent ""Remove"".",Each row exposes an equivalent delete affordance.
-TC02,vis-cosm-1,cosmetic,FAIL,Font family swapped from system sans-serif to Georgia serif.,Application typography renders without breaking layout.
+TC02,vis-cosm-1,cosmetic,PASS,Font family swapped from system sans-serif to Georgia serif.,Application typography renders without breaking layout.
 TC03,vis-cosm-9,cosmetic,PASS,Letter-spacing increased by 0.5px across body text.,Text renders with slightly expanded letter-spacing; remains within container bounds.
-TC04,vis-func-10,functional,FAIL,Toggle checkboxes replaced with non-interactive square <span> visuals (no input element).,Each todo row has an interactive checkbox to toggle completion.
+TC04,vis-func-10,functional,PASS,Toggle checkboxes replaced with non-interactive square <span> visuals (no input element).,Each todo row has an interactive checkbox to toggle completion.
 TC05,vis-func-4,functional,FAIL,"Each row delete button shrunk to 12x12 px, below the 24x24 a11y minimum touch target.",Delete buttons meet the 24x24 px accessibility minimum touch target.
 TC06,vis-cosm-4,cosmetic,PASS,"Padding on header, main, and footer increased by 4px (16 → 20 px).",Container padding is consistent; touch targets remain reachable.
 TC07,vis-cosm-5,cosmetic,PASS,"Subtle drop shadow added to add, destroy, and clear-completed buttons.",Buttons render with a subtle shadow; remain visually identifiable as buttons.
 TC08,vis-func-1,functional,FAIL,Primary Add button obscured by a full-width opaque overlay covering the new-todo form.,The Add todo CTA is visible and tappable in the header.
 TC09,vis-cosm-11,cosmetic,PASS,Hover-state simulated: Add button rendered in its deeper-blue hover color (#0d47a1) at rest.,Add button renders in a primary-blue color; remains identifiable.
-TC10,vis-func-12,functional,PASS,All focus indicators removed; keyboard focus on new-todo input is forced but invisible.,A visible focus indicator appears on keyboard-focused interactive elements.
+TC10,vis-func-12,functional,FAIL,All focus indicators removed; keyboard focus on new-todo input is forced but invisible.,A visible focus indicator appears on keyboard-focused interactive elements.
 TC11,vis-cosm-2,cosmetic,PASS,Primary color shifted from blue (#1976d2) to green (#2e7d32).,Primary CTA remains visible and visually distinct from neutral chrome.
-TC12,vis-func-2,functional,FAIL,New-todo input clipped to 50% of its container so the placeholder and typed text are cut off mid-character.,The new-todo input field displays the full placeholder text without clipping.
+TC12,vis-func-2,functional,PASS,New-todo input clipped to 50% of its container so the placeholder and typed text are cut off mid-character.,The new-todo input field displays the full placeholder text without clipping.
 TC13,vis-func-7,functional,FAIL,"All delete buttons translated 2000px to the right, off-screen.",Delete buttons for each todo are visible inside the list row.
 TC14,vis-func-3,functional,FAIL,Submit/Add button removed entirely from the DOM.,The Add submit button is present in the header form.
 TC15,vis-cosm-3,cosmetic,PASS,Border radius increased from 4px to 12px on all rounded surfaces.,Rounded surface treatment is consistent; no content clipped.
@@ -20,6 +20,6 @@ TC18,vis-func-9,functional,FAIL,Visible label text for new-todo input removed an
 TC19,vis-cosm-10,cosmetic,PASS,Filter pill heights increased by 4px (slightly chunkier filter row).,Filter pills render with slightly increased height; remain on a single row.
 TC20,vis-func-6,functional,FAIL,Full-viewport modal dialog blocks all UI and has no close button or backdrop dismiss.,No modal blocks the application without a dismiss affordance.
 TC21,vis-cosm-12,cosmetic,PASS,"Brand ""todos"" wordmark scaled up 20% (48px → 57.6px).",Brand wordmark renders larger but stays within the header.
-TC22,vis-func-8,functional,FAIL,List items vertically overlap by ~60% via negative top margin.,List items are visually separated; no row overlaps the row above it.
+TC22,vis-func-8,functional,PASS,List items vertically overlap by ~60% via negative top margin.,List items are visually separated; no row overlaps the row above it.
 TC23,vis-func-5,functional,FAIL,"Body text rendered at #c8c8c8 on #f5f5f5 background — contrast ratio ~1.5:1, well below 3:1.",Body text contrast against the background meets 3:1 minimum.
-TC24,vis-func-11,functional,FAIL,Error banner rendered visible but with a higher-z opaque card placed on top of it.,"When the error banner is shown, it is fully visible and not occluded."
+TC24,vis-func-11,functional,PASS,Error banner rendered visible but with a higher-z opaque card placed on top of it.,"When the error banner is shown, it is fully visible and not occluded."

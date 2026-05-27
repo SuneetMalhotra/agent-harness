@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "runId": "run-1779854922827",
-    "provider": "stub",
+    "runId": "run-1779894555899",
+    "provider": "anthropic-oauth",
     "modelVersion": "claude-sonnet-4-6",
-    "timestamp": "2026-05-27T04:08:42.827Z",
-    "testCount": 12
+    "timestamp": "2026-05-27T15:09:15.899Z",
+    "testCount": 30
   },
   "authoringVelocity": {
     "medianPromptToMergeMinutes": 150,
@@ -12,390 +12,594 @@
     "speedup": 3.2
   },
   "pipelineRuntime": {
-    "stubDurationSeconds": 0,
+    "stubDurationSeconds": 1665.695,
     "perRun": [
-      0
+      27.766666666666666
     ]
   },
   "healing": {
-    "cacheHitRate": 0.92,
-    "domHealerSuccessRate": 0.88,
-    "visionFallbackSuccessRate": 0.79,
-    "combinedRecoveryRate": 0.97,
+    "cacheHitRate": 0,
+    "domHealerSuccessRate": 1,
+    "visionFallbackSuccessRate": 1,
+    "combinedRecoveryRate": 0.9666666666666667,
     "events": [
       {
-        "id": "heal-1-1779854922827",
-        "testCaseId": "TC-01",
-        "semanticName": "primary action for TC-01",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
-        "tier": "tier2",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      {
-        "id": "heal-2-1779854922827",
-        "testCaseId": "TC-02",
-        "semanticName": "primary action for TC-02",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
-        "tier": "tier2",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      {
-        "id": "heal-3-1779854922827",
-        "testCaseId": "TC-03",
-        "semanticName": "primary action for TC-03",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
-        "tier": "tier2",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      {
-        "id": "heal-4-1779854922827",
-        "testCaseId": "TC-04",
-        "semanticName": "primary action for TC-04",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
-        "tier": "tier2",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      {
-        "id": "heal-5-1779854922827",
-        "testCaseId": "TC-05",
-        "semanticName": "primary action for TC-05",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
-        "tier": "tier2",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      {
-        "id": "heal-6-1779854922827",
-        "testCaseId": "TC-06",
-        "semanticName": "primary action for TC-06",
+        "id": "heal-1-1779892984373",
+        "testCaseId": "TC-001",
+        "semanticName": "primary action for TC-001",
         "resolvedStrategy": "dom-healer",
         "success": true,
-        "latencyMs": 0,
+        "latencyMs": 34936,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:43:04.373Z"
+      },
+      {
+        "id": "heal-2-1779893017958",
+        "testCaseId": "TC-002",
+        "semanticName": "primary action for TC-002",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 33585,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:43:37.958Z"
+      },
+      {
+        "id": "heal-3-1779893064269",
+        "testCaseId": "TC-003",
+        "semanticName": "primary action for TC-003",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 46311,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:44:24.269Z"
+      },
+      {
+        "id": "heal-4-1779893119951",
+        "testCaseId": "TC-004",
+        "semanticName": "primary action for TC-004",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 55682,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:45:19.951Z"
+      },
+      {
+        "id": "heal-5-1779893157380",
+        "testCaseId": "TC-005",
+        "semanticName": "primary action for TC-005",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 37429,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:45:57.380Z"
+      },
+      {
+        "id": "heal-6-1779893203686",
+        "testCaseId": "TC-006",
+        "semanticName": "primary action for TC-006",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 46306,
         "tier": "tier2",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "timestamp": "2026-05-27T14:46:43.686Z"
       },
       {
-        "id": "heal-7-1779854922827",
-        "testCaseId": "TC-07",
-        "semanticName": "primary action for TC-07",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
-        "tier": "tier3",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "id": "heal-7-1779893266841",
+        "testCaseId": "TC-007",
+        "semanticName": "primary action for TC-007",
+        "resolvedStrategy": "failed",
+        "success": false,
+        "latencyMs": 63155,
+        "tier": "tier2",
+        "timestamp": "2026-05-27T14:47:46.841Z"
       },
       {
-        "id": "heal-8-1779854922827",
-        "testCaseId": "TC-08",
-        "semanticName": "primary action for TC-08",
-        "resolvedStrategy": "cache",
+        "id": "heal-8-1779893293828",
+        "testCaseId": "TC-008",
+        "semanticName": "primary action for TC-008",
+        "resolvedStrategy": "dom-healer",
         "success": true,
-        "latencyMs": 0,
-        "tier": "tier3",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      {
-        "id": "heal-9-1779854922827",
-        "testCaseId": "TC-09",
-        "semanticName": "primary action for TC-09",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
-        "tier": "tier3",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      {
-        "id": "heal-10-1779854922827",
-        "testCaseId": "TC-10",
-        "semanticName": "primary action for TC-10",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
+        "latencyMs": 26987,
         "tier": "tier1",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "timestamp": "2026-05-27T14:48:13.828Z"
       },
       {
-        "id": "heal-11-1779854922827",
-        "testCaseId": "TC-11",
-        "semanticName": "primary action for TC-11",
-        "resolvedStrategy": "cache",
+        "id": "heal-9-1779893317783",
+        "testCaseId": "TC-009",
+        "semanticName": "primary action for TC-009",
+        "resolvedStrategy": "dom-healer",
         "success": true,
-        "latencyMs": 0,
+        "latencyMs": 23954,
         "tier": "tier1",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "timestamp": "2026-05-27T14:48:37.783Z"
       },
       {
-        "id": "heal-12-1779854922827",
-        "testCaseId": "TC-12",
-        "semanticName": "primary action for TC-12",
-        "resolvedStrategy": "cache",
+        "id": "heal-10-1779893369831",
+        "testCaseId": "TC-010",
+        "semanticName": "primary action for TC-010",
+        "resolvedStrategy": "vision-healer",
         "success": true,
-        "latencyMs": 0,
+        "latencyMs": 52048,
         "tier": "tier1",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "timestamp": "2026-05-27T14:49:29.831Z"
+      },
+      {
+        "id": "heal-11-1779893419631",
+        "testCaseId": "TC-011",
+        "semanticName": "primary action for TC-011",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 49800,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:50:19.631Z"
+      },
+      {
+        "id": "heal-12-1779893473502",
+        "testCaseId": "TC-012",
+        "semanticName": "primary action for TC-012",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 53871,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:51:13.502Z"
+      },
+      {
+        "id": "heal-13-1779893502741",
+        "testCaseId": "TC-013",
+        "semanticName": "primary action for TC-013",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 29239,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:51:42.741Z"
+      },
+      {
+        "id": "heal-14-1779893531990",
+        "testCaseId": "TC-014",
+        "semanticName": "primary action for TC-014",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 29249,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:52:11.990Z"
+      },
+      {
+        "id": "heal-15-1779893583295",
+        "testCaseId": "TC-015",
+        "semanticName": "primary action for TC-015",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 51304,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:53:03.295Z"
+      },
+      {
+        "id": "heal-16-1779893639541",
+        "testCaseId": "TC-016",
+        "semanticName": "primary action for TC-016",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 56246,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:53:59.541Z"
+      },
+      {
+        "id": "heal-17-1779893691205",
+        "testCaseId": "TC-017",
+        "semanticName": "primary action for TC-017",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 51664,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:54:51.205Z"
+      },
+      {
+        "id": "heal-18-1779893717561",
+        "testCaseId": "TC-018",
+        "semanticName": "primary action for TC-018",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 26356,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:55:17.561Z"
+      },
+      {
+        "id": "heal-19-1779893771720",
+        "testCaseId": "TC-019",
+        "semanticName": "primary action for TC-019",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 54159,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:56:11.720Z"
+      },
+      {
+        "id": "heal-20-1779893801707",
+        "testCaseId": "TC-020",
+        "semanticName": "primary action for TC-020",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 29987,
+        "tier": "tier2",
+        "timestamp": "2026-05-27T14:56:41.707Z"
+      },
+      {
+        "id": "heal-21-1779893864104",
+        "testCaseId": "TC-021",
+        "semanticName": "primary action for TC-021",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 62397,
+        "tier": "tier2",
+        "timestamp": "2026-05-27T14:57:44.104Z"
+      },
+      {
+        "id": "heal-22-1779893928367",
+        "testCaseId": "TC-022",
+        "semanticName": "primary action for TC-022",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 64263,
+        "tier": "tier2",
+        "timestamp": "2026-05-27T14:58:48.367Z"
+      },
+      {
+        "id": "heal-23-1779893983910",
+        "testCaseId": "TC-023",
+        "semanticName": "primary action for TC-023",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 55543,
+        "tier": "tier3",
+        "timestamp": "2026-05-27T14:59:43.910Z"
+      },
+      {
+        "id": "heal-24-1779894024400",
+        "testCaseId": "TC-024",
+        "semanticName": "primary action for TC-024",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 40490,
+        "tier": "tier3",
+        "timestamp": "2026-05-27T15:00:24.400Z"
+      },
+      {
+        "id": "heal-25-1779894080894",
+        "testCaseId": "TC-025",
+        "semanticName": "primary action for TC-025",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 56493,
+        "tier": "tier2",
+        "timestamp": "2026-05-27T15:01:20.894Z"
+      },
+      {
+        "id": "heal-26-1779894106841",
+        "testCaseId": "TC-026",
+        "semanticName": "primary action for TC-026",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 25947,
+        "tier": "tier2",
+        "timestamp": "2026-05-27T15:01:46.841Z"
+      },
+      {
+        "id": "heal-27-1779894153052",
+        "testCaseId": "TC-027",
+        "semanticName": "primary action for TC-027",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 46211,
+        "tier": "tier3",
+        "timestamp": "2026-05-27T15:02:33.052Z"
+      },
+      {
+        "id": "heal-28-1779894207505",
+        "testCaseId": "TC-028",
+        "semanticName": "primary action for TC-028",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 54453,
+        "tier": "tier3",
+        "timestamp": "2026-05-27T15:03:27.505Z"
+      },
+      {
+        "id": "heal-29-1779894269759",
+        "testCaseId": "TC-029",
+        "semanticName": "primary action for TC-029",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 62253,
+        "tier": "tier2",
+        "timestamp": "2026-05-27T15:04:29.759Z"
+      },
+      {
+        "id": "heal-30-1779894295776",
+        "testCaseId": "TC-030",
+        "semanticName": "primary action for TC-030",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 26017,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T15:04:55.776Z"
       }
     ]
   },
   "visualAssertion": {
-    "precision": 0.9166666666666666,
-    "recall": 0.9166666666666666,
+    "precision": 1,
+    "recall": 0.6666666666666666,
     "pixelComparisonPrecision": 1,
     "pixelComparisonRecall": 0.5,
     "events": [
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894306584",
         "testCaseId": "vis-func-1",
         "expectedBehavior": "The Add todo CTA is visible and tappable in the header.",
         "verdict": "fail",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-1.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The Add button and new-todo input field are rendered on a near-black header background (#000 or very dark gray) with near-black text/button contrast, making both the placeholder text and the Add button label illegible (contrast ratio well below 3:1), which constitutes a functionally-observable defect impairing the CTA.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:05:06.584Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894315681",
         "testCaseId": "vis-func-2",
         "expectedBehavior": "The new-todo input field displays the full placeholder text without clipping.",
-        "verdict": "fail",
+        "verdict": "pass",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-2.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The new-todo input field is wide enough to display the full placeholder text 'What needs to be done?' without any clipping, and the form layout is fully preserved.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:05:15.681Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894325835",
         "testCaseId": "vis-func-3",
         "expectedBehavior": "The Add submit button is present in the header form.",
         "verdict": "fail",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-3.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The header form contains only a text input field with placeholder 'What needs to be done?' and no visible 'Add' submit button, making it impossible for the user to submit a new todo by clicking Add.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:05:25.835Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894332716",
         "testCaseId": "vis-func-4",
         "expectedBehavior": "Delete buttons meet the 24x24 px accessibility minimum touch target.",
         "verdict": "fail",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-4.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The delete buttons (labeled 'Del') are rendered as small red text links at the far right of each row, visually appearing to be approximately 20×16 px — well below the 24×24 px WCAG 2.5.5 minimum touch target requirement.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:05:32.716Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894362181",
         "testCaseId": "vis-func-5",
         "expectedBehavior": "Body text contrast against the background meets 3:1 minimum.",
         "verdict": "fail",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-5.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "Multiple body-text elements fail the 3:1 contrast minimum: the completed 'Walk the dog' item renders in a faded light-gray with strikethrough (estimated ~#aaa on #fff, ≈2.3:1), the footer filter labels 'Active' and 'Completed' appear in very light gray (~#ccc on #fff, ≈1.6:1), and the 'todos' heading is rendered in an extremely pale pink-gray well below 3:1 — all constitute accessibility contrast violations.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:06:02.181Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894371736",
         "testCaseId": "vis-func-6",
         "expectedBehavior": "No modal blocks the application without a dismiss affordance.",
         "verdict": "fail",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-6.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "A full-screen dark overlay blocks the entire application UI with only a \"Loading...\" spinner and no dismiss affordance, making the app unreachable and violating the no-blocking-overlay-without-close-control requirement.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:06:11.736Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894380161",
         "testCaseId": "vis-func-7",
         "expectedBehavior": "Delete buttons for each todo are visible inside the list row.",
         "verdict": "fail",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-7.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "No delete buttons are visible in any of the todo list rows; each row shows only a checkbox and label text, with no delete control present.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:06:20.161Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894394407",
         "testCaseId": "vis-func-8",
         "expectedBehavior": "List items are visually separated; no row overlaps the row above it.",
-        "verdict": "fail",
+        "verdict": "pass",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-8.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "All three list rows (Buy milk, Walk the dog, Write the report) are clearly separated with no vertical overlap, each label is fully readable, and consistent row spacing is preserved throughout the list.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:06:34.407Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894401126",
         "testCaseId": "vis-func-9",
         "expectedBehavior": "The new-todo input has an associated label (visible or programmatic).",
         "verdict": "fail",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-9.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The new-todo input field has no visible label and no programmatically associated label element is present in the rendered UI — the input appears entirely unlabelled, meaning a screen reader cannot announce its purpose.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:06:41.126Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894411617",
         "testCaseId": "vis-func-10",
         "expectedBehavior": "Each todo row has an interactive checkbox to toggle completion.",
-        "verdict": "fail",
-        "seededDefect": "functional",
-        "imagePath": "visual-corpus/images/vis-func-10.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      {
-        "id": "assert-12-1779854922827",
-        "testCaseId": "vis-func-11",
-        "expectedBehavior": "When the error banner is shown, it is fully visible and not occluded.",
-        "verdict": "fail",
-        "seededDefect": "functional",
-        "imagePath": "visual-corpus/images/vis-func-11.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      {
-        "id": "assert-12-1779854922827",
-        "testCaseId": "vis-func-12",
-        "expectedBehavior": "A visible focus indicator appears on keyboard-focused interactive elements.",
         "verdict": "pass",
         "seededDefect": "functional",
-        "imagePath": "visual-corpus/images/vis-func-12.png",
-        "rationale": "Properties listed concern focus visibility, which cannot be determined from the text description alone; defaulting to pass.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "imagePath": "visual-corpus/images/vis-func-10.png",
+        "rationale": "Each todo row displays a visible checkbox input (unchecked squares) that conveys checked/unchecked state, with 'Walk the dog' shown with strikethrough indicating it is already marked complete, confirming the toggle mechanism communicates state and supports completion.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:06:51.617Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894422355",
+        "testCaseId": "vis-func-11",
+        "expectedBehavior": "When the error banner is shown, it is fully visible and not occluded.",
+        "verdict": "pass",
+        "seededDefect": "functional",
+        "imagePath": "visual-corpus/images/vis-func-11.png",
+        "rationale": "The error banner ('Could not save todo. Please retry.') is fully visible at the bottom of the card, unoccluded by any other element, with legible high-contrast red text on a light pink background, and the stacking context is preserved with no overlap from other UI components.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:07:02.355Z"
+      },
+      {
+        "id": "assert-30-1779894436499",
+        "testCaseId": "vis-func-12",
+        "expectedBehavior": "A visible focus indicator appears on keyboard-focused interactive elements.",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "imagePath": "visual-corpus/images/vis-func-12.png",
+        "rationale": "No keyboard focus indicator (outline or ring) is visible on any interactive element in the screenshot; the image shows a static state with no element exhibiting a focus ring, making keyboard navigation accessibility unverifiable and violating the focus-visibility requirement.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:07:16.499Z"
+      },
+      {
+        "id": "assert-30-1779894446603",
         "testCaseId": "vis-cosm-1",
         "expectedBehavior": "Application typography renders without breaking layout.",
-        "verdict": "fail",
+        "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-1.png",
-        "rationale": "Typography change implied; flagging as potentially layout-affecting under the cautious-defaults policy.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "All text renders fully within its containers, no content is clipped or wrapped unexpectedly, and layout integrity is preserved across all rows and the footer bar.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:07:26.603Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894456423",
         "testCaseId": "vis-cosm-2",
         "expectedBehavior": "Primary CTA remains visible and visually distinct from neutral chrome.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-2.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The 'Add' button is fully visible with a solid dark-green fill that clearly distinguishes it from the white card and gray page background, and all layout elements are unclipped and properly positioned.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:07:36.423Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894464955",
         "testCaseId": "vis-cosm-3",
         "expectedBehavior": "Rounded surface treatment is consistent; no content clipped.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-3.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "Rounded corners are consistently applied to the card container, input field, Add button, Delete buttons, All/Clear completed controls, and checkboxes; no content is clipped at any edge; layout integrity is fully preserved.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:07:44.955Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894477323",
         "testCaseId": "vis-cosm-4",
         "expectedBehavior": "Container padding is consistent; touch targets remain reachable.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-4.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "All controls (input, Add button, checkboxes, Delete buttons, filter links, Clear completed) are fully within the visible container with consistent padding, no clipping or occlusion, and touch targets are adequately sized and reachable.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:07:57.323Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894486195",
         "testCaseId": "vis-cosm-5",
         "expectedBehavior": "Buttons render with a subtle shadow; remain visually identifiable as buttons.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-5.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "All buttons (Add, Delete ×3, All, Clear completed) are clearly identifiable with visible borders and/or fills, subtle drop shadows are present on the Delete buttons and Clear completed without obscuring any text or content, and the overall layout is intact.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:08:06.195Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894496738",
         "testCaseId": "vis-cosm-6",
         "expectedBehavior": "Footer labels render in italic; remain legible.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-6.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "Footer labels ('2 items left', 'All', 'Active', 'Completed') render in italic, are fully legible with adequate contrast, none are truncated, and the overall layout is intact.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:08:16.738Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894508026",
         "testCaseId": "vis-cosm-7",
         "expectedBehavior": "Page background renders without disrupting card legibility.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-7.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The white card renders cleanly against the light gray/blue gradient background with no contrast violations, all text and controls are fully legible, and the layout is structurally intact.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:08:28.026Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894518125",
         "testCaseId": "vis-cosm-8",
         "expectedBehavior": "Each row exposes an equivalent delete affordance.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-8.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "Every todo row (Buy milk, Walk the dog, Write the report) has a visible 'Remove' button with human-readable text and an adequately sized touch target (~70×30 px), satisfying all three critical properties.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:08:38.125Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894526712",
         "testCaseId": "vis-cosm-9",
         "expectedBehavior": "Text renders with slightly expanded letter-spacing; remains within container bounds.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-9.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "All text remains within container bounds with no overflow, every label stays on a single line, and the overall layout is fully intact with no clipped or obscured elements.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:08:46.712Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894536112",
         "testCaseId": "vis-cosm-10",
         "expectedBehavior": "Filter pills render with slightly increased height; remain on a single row.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-10.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "All three filter pills (All, Active, Completed) are visible and rendered on a single row in the footer bar, with layout integrity fully preserved.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:08:56.112Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894546293",
         "testCaseId": "vis-cosm-11",
         "expectedBehavior": "Add button renders in a primary-blue color; remains identifiable.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-11.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The Add button is clearly visible, rendered in a dark primary-blue (#1a4e8c-range) background with white label text, and the overall layout is fully intact with no clipped or occluded elements.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:09:06.293Z"
       },
       {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894555898",
         "testCaseId": "vis-cosm-12",
         "expectedBehavior": "Brand wordmark renders larger but stays within the header.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-12.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The brand wordmark 'todos' renders at a larger size and is fully contained within the header container, the input form and Add button below it are fully visible, and overall layout integrity is preserved with no clipping, occlusion, or overflow.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:09:15.898Z"
       }
     ]
   },
   "tierRouting": {
-    "correctOnFirstInvocation": 12,
-    "totalRouted": 12
+    "correctOnFirstInvocation": 30,
+    "totalRouted": 30
   },
   "observabilityLog": [
     {
@@ -406,7 +610,7 @@
         "author": "agent",
         "promptId": "feature-locator-resolver"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:14:43.742Z"
     },
     {
       "layer": "authoring",
@@ -416,7 +620,7 @@
         "author": "agent-revised",
         "promptId": "feature-vision-fallback"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:14:43.742Z"
     },
     {
       "layer": "authoring",
@@ -425,7 +629,7 @@
         "sha": "ghi9012",
         "author": "human"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:14:43.742Z"
     },
     {
       "layer": "operating",
@@ -433,15 +637,15 @@
       "payload": {
         "fromAgent": "product-manager-agent",
         "toAgent": "qa-engineer-agent",
-        "modelVersion": "stub",
+        "modelVersion": "anthropic-oauth",
         "promptId": "pm-v1",
         "inputArtifactIds": [
           "todomvc-mobile-1"
         ],
-        "outputArtifactId": "PRD-001",
-        "timestamp": "2026-05-27T04:08:42.826Z"
+        "outputArtifactId": "PRD-todomvc-mobile-1",
+        "timestamp": "2026-05-27T14:15:27.049Z"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:15:27.049Z"
     },
     {
       "layer": "operating",
@@ -449,15 +653,15 @@
       "payload": {
         "fromAgent": "qa-engineer-agent",
         "toAgent": "automation-engineer-agent",
-        "modelVersion": "stub",
+        "modelVersion": "anthropic-oauth",
         "promptId": "qa-v1",
         "inputArtifactIds": [
-          "PRD-001"
+          "PRD-todomvc-mobile-1"
         ],
-        "outputArtifactId": "testcases-PRD-001",
-        "timestamp": "2026-05-27T04:08:42.826Z"
+        "outputArtifactId": "testcases-PRD-todomvc-mobile-1",
+        "timestamp": "2026-05-27T14:16:43.807Z"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:16:43.807Z"
     },
     {
       "layer": "operating",
@@ -465,15 +669,15 @@
       "payload": {
         "fromAgent": "automation-engineer-agent",
         "toAgent": "pull-request-reviewer-agent",
-        "modelVersion": "stub",
+        "modelVersion": "anthropic-oauth",
         "promptId": "aut-v1",
         "inputArtifactIds": [
-          "TC-01"
+          "TC-001"
         ],
-        "outputArtifactId": "AUT-TC-01",
-        "timestamp": "2026-05-27T04:08:42.826Z"
+        "outputArtifactId": "AA-TC-001",
+        "timestamp": "2026-05-27T14:17:05.406Z"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:17:05.406Z"
     },
     {
       "layer": "operating",
@@ -481,9 +685,9 @@
       "payload": {
         "agent": "pull-request-reviewer-agent",
         "durationMs": 0,
-        "outputArtifactId": "AUT-TC-01"
+        "outputArtifactId": "AA-TC-001"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:17:34.978Z"
     },
     {
       "layer": "operating",
@@ -491,15 +695,15 @@
       "payload": {
         "fromAgent": "automation-engineer-agent",
         "toAgent": "pull-request-reviewer-agent",
-        "modelVersion": "stub",
+        "modelVersion": "anthropic-oauth",
         "promptId": "aut-v1",
         "inputArtifactIds": [
-          "TC-02"
+          "TC-002"
         ],
-        "outputArtifactId": "AUT-TC-02",
-        "timestamp": "2026-05-27T04:08:42.826Z"
+        "outputArtifactId": "AUTO-TC-002",
+        "timestamp": "2026-05-27T14:17:53.599Z"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:17:53.599Z"
     },
     {
       "layer": "operating",
@@ -507,9 +711,9 @@
       "payload": {
         "agent": "pull-request-reviewer-agent",
         "durationMs": 0,
-        "outputArtifactId": "AUT-TC-02"
+        "outputArtifactId": "AUTO-TC-002"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:18:10.782Z"
     },
     {
       "layer": "operating",
@@ -517,15 +721,15 @@
       "payload": {
         "fromAgent": "automation-engineer-agent",
         "toAgent": "pull-request-reviewer-agent",
-        "modelVersion": "stub",
+        "modelVersion": "anthropic-oauth",
         "promptId": "aut-v1",
         "inputArtifactIds": [
-          "TC-03"
+          "TC-003"
         ],
-        "outputArtifactId": "AUT-TC-03",
-        "timestamp": "2026-05-27T04:08:42.826Z"
+        "outputArtifactId": "AUTO-TC-003",
+        "timestamp": "2026-05-27T14:18:38.306Z"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:18:38.306Z"
     },
     {
       "layer": "operating",
@@ -533,9 +737,9 @@
       "payload": {
         "agent": "pull-request-reviewer-agent",
         "durationMs": 0,
-        "outputArtifactId": "AUT-TC-03"
+        "outputArtifactId": "AUTO-TC-003"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:19:02.699Z"
     },
     {
       "layer": "operating",
@@ -543,15 +747,15 @@
       "payload": {
         "fromAgent": "automation-engineer-agent",
         "toAgent": "pull-request-reviewer-agent",
-        "modelVersion": "stub",
+        "modelVersion": "anthropic-oauth",
         "promptId": "aut-v1",
         "inputArtifactIds": [
-          "TC-04"
+          "TC-004"
         ],
-        "outputArtifactId": "AUT-TC-04",
-        "timestamp": "2026-05-27T04:08:42.826Z"
+        "outputArtifactId": "AUTO-TC-004",
+        "timestamp": "2026-05-27T14:19:14.862Z"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:19:14.863Z"
     },
     {
       "layer": "operating",
@@ -559,9 +763,9 @@
       "payload": {
         "agent": "pull-request-reviewer-agent",
         "durationMs": 0,
-        "outputArtifactId": "AUT-TC-04"
+        "outputArtifactId": "AUTO-TC-004"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:20:24.168Z"
     },
     {
       "layer": "operating",
@@ -569,15 +773,15 @@
       "payload": {
         "fromAgent": "automation-engineer-agent",
         "toAgent": "pull-request-reviewer-agent",
-        "modelVersion": "stub",
+        "modelVersion": "anthropic-oauth",
         "promptId": "aut-v1",
         "inputArtifactIds": [
-          "TC-05"
+          "TC-005"
         ],
-        "outputArtifactId": "AUT-TC-05",
-        "timestamp": "2026-05-27T04:08:42.826Z"
+        "outputArtifactId": "AA-005",
+        "timestamp": "2026-05-27T14:20:38.469Z"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:20:38.469Z"
     },
     {
       "layer": "operating",
@@ -585,9 +789,9 @@
       "payload": {
         "agent": "pull-request-reviewer-agent",
         "durationMs": 0,
-        "outputArtifactId": "AUT-TC-05"
+        "outputArtifactId": "AA-005"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:20:59.725Z"
     },
     {
       "layer": "operating",
@@ -595,15 +799,15 @@
       "payload": {
         "fromAgent": "automation-engineer-agent",
         "toAgent": "pull-request-reviewer-agent",
-        "modelVersion": "stub",
+        "modelVersion": "anthropic-oauth",
         "promptId": "aut-v1",
         "inputArtifactIds": [
-          "TC-06"
+          "TC-006"
         ],
-        "outputArtifactId": "AUT-TC-06",
-        "timestamp": "2026-05-27T04:08:42.826Z"
+        "outputArtifactId": "AA-TC-006",
+        "timestamp": "2026-05-27T14:21:18.028Z"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:21:18.028Z"
     },
     {
       "layer": "operating",
@@ -611,9 +815,9 @@
       "payload": {
         "agent": "pull-request-reviewer-agent",
         "durationMs": 0,
-        "outputArtifactId": "AUT-TC-06"
+        "outputArtifactId": "AA-TC-006"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:21:44.835Z"
     },
     {
       "layer": "operating",
@@ -621,15 +825,15 @@
       "payload": {
         "fromAgent": "automation-engineer-agent",
         "toAgent": "pull-request-reviewer-agent",
-        "modelVersion": "stub",
+        "modelVersion": "anthropic-oauth",
         "promptId": "aut-v1",
         "inputArtifactIds": [
-          "TC-07"
+          "TC-007"
         ],
-        "outputArtifactId": "AUT-TC-07",
-        "timestamp": "2026-05-27T04:08:42.826Z"
+        "outputArtifactId": "AUTO-TC-007",
+        "timestamp": "2026-05-27T14:22:11.075Z"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:22:11.075Z"
     },
     {
       "layer": "operating",
@@ -637,9 +841,9 @@
       "payload": {
         "agent": "pull-request-reviewer-agent",
         "durationMs": 0,
-        "outputArtifactId": "AUT-TC-07"
+        "outputArtifactId": "AUTO-TC-007"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:22:26.544Z"
     },
     {
       "layer": "operating",
@@ -647,15 +851,15 @@
       "payload": {
         "fromAgent": "automation-engineer-agent",
         "toAgent": "pull-request-reviewer-agent",
-        "modelVersion": "stub",
+        "modelVersion": "anthropic-oauth",
         "promptId": "aut-v1",
         "inputArtifactIds": [
-          "TC-08"
+          "TC-008"
         ],
-        "outputArtifactId": "AUT-TC-08",
-        "timestamp": "2026-05-27T04:08:42.826Z"
+        "outputArtifactId": "AA-008",
+        "timestamp": "2026-05-27T14:23:00.333Z"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:23:00.333Z"
     },
     {
       "layer": "operating",
@@ -663,9 +867,9 @@
       "payload": {
         "agent": "pull-request-reviewer-agent",
         "durationMs": 0,
-        "outputArtifactId": "AUT-TC-08"
+        "outputArtifactId": "AA-008"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:23:36.741Z"
     },
     {
       "layer": "operating",
@@ -673,15 +877,15 @@
       "payload": {
         "fromAgent": "automation-engineer-agent",
         "toAgent": "pull-request-reviewer-agent",
-        "modelVersion": "stub",
+        "modelVersion": "anthropic-oauth",
         "promptId": "aut-v1",
         "inputArtifactIds": [
-          "TC-09"
+          "TC-009"
         ],
-        "outputArtifactId": "AUT-TC-09",
-        "timestamp": "2026-05-27T04:08:42.826Z"
+        "outputArtifactId": "ART-009",
+        "timestamp": "2026-05-27T14:24:02.668Z"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:24:02.668Z"
     },
     {
       "layer": "operating",
@@ -689,9 +893,9 @@
       "payload": {
         "agent": "pull-request-reviewer-agent",
         "durationMs": 0,
-        "outputArtifactId": "AUT-TC-09"
+        "outputArtifactId": "ART-009"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:24:31.143Z"
     },
     {
       "layer": "operating",
@@ -699,15 +903,15 @@
       "payload": {
         "fromAgent": "automation-engineer-agent",
         "toAgent": "pull-request-reviewer-agent",
-        "modelVersion": "stub",
+        "modelVersion": "anthropic-oauth",
         "promptId": "aut-v1",
         "inputArtifactIds": [
-          "TC-10"
+          "TC-010"
         ],
-        "outputArtifactId": "AUT-TC-10",
-        "timestamp": "2026-05-27T04:08:42.826Z"
+        "outputArtifactId": "AA-TC-010",
+        "timestamp": "2026-05-27T14:24:47.382Z"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:24:47.382Z"
     },
     {
       "layer": "operating",
@@ -715,9 +919,9 @@
       "payload": {
         "agent": "pull-request-reviewer-agent",
         "durationMs": 0,
-        "outputArtifactId": "AUT-TC-10"
+        "outputArtifactId": "AA-TC-010"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:24:58.795Z"
     },
     {
       "layer": "operating",
@@ -725,15 +929,15 @@
       "payload": {
         "fromAgent": "automation-engineer-agent",
         "toAgent": "pull-request-reviewer-agent",
-        "modelVersion": "stub",
+        "modelVersion": "anthropic-oauth",
         "promptId": "aut-v1",
         "inputArtifactIds": [
-          "TC-11"
+          "TC-011"
         ],
-        "outputArtifactId": "AUT-TC-11",
-        "timestamp": "2026-05-27T04:08:42.826Z"
+        "outputArtifactId": "AUTO-011",
+        "timestamp": "2026-05-27T14:25:12.846Z"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:25:12.846Z"
     },
     {
       "layer": "operating",
@@ -741,9 +945,9 @@
       "payload": {
         "agent": "pull-request-reviewer-agent",
         "durationMs": 0,
-        "outputArtifactId": "AUT-TC-11"
+        "outputArtifactId": "AUTO-011"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:25:35.472Z"
     },
     {
       "layer": "operating",
@@ -751,15 +955,15 @@
       "payload": {
         "fromAgent": "automation-engineer-agent",
         "toAgent": "pull-request-reviewer-agent",
-        "modelVersion": "stub",
+        "modelVersion": "anthropic-oauth",
         "promptId": "aut-v1",
         "inputArtifactIds": [
-          "TC-12"
+          "TC-012"
         ],
-        "outputArtifactId": "AUT-TC-12",
-        "timestamp": "2026-05-27T04:08:42.826Z"
+        "outputArtifactId": "AA-TC-012",
+        "timestamp": "2026-05-27T14:25:57.553Z"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:25:57.553Z"
     },
     {
       "layer": "operating",
@@ -767,657 +971,1581 @@
       "payload": {
         "agent": "pull-request-reviewer-agent",
         "durationMs": 0,
-        "outputArtifactId": "AUT-TC-12"
+        "outputArtifactId": "AA-TC-012"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:26:22.942Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-013"
+        ],
+        "outputArtifactId": "AUTO-013",
+        "timestamp": "2026-05-27T14:26:40.486Z"
+      },
+      "timestamp": "2026-05-27T14:26:40.486Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUTO-013"
+      },
+      "timestamp": "2026-05-27T14:27:56.803Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-014"
+        ],
+        "outputArtifactId": "AUTO-TC-014",
+        "timestamp": "2026-05-27T14:28:08.876Z"
+      },
+      "timestamp": "2026-05-27T14:28:08.876Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUTO-TC-014"
+      },
+      "timestamp": "2026-05-27T14:28:24.571Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-015"
+        ],
+        "outputArtifactId": "AUTO-TC-015",
+        "timestamp": "2026-05-27T14:28:35.257Z"
+      },
+      "timestamp": "2026-05-27T14:28:35.257Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUTO-TC-015"
+      },
+      "timestamp": "2026-05-27T14:28:57.909Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-016"
+        ],
+        "outputArtifactId": "AA-TC-016",
+        "timestamp": "2026-05-27T14:29:07.826Z"
+      },
+      "timestamp": "2026-05-27T14:29:07.826Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AA-TC-016"
+      },
+      "timestamp": "2026-05-27T14:29:23.857Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-017"
+        ],
+        "outputArtifactId": "AUTO-TC-017",
+        "timestamp": "2026-05-27T14:29:33.402Z"
+      },
+      "timestamp": "2026-05-27T14:29:33.402Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUTO-TC-017"
+      },
+      "timestamp": "2026-05-27T14:29:51.344Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-018"
+        ],
+        "outputArtifactId": "AA-TC-018",
+        "timestamp": "2026-05-27T14:30:04.454Z"
+      },
+      "timestamp": "2026-05-27T14:30:04.454Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AA-TC-018"
+      },
+      "timestamp": "2026-05-27T14:30:26.209Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-019"
+        ],
+        "outputArtifactId": "AUTO-019",
+        "timestamp": "2026-05-27T14:30:50.852Z"
+      },
+      "timestamp": "2026-05-27T14:30:50.852Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUTO-019"
+      },
+      "timestamp": "2026-05-27T14:31:10.422Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-020"
+        ],
+        "outputArtifactId": "AA-020",
+        "timestamp": "2026-05-27T14:31:35.935Z"
+      },
+      "timestamp": "2026-05-27T14:31:35.935Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AA-020"
+      },
+      "timestamp": "2026-05-27T14:32:23.323Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-021"
+        ],
+        "outputArtifactId": "AA-021",
+        "timestamp": "2026-05-27T14:32:45.048Z"
+      },
+      "timestamp": "2026-05-27T14:32:45.048Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AA-021"
+      },
+      "timestamp": "2026-05-27T14:33:01.953Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-022"
+        ],
+        "outputArtifactId": "AUTO-TC-022",
+        "timestamp": "2026-05-27T14:33:19.963Z"
+      },
+      "timestamp": "2026-05-27T14:33:19.963Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUTO-TC-022"
+      },
+      "timestamp": "2026-05-27T14:33:47.408Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-023"
+        ],
+        "outputArtifactId": "AA-023",
+        "timestamp": "2026-05-27T14:34:25.281Z"
+      },
+      "timestamp": "2026-05-27T14:34:25.281Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AA-023"
+      },
+      "timestamp": "2026-05-27T14:34:58.028Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-024"
+        ],
+        "outputArtifactId": "AA-TC-024",
+        "timestamp": "2026-05-27T14:35:25.347Z"
+      },
+      "timestamp": "2026-05-27T14:35:25.347Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AA-TC-024"
+      },
+      "timestamp": "2026-05-27T14:35:54.036Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-025"
+        ],
+        "outputArtifactId": "AA-025",
+        "timestamp": "2026-05-27T14:36:11.718Z"
+      },
+      "timestamp": "2026-05-27T14:36:11.718Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AA-025"
+      },
+      "timestamp": "2026-05-27T14:36:32.693Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-026"
+        ],
+        "outputArtifactId": "AUTO-026",
+        "timestamp": "2026-05-27T14:37:03.226Z"
+      },
+      "timestamp": "2026-05-27T14:37:03.226Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUTO-026"
+      },
+      "timestamp": "2026-05-27T14:37:26.516Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-027"
+        ],
+        "outputArtifactId": "AUTO-TC-027",
+        "timestamp": "2026-05-27T14:38:37.208Z"
+      },
+      "timestamp": "2026-05-27T14:38:37.208Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUTO-TC-027"
+      },
+      "timestamp": "2026-05-27T14:39:42.336Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-028"
+        ],
+        "outputArtifactId": "AUTO-TC-028",
+        "timestamp": "2026-05-27T14:40:03.079Z"
+      },
+      "timestamp": "2026-05-27T14:40:03.079Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AUTO-TC-028"
+      },
+      "timestamp": "2026-05-27T14:40:31.443Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-029"
+        ],
+        "outputArtifactId": "AA-TC-029",
+        "timestamp": "2026-05-27T14:41:06.106Z"
+      },
+      "timestamp": "2026-05-27T14:41:06.106Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AA-TC-029"
+      },
+      "timestamp": "2026-05-27T14:42:01.954Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "handoff",
+      "payload": {
+        "fromAgent": "automation-engineer-agent",
+        "toAgent": "pull-request-reviewer-agent",
+        "modelVersion": "anthropic-oauth",
+        "promptId": "aut-v1",
+        "inputArtifactIds": [
+          "TC-030"
+        ],
+        "outputArtifactId": "AA-030",
+        "timestamp": "2026-05-27T14:42:15.678Z"
+      },
+      "timestamp": "2026-05-27T14:42:15.678Z"
+    },
+    {
+      "layer": "operating",
+      "kind": "pipeline-step",
+      "payload": {
+        "agent": "pull-request-reviewer-agent",
+        "durationMs": 0,
+        "outputArtifactId": "AA-030"
+      },
+      "timestamp": "2026-05-27T14:42:29.436Z"
     },
     {
       "layer": "executing",
       "kind": "tier-routed",
       "payload": {
-        "testCaseId": "TC-01",
-        "tier": "tier2"
+        "testCaseId": "TC-001",
+        "tier": "tier1"
       },
-      "timestamp": "2026-05-27T04:08:42.826Z"
+      "timestamp": "2026-05-27T14:42:29.437Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-1-1779854922827",
-        "testCaseId": "TC-01",
-        "semanticName": "primary action for TC-01",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
-        "tier": "tier2",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "tier-routed",
-      "payload": {
-        "testCaseId": "TC-02",
-        "tier": "tier2"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "healing",
-      "payload": {
-        "id": "heal-2-1779854922827",
-        "testCaseId": "TC-02",
-        "semanticName": "primary action for TC-02",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
-        "tier": "tier2",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "tier-routed",
-      "payload": {
-        "testCaseId": "TC-03",
-        "tier": "tier2"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "healing",
-      "payload": {
-        "id": "heal-3-1779854922827",
-        "testCaseId": "TC-03",
-        "semanticName": "primary action for TC-03",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
-        "tier": "tier2",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "tier-routed",
-      "payload": {
-        "testCaseId": "TC-04",
-        "tier": "tier2"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "healing",
-      "payload": {
-        "id": "heal-4-1779854922827",
-        "testCaseId": "TC-04",
-        "semanticName": "primary action for TC-04",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
-        "tier": "tier2",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "tier-routed",
-      "payload": {
-        "testCaseId": "TC-05",
-        "tier": "tier2"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "healing",
-      "payload": {
-        "id": "heal-5-1779854922827",
-        "testCaseId": "TC-05",
-        "semanticName": "primary action for TC-05",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
-        "tier": "tier2",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "tier-routed",
-      "payload": {
-        "testCaseId": "TC-06",
-        "tier": "tier2"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "healing",
-      "payload": {
-        "id": "heal-6-1779854922827",
-        "testCaseId": "TC-06",
-        "semanticName": "primary action for TC-06",
+        "id": "heal-1-1779892984373",
+        "testCaseId": "TC-001",
+        "semanticName": "primary action for TC-001",
         "resolvedStrategy": "dom-healer",
         "success": true,
-        "latencyMs": 0,
+        "latencyMs": 34936,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:43:04.373Z"
+      },
+      "timestamp": "2026-05-27T14:43:04.373Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-002",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-27T14:43:04.373Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-2-1779893017958",
+        "testCaseId": "TC-002",
+        "semanticName": "primary action for TC-002",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 33585,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:43:37.958Z"
+      },
+      "timestamp": "2026-05-27T14:43:37.958Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-003",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-27T14:43:37.958Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-3-1779893064269",
+        "testCaseId": "TC-003",
+        "semanticName": "primary action for TC-003",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 46311,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:44:24.269Z"
+      },
+      "timestamp": "2026-05-27T14:44:24.269Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-004",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-27T14:44:24.269Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-4-1779893119951",
+        "testCaseId": "TC-004",
+        "semanticName": "primary action for TC-004",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 55682,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:45:19.951Z"
+      },
+      "timestamp": "2026-05-27T14:45:19.951Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-005",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-27T14:45:19.951Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-5-1779893157380",
+        "testCaseId": "TC-005",
+        "semanticName": "primary action for TC-005",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 37429,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:45:57.380Z"
+      },
+      "timestamp": "2026-05-27T14:45:57.380Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-006",
+        "tier": "tier2"
+      },
+      "timestamp": "2026-05-27T14:45:57.380Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-6-1779893203686",
+        "testCaseId": "TC-006",
+        "semanticName": "primary action for TC-006",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 46306,
         "tier": "tier2",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "timestamp": "2026-05-27T14:46:43.686Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T14:46:43.686Z"
     },
     {
       "layer": "executing",
       "kind": "tier-routed",
       "payload": {
-        "testCaseId": "TC-07",
-        "tier": "tier3"
+        "testCaseId": "TC-007",
+        "tier": "tier2"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T14:46:43.686Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-7-1779854922827",
-        "testCaseId": "TC-07",
-        "semanticName": "primary action for TC-07",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
-        "tier": "tier3",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "id": "heal-7-1779893266841",
+        "testCaseId": "TC-007",
+        "semanticName": "primary action for TC-007",
+        "resolvedStrategy": "failed",
+        "success": false,
+        "latencyMs": 63155,
+        "tier": "tier2",
+        "timestamp": "2026-05-27T14:47:46.841Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T14:47:46.841Z"
     },
     {
       "layer": "executing",
       "kind": "tier-routed",
       "payload": {
-        "testCaseId": "TC-08",
-        "tier": "tier3"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "healing",
-      "payload": {
-        "id": "heal-8-1779854922827",
-        "testCaseId": "TC-08",
-        "semanticName": "primary action for TC-08",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
-        "tier": "tier3",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "tier-routed",
-      "payload": {
-        "testCaseId": "TC-09",
-        "tier": "tier3"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "healing",
-      "payload": {
-        "id": "heal-9-1779854922827",
-        "testCaseId": "TC-09",
-        "semanticName": "primary action for TC-09",
-        "resolvedStrategy": "cache",
-        "success": true,
-        "latencyMs": 0,
-        "tier": "tier3",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "tier-routed",
-      "payload": {
-        "testCaseId": "TC-10",
+        "testCaseId": "TC-008",
         "tier": "tier1"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T14:47:46.841Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-10-1779854922827",
-        "testCaseId": "TC-10",
-        "semanticName": "primary action for TC-10",
-        "resolvedStrategy": "cache",
+        "id": "heal-8-1779893293828",
+        "testCaseId": "TC-008",
+        "semanticName": "primary action for TC-008",
+        "resolvedStrategy": "dom-healer",
         "success": true,
-        "latencyMs": 0,
+        "latencyMs": 26987,
         "tier": "tier1",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "timestamp": "2026-05-27T14:48:13.828Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T14:48:13.828Z"
     },
     {
       "layer": "executing",
       "kind": "tier-routed",
       "payload": {
-        "testCaseId": "TC-11",
+        "testCaseId": "TC-009",
         "tier": "tier1"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T14:48:13.829Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-11-1779854922827",
-        "testCaseId": "TC-11",
-        "semanticName": "primary action for TC-11",
-        "resolvedStrategy": "cache",
+        "id": "heal-9-1779893317783",
+        "testCaseId": "TC-009",
+        "semanticName": "primary action for TC-009",
+        "resolvedStrategy": "dom-healer",
         "success": true,
-        "latencyMs": 0,
+        "latencyMs": 23954,
         "tier": "tier1",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "timestamp": "2026-05-27T14:48:37.783Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T14:48:37.783Z"
     },
     {
       "layer": "executing",
       "kind": "tier-routed",
       "payload": {
-        "testCaseId": "TC-12",
+        "testCaseId": "TC-010",
         "tier": "tier1"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T14:48:37.783Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-12-1779854922827",
-        "testCaseId": "TC-12",
-        "semanticName": "primary action for TC-12",
-        "resolvedStrategy": "cache",
+        "id": "heal-10-1779893369831",
+        "testCaseId": "TC-010",
+        "semanticName": "primary action for TC-010",
+        "resolvedStrategy": "vision-healer",
         "success": true,
-        "latencyMs": 0,
+        "latencyMs": 52048,
         "tier": "tier1",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "timestamp": "2026-05-27T14:49:29.831Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T14:49:29.831Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-011",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-27T14:49:29.831Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-11-1779893419631",
+        "testCaseId": "TC-011",
+        "semanticName": "primary action for TC-011",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 49800,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:50:19.631Z"
+      },
+      "timestamp": "2026-05-27T14:50:19.631Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-012",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-27T14:50:19.631Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-12-1779893473502",
+        "testCaseId": "TC-012",
+        "semanticName": "primary action for TC-012",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 53871,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:51:13.502Z"
+      },
+      "timestamp": "2026-05-27T14:51:13.502Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-013",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-27T14:51:13.502Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-13-1779893502741",
+        "testCaseId": "TC-013",
+        "semanticName": "primary action for TC-013",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 29239,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:51:42.741Z"
+      },
+      "timestamp": "2026-05-27T14:51:42.741Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-014",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-27T14:51:42.741Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-14-1779893531990",
+        "testCaseId": "TC-014",
+        "semanticName": "primary action for TC-014",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 29249,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:52:11.990Z"
+      },
+      "timestamp": "2026-05-27T14:52:11.991Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-015",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-27T14:52:11.991Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-15-1779893583295",
+        "testCaseId": "TC-015",
+        "semanticName": "primary action for TC-015",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 51304,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:53:03.295Z"
+      },
+      "timestamp": "2026-05-27T14:53:03.295Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-016",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-27T14:53:03.295Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-16-1779893639541",
+        "testCaseId": "TC-016",
+        "semanticName": "primary action for TC-016",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 56246,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:53:59.541Z"
+      },
+      "timestamp": "2026-05-27T14:53:59.541Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-017",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-27T14:53:59.541Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-17-1779893691205",
+        "testCaseId": "TC-017",
+        "semanticName": "primary action for TC-017",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 51664,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:54:51.205Z"
+      },
+      "timestamp": "2026-05-27T14:54:51.205Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-018",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-27T14:54:51.205Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-18-1779893717561",
+        "testCaseId": "TC-018",
+        "semanticName": "primary action for TC-018",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 26356,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:55:17.561Z"
+      },
+      "timestamp": "2026-05-27T14:55:17.561Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-019",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-27T14:55:17.561Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-19-1779893771720",
+        "testCaseId": "TC-019",
+        "semanticName": "primary action for TC-019",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 54159,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T14:56:11.720Z"
+      },
+      "timestamp": "2026-05-27T14:56:11.720Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-020",
+        "tier": "tier2"
+      },
+      "timestamp": "2026-05-27T14:56:11.720Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-20-1779893801707",
+        "testCaseId": "TC-020",
+        "semanticName": "primary action for TC-020",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 29987,
+        "tier": "tier2",
+        "timestamp": "2026-05-27T14:56:41.707Z"
+      },
+      "timestamp": "2026-05-27T14:56:41.707Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-021",
+        "tier": "tier2"
+      },
+      "timestamp": "2026-05-27T14:56:41.707Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-21-1779893864104",
+        "testCaseId": "TC-021",
+        "semanticName": "primary action for TC-021",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 62397,
+        "tier": "tier2",
+        "timestamp": "2026-05-27T14:57:44.104Z"
+      },
+      "timestamp": "2026-05-27T14:57:44.104Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-022",
+        "tier": "tier2"
+      },
+      "timestamp": "2026-05-27T14:57:44.104Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-22-1779893928367",
+        "testCaseId": "TC-022",
+        "semanticName": "primary action for TC-022",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 64263,
+        "tier": "tier2",
+        "timestamp": "2026-05-27T14:58:48.367Z"
+      },
+      "timestamp": "2026-05-27T14:58:48.367Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-023",
+        "tier": "tier3"
+      },
+      "timestamp": "2026-05-27T14:58:48.367Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-23-1779893983910",
+        "testCaseId": "TC-023",
+        "semanticName": "primary action for TC-023",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 55543,
+        "tier": "tier3",
+        "timestamp": "2026-05-27T14:59:43.910Z"
+      },
+      "timestamp": "2026-05-27T14:59:43.910Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-024",
+        "tier": "tier3"
+      },
+      "timestamp": "2026-05-27T14:59:43.910Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-24-1779894024400",
+        "testCaseId": "TC-024",
+        "semanticName": "primary action for TC-024",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 40490,
+        "tier": "tier3",
+        "timestamp": "2026-05-27T15:00:24.400Z"
+      },
+      "timestamp": "2026-05-27T15:00:24.400Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-025",
+        "tier": "tier2"
+      },
+      "timestamp": "2026-05-27T15:00:24.401Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-25-1779894080894",
+        "testCaseId": "TC-025",
+        "semanticName": "primary action for TC-025",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 56493,
+        "tier": "tier2",
+        "timestamp": "2026-05-27T15:01:20.894Z"
+      },
+      "timestamp": "2026-05-27T15:01:20.894Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-026",
+        "tier": "tier2"
+      },
+      "timestamp": "2026-05-27T15:01:20.894Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-26-1779894106841",
+        "testCaseId": "TC-026",
+        "semanticName": "primary action for TC-026",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 25947,
+        "tier": "tier2",
+        "timestamp": "2026-05-27T15:01:46.841Z"
+      },
+      "timestamp": "2026-05-27T15:01:46.841Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-027",
+        "tier": "tier3"
+      },
+      "timestamp": "2026-05-27T15:01:46.841Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-27-1779894153052",
+        "testCaseId": "TC-027",
+        "semanticName": "primary action for TC-027",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 46211,
+        "tier": "tier3",
+        "timestamp": "2026-05-27T15:02:33.052Z"
+      },
+      "timestamp": "2026-05-27T15:02:33.052Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-028",
+        "tier": "tier3"
+      },
+      "timestamp": "2026-05-27T15:02:33.052Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-28-1779894207505",
+        "testCaseId": "TC-028",
+        "semanticName": "primary action for TC-028",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 54453,
+        "tier": "tier3",
+        "timestamp": "2026-05-27T15:03:27.505Z"
+      },
+      "timestamp": "2026-05-27T15:03:27.505Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-029",
+        "tier": "tier2"
+      },
+      "timestamp": "2026-05-27T15:03:27.506Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-29-1779894269759",
+        "testCaseId": "TC-029",
+        "semanticName": "primary action for TC-029",
+        "resolvedStrategy": "vision-healer",
+        "success": true,
+        "latencyMs": 62253,
+        "tier": "tier2",
+        "timestamp": "2026-05-27T15:04:29.759Z"
+      },
+      "timestamp": "2026-05-27T15:04:29.759Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "tier-routed",
+      "payload": {
+        "testCaseId": "TC-030",
+        "tier": "tier1"
+      },
+      "timestamp": "2026-05-27T15:04:29.759Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "healing",
+      "payload": {
+        "id": "heal-30-1779894295776",
+        "testCaseId": "TC-030",
+        "semanticName": "primary action for TC-030",
+        "resolvedStrategy": "dom-healer",
+        "success": true,
+        "latencyMs": 26017,
+        "tier": "tier1",
+        "timestamp": "2026-05-27T15:04:55.776Z"
+      },
+      "timestamp": "2026-05-27T15:04:55.776Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894306584",
         "testCaseId": "vis-func-1",
         "expectedBehavior": "The Add todo CTA is visible and tappable in the header.",
         "verdict": "fail",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-1.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The Add button and new-todo input field are rendered on a near-black header background (#000 or very dark gray) with near-black text/button contrast, making both the placeholder text and the Add button label illegible (contrast ratio well below 3:1), which constitutes a functionally-observable defect impairing the CTA.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:05:06.584Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:05:06.584Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894315681",
         "testCaseId": "vis-func-2",
         "expectedBehavior": "The new-todo input field displays the full placeholder text without clipping.",
-        "verdict": "fail",
+        "verdict": "pass",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-2.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The new-todo input field is wide enough to display the full placeholder text 'What needs to be done?' without any clipping, and the form layout is fully preserved.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:05:15.681Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:05:15.681Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894325835",
         "testCaseId": "vis-func-3",
         "expectedBehavior": "The Add submit button is present in the header form.",
         "verdict": "fail",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-3.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The header form contains only a text input field with placeholder 'What needs to be done?' and no visible 'Add' submit button, making it impossible for the user to submit a new todo by clicking Add.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:05:25.835Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:05:25.835Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894332716",
         "testCaseId": "vis-func-4",
         "expectedBehavior": "Delete buttons meet the 24x24 px accessibility minimum touch target.",
         "verdict": "fail",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-4.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The delete buttons (labeled 'Del') are rendered as small red text links at the far right of each row, visually appearing to be approximately 20×16 px — well below the 24×24 px WCAG 2.5.5 minimum touch target requirement.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:05:32.716Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:05:32.716Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894362181",
         "testCaseId": "vis-func-5",
         "expectedBehavior": "Body text contrast against the background meets 3:1 minimum.",
         "verdict": "fail",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-5.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "Multiple body-text elements fail the 3:1 contrast minimum: the completed 'Walk the dog' item renders in a faded light-gray with strikethrough (estimated ~#aaa on #fff, ≈2.3:1), the footer filter labels 'Active' and 'Completed' appear in very light gray (~#ccc on #fff, ≈1.6:1), and the 'todos' heading is rendered in an extremely pale pink-gray well below 3:1 — all constitute accessibility contrast violations.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:06:02.181Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:06:02.181Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894371736",
         "testCaseId": "vis-func-6",
         "expectedBehavior": "No modal blocks the application without a dismiss affordance.",
         "verdict": "fail",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-6.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "A full-screen dark overlay blocks the entire application UI with only a \"Loading...\" spinner and no dismiss affordance, making the app unreachable and violating the no-blocking-overlay-without-close-control requirement.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:06:11.736Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:06:11.736Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894380161",
         "testCaseId": "vis-func-7",
         "expectedBehavior": "Delete buttons for each todo are visible inside the list row.",
         "verdict": "fail",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-7.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "No delete buttons are visible in any of the todo list rows; each row shows only a checkbox and label text, with no delete control present.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:06:20.161Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:06:20.161Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894394407",
         "testCaseId": "vis-func-8",
         "expectedBehavior": "List items are visually separated; no row overlaps the row above it.",
-        "verdict": "fail",
+        "verdict": "pass",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-8.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "All three list rows (Buy milk, Walk the dog, Write the report) are clearly separated with no vertical overlap, each label is fully readable, and consistent row spacing is preserved throughout the list.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:06:34.407Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:06:34.407Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894401126",
         "testCaseId": "vis-func-9",
         "expectedBehavior": "The new-todo input has an associated label (visible or programmatic).",
         "verdict": "fail",
         "seededDefect": "functional",
         "imagePath": "visual-corpus/images/vis-func-9.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The new-todo input field has no visible label and no programmatically associated label element is present in the rendered UI — the input appears entirely unlabelled, meaning a screen reader cannot announce its purpose.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:06:41.126Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:06:41.126Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894411617",
         "testCaseId": "vis-func-10",
         "expectedBehavior": "Each todo row has an interactive checkbox to toggle completion.",
-        "verdict": "fail",
-        "seededDefect": "functional",
-        "imagePath": "visual-corpus/images/vis-func-10.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "assertion",
-      "payload": {
-        "id": "assert-12-1779854922827",
-        "testCaseId": "vis-func-11",
-        "expectedBehavior": "When the error banner is shown, it is fully visible and not occluded.",
-        "verdict": "fail",
-        "seededDefect": "functional",
-        "imagePath": "visual-corpus/images/vis-func-11.png",
-        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
-      },
-      "timestamp": "2026-05-27T04:08:42.827Z"
-    },
-    {
-      "layer": "executing",
-      "kind": "assertion",
-      "payload": {
-        "id": "assert-12-1779854922827",
-        "testCaseId": "vis-func-12",
-        "expectedBehavior": "A visible focus indicator appears on keyboard-focused interactive elements.",
         "verdict": "pass",
         "seededDefect": "functional",
-        "imagePath": "visual-corpus/images/vis-func-12.png",
-        "rationale": "Properties listed concern focus visibility, which cannot be determined from the text description alone; defaulting to pass.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "imagePath": "visual-corpus/images/vis-func-10.png",
+        "rationale": "Each todo row displays a visible checkbox input (unchecked squares) that conveys checked/unchecked state, with 'Walk the dog' shown with strikethrough indicating it is already marked complete, confirming the toggle mechanism communicates state and supports completion.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:06:51.617Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:06:51.617Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894422355",
+        "testCaseId": "vis-func-11",
+        "expectedBehavior": "When the error banner is shown, it is fully visible and not occluded.",
+        "verdict": "pass",
+        "seededDefect": "functional",
+        "imagePath": "visual-corpus/images/vis-func-11.png",
+        "rationale": "The error banner ('Could not save todo. Please retry.') is fully visible at the bottom of the card, unoccluded by any other element, with legible high-contrast red text on a light pink background, and the stacking context is preserved with no overlap from other UI components.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:07:02.355Z"
+      },
+      "timestamp": "2026-05-27T15:07:02.355Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-30-1779894436499",
+        "testCaseId": "vis-func-12",
+        "expectedBehavior": "A visible focus indicator appears on keyboard-focused interactive elements.",
+        "verdict": "fail",
+        "seededDefect": "functional",
+        "imagePath": "visual-corpus/images/vis-func-12.png",
+        "rationale": "No keyboard focus indicator (outline or ring) is visible on any interactive element in the screenshot; the image shows a static state with no element exhibiting a focus ring, making keyboard navigation accessibility unverifiable and violating the focus-visibility requirement.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:07:16.499Z"
+      },
+      "timestamp": "2026-05-27T15:07:16.499Z"
+    },
+    {
+      "layer": "executing",
+      "kind": "assertion",
+      "payload": {
+        "id": "assert-30-1779894446603",
         "testCaseId": "vis-cosm-1",
         "expectedBehavior": "Application typography renders without breaking layout.",
-        "verdict": "fail",
+        "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-1.png",
-        "rationale": "Typography change implied; flagging as potentially layout-affecting under the cautious-defaults policy.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "All text renders fully within its containers, no content is clipped or wrapped unexpectedly, and layout integrity is preserved across all rows and the footer bar.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:07:26.603Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:07:26.603Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894456423",
         "testCaseId": "vis-cosm-2",
         "expectedBehavior": "Primary CTA remains visible and visually distinct from neutral chrome.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-2.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The 'Add' button is fully visible with a solid dark-green fill that clearly distinguishes it from the white card and gray page background, and all layout elements are unclipped and properly positioned.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:07:36.423Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:07:36.423Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894464955",
         "testCaseId": "vis-cosm-3",
         "expectedBehavior": "Rounded surface treatment is consistent; no content clipped.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-3.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "Rounded corners are consistently applied to the card container, input field, Add button, Delete buttons, All/Clear completed controls, and checkboxes; no content is clipped at any edge; layout integrity is fully preserved.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:07:44.955Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:07:44.955Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894477323",
         "testCaseId": "vis-cosm-4",
         "expectedBehavior": "Container padding is consistent; touch targets remain reachable.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-4.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "All controls (input, Add button, checkboxes, Delete buttons, filter links, Clear completed) are fully within the visible container with consistent padding, no clipping or occlusion, and touch targets are adequately sized and reachable.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:07:57.323Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:07:57.323Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894486195",
         "testCaseId": "vis-cosm-5",
         "expectedBehavior": "Buttons render with a subtle shadow; remain visually identifiable as buttons.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-5.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "All buttons (Add, Delete ×3, All, Clear completed) are clearly identifiable with visible borders and/or fills, subtle drop shadows are present on the Delete buttons and Clear completed without obscuring any text or content, and the overall layout is intact.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:08:06.195Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:08:06.195Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894496738",
         "testCaseId": "vis-cosm-6",
         "expectedBehavior": "Footer labels render in italic; remain legible.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-6.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "Footer labels ('2 items left', 'All', 'Active', 'Completed') render in italic, are fully legible with adequate contrast, none are truncated, and the overall layout is intact.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:08:16.738Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:08:16.738Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894508026",
         "testCaseId": "vis-cosm-7",
         "expectedBehavior": "Page background renders without disrupting card legibility.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-7.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The white card renders cleanly against the light gray/blue gradient background with no contrast violations, all text and controls are fully legible, and the layout is structurally intact.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:08:28.026Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:08:28.026Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894518125",
         "testCaseId": "vis-cosm-8",
         "expectedBehavior": "Each row exposes an equivalent delete affordance.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-8.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "Every todo row (Buy milk, Walk the dog, Write the report) has a visible 'Remove' button with human-readable text and an adequately sized touch target (~70×30 px), satisfying all three critical properties.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:08:38.125Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:08:38.125Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894526712",
         "testCaseId": "vis-cosm-9",
         "expectedBehavior": "Text renders with slightly expanded letter-spacing; remains within container bounds.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-9.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "All text remains within container bounds with no overflow, every label stays on a single line, and the overall layout is fully intact with no clipped or obscured elements.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:08:46.712Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:08:46.712Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894536112",
         "testCaseId": "vis-cosm-10",
         "expectedBehavior": "Filter pills render with slightly increased height; remain on a single row.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-10.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "All three filter pills (All, Active, Completed) are visible and rendered on a single row in the footer bar, with layout integrity fully preserved.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:08:56.112Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:08:56.112Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894546293",
         "testCaseId": "vis-cosm-11",
         "expectedBehavior": "Add button renders in a primary-blue color; remains identifiable.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-11.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The Add button is clearly visible, rendered in a dark primary-blue (#1a4e8c-range) background with white label text, and the overall layout is fully intact with no clipped or occluded elements.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:09:06.293Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:09:06.293Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779854922827",
+        "id": "assert-30-1779894555898",
         "testCaseId": "vis-cosm-12",
         "expectedBehavior": "Brand wordmark renders larger but stays within the header.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
         "imagePath": "visual-corpus/images/vis-cosm-12.png",
-        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
-        "timestamp": "2026-05-27T04:08:42.827Z"
+        "rationale": "The brand wordmark 'todos' renders at a larger size and is fully contained within the header container, the input form and Add button below it are fully visible, and overall layout integrity is preserved with no clipping, occlusion, or overflow.",
+        "judgeModality": "vision",
+        "timestamp": "2026-05-27T15:09:15.898Z"
       },
-      "timestamp": "2026-05-27T04:08:42.827Z"
+      "timestamp": "2026-05-27T15:09:15.898Z"
     }
   ]
 }

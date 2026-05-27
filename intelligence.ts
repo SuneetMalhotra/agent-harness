@@ -6,6 +6,8 @@
 //   3. Vision-based LLM fallback (expensive)
 //
 
+import { resolve as pathResolve } from 'node:path';
+import { existsSync } from 'node:fs';
 import { ModelProvider } from './providers/types.js';
 import { Observability } from './observability.js';
 import { HealingEvent, AssertionEvent, TierName } from './types.js';
@@ -22,6 +24,8 @@ const DOM_HEALER_SYSTEM = `You are a DOM healer agent for a mobile testing frame
 const VISION_HEALER_SYSTEM = `You are a vision healer agent for a mobile testing framework. Given a screenshot reference and a semantic description of an element, emit ranked locator-strategy candidates with confidence scores. Output JSON only.`;
 
 const VISUAL_ASSERTION_SYSTEM = `You are a visual assertion service. Given a screenshot reference, an expected-behavior description, and a checklist of critical visual properties, decide whether the screen matches the expected behavior at the level of functional correctness. Cosmetic differences (font rendering, shadow tweaks, anti-aliasing) should not produce a failure verdict. Functional differences (button obscured, content clipped, accessibility minimum violated) should. Output JSON with fields { verdict: "pass" | "fail", rationale: string }.`;
+
+const VISUAL_ASSERTION_VISION_SYSTEM = `You are a visual-assertion service. You will be given the absolute path to a PNG screenshot, an expected-behavior description, and a checklist of critical visual properties. You MUST open the PNG using your Read tool (the path is absolute) and judge the rendered image against the checklist and the expected behavior. PASS only if every listed property holds in the rendered image AND the image matches the expected behavior. FAIL if any property is violated or the screen has a functionally-observable defect: obscured CTA, clipped content, missing element, illegible text (contrast < 3:1), a11y violation (touch target below 24x24 px, missing label, missing focus indicator), occlusion by another element, or content rendered off-screen. Cosmetic differences (font swap that does not break layout, shadow tweaks, slightly different padding, hue shifts, anti-aliasing) MUST NOT cause FAIL. Output exactly one JSON object on a single line: {"verdict":"pass"|"fail","rationale":"one sentence"}. No prose, no fences, no preamble.`;
 
 export class Intelligence {
   private readonly cache = new Map<string, CacheEntry>();
@@ -149,20 +153,57 @@ export class Intelligence {
       imagePath?: string;
     },
   ): Promise<{ verdict: 'pass' | 'fail'; rationale: string }> {
+    // Decide judge modality:
+    //   - stub provider          -> 'stub' (deterministic; no LLM call shape)
+    //   - vision-capable provider with absolute image path on disk -> 'vision'
+    //   - otherwise              -> 'text-only' (legacy text+properties path)
+    const providerName = this.provider.name ?? '';
+    const visionCapable = providerName === 'anthropic-oauth';
+    let absImagePath: string | undefined;
+    if (options.imagePath) {
+      const candidate = pathResolve(process.cwd(), options.imagePath);
+      if (existsSync(candidate)) absImagePath = candidate;
+    }
+    const useVision = visionCapable && !!absImagePath;
+    let modality: 'vision' | 'text-only' | 'stub';
+    if (providerName === 'stub') modality = 'stub';
+    else if (useVision) modality = 'vision';
+    else modality = 'text-only';
+
     const seededHint = options.seededDefect ? `\n\n(Internal: SEEDED:${options.seededDefect})` : '';
     const idHint = `\n(Snapshot ID: ${options.testCaseId})`;
-    // NOTE: The reference implementation's visual-assertion service judges
-    // the text+properties description and is NOT a vision model. The image
-    // path is recorded in the AssertionEvent so the audit raters (and any
-    // future vision-enabled provider) can consume the actual screenshot;
-    // see audit/visual-assertion-protocol.md for the disclosed delta.
-    const imageHint = options.imagePath ? `\n(Image path: ${options.imagePath})` : '';
-    const resp = await this.provider.generate({
-      system: VISUAL_ASSERTION_SYSTEM,
-      user: `Expected behavior: ${expectedBehavior}\n\nCritical properties:\n${properties.map((p) => `- ${p}`).join('\n')}${seededHint}${idHint}${imageHint}`,
-      responseFormat: 'json',
-      temperature: 0,
-    });
+
+    let resp: string;
+    if (useVision && absImagePath) {
+      // Vision-judgment path: tell Claude to open the PNG via Read tool
+      // (claude -p has Read tool by default). The provider just forwards
+      // the prompt as text; image ingestion happens inside the model's
+      // tool loop. This is the path the v12 audit re-runs against.
+      const visionUser =
+        `Read the image at this absolute path before answering: ${absImagePath}\n\n` +
+        `Expected behavior: ${expectedBehavior}\n\n` +
+        `Critical properties (ALL must hold for PASS):\n${properties
+          .map((p) => `- ${p}`)
+          .join('\n')}${idHint}`;
+      resp = await this.provider.generate({
+        system: VISUAL_ASSERTION_VISION_SYSTEM,
+        user: visionUser,
+        responseFormat: 'json',
+        temperature: 0,
+      });
+    } else {
+      // Legacy text-only / stub path. The stub provider intercepts the
+      // VISUAL_ASSERTION_SYSTEM marker and emits a deterministic verdict.
+      const imageHint = options.imagePath ? `\n(Image path: ${options.imagePath})` : '';
+      resp = await this.provider.generate({
+        system: VISUAL_ASSERTION_SYSTEM,
+        user: `Expected behavior: ${expectedBehavior}\n\nCritical properties:\n${properties
+          .map((p) => `- ${p}`)
+          .join('\n')}${seededHint}${idHint}${imageHint}`,
+        responseFormat: 'json',
+        temperature: 0,
+      });
+    }
     const parsed = parseAssertionResponse(resp);
 
     const event: AssertionEvent = {
@@ -173,6 +214,7 @@ export class Intelligence {
       seededDefect: options.seededDefect,
       imagePath: options.imagePath,
       rationale: parsed.rationale,
+      judgeModality: modality,
       timestamp: new Date().toISOString(),
     };
     this.obs.append({ layer: 'executing', kind: 'assertion', payload: event });
