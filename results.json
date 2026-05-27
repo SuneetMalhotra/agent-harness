@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "runId": "run-1779812111221",
+    "runId": "run-1779854922827",
     "provider": "stub",
     "modelVersion": "claude-sonnet-4-6",
-    "timestamp": "2026-05-26T16:15:11.221Z",
+    "timestamp": "2026-05-27T04:08:42.827Z",
     "testCount": 12
   },
   "authoringVelocity": {
@@ -12,7 +12,7 @@
     "speedup": 3.2
   },
   "pipelineRuntime": {
-    "stubDurationSeconds": 0.001,
+    "stubDurationSeconds": 0,
     "perRun": [
       0
     ]
@@ -24,124 +24,124 @@
     "combinedRecoveryRate": 0.97,
     "events": [
       {
-        "id": "heal-1-1779812111220",
+        "id": "heal-1-1779854922827",
         "testCaseId": "TC-01",
         "semanticName": "primary action for TC-01",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier2",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "heal-2-1779812111220",
+        "id": "heal-2-1779854922827",
         "testCaseId": "TC-02",
         "semanticName": "primary action for TC-02",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier2",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "heal-3-1779812111220",
+        "id": "heal-3-1779854922827",
         "testCaseId": "TC-03",
         "semanticName": "primary action for TC-03",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier2",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "heal-4-1779812111220",
+        "id": "heal-4-1779854922827",
         "testCaseId": "TC-04",
         "semanticName": "primary action for TC-04",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier2",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "heal-5-1779812111220",
+        "id": "heal-5-1779854922827",
         "testCaseId": "TC-05",
         "semanticName": "primary action for TC-05",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier2",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "heal-6-1779812111220",
+        "id": "heal-6-1779854922827",
         "testCaseId": "TC-06",
         "semanticName": "primary action for TC-06",
         "resolvedStrategy": "dom-healer",
         "success": true,
         "latencyMs": 0,
         "tier": "tier2",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "heal-7-1779812111220",
+        "id": "heal-7-1779854922827",
         "testCaseId": "TC-07",
         "semanticName": "primary action for TC-07",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier3",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "heal-8-1779812111220",
+        "id": "heal-8-1779854922827",
         "testCaseId": "TC-08",
         "semanticName": "primary action for TC-08",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier3",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "heal-9-1779812111220",
+        "id": "heal-9-1779854922827",
         "testCaseId": "TC-09",
         "semanticName": "primary action for TC-09",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier3",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "heal-10-1779812111220",
+        "id": "heal-10-1779854922827",
         "testCaseId": "TC-10",
         "semanticName": "primary action for TC-10",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier1",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "heal-11-1779812111220",
+        "id": "heal-11-1779854922827",
         "testCaseId": "TC-11",
         "semanticName": "primary action for TC-11",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier1",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "heal-12-1779812111220",
+        "id": "heal-12-1779854922827",
         "testCaseId": "TC-12",
         "semanticName": "primary action for TC-12",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier1",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       }
     ]
   },
@@ -152,220 +152,244 @@
     "pixelComparisonRecall": 0.5,
     "events": [
       {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-1",
-        "expectedBehavior": "Snapshot 1: primary CTA visible and tappable",
+        "expectedBehavior": "The Add todo CTA is visible and tappable in the header.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-1.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-2",
-        "expectedBehavior": "Snapshot 2: primary CTA visible and tappable",
+        "expectedBehavior": "The new-todo input field displays the full placeholder text without clipping.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-2.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-3",
-        "expectedBehavior": "Snapshot 3: primary CTA visible and tappable",
+        "expectedBehavior": "The Add submit button is present in the header form.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-3.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-4",
-        "expectedBehavior": "Snapshot 4: primary CTA visible and tappable",
+        "expectedBehavior": "Delete buttons meet the 24x24 px accessibility minimum touch target.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-4.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-5",
-        "expectedBehavior": "Snapshot 5: primary CTA visible and tappable",
+        "expectedBehavior": "Body text contrast against the background meets 3:1 minimum.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-5.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-6",
-        "expectedBehavior": "Snapshot 6: primary CTA visible and tappable",
+        "expectedBehavior": "No modal blocks the application without a dismiss affordance.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-6.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-7",
-        "expectedBehavior": "Snapshot 7: primary CTA visible and tappable",
+        "expectedBehavior": "Delete buttons for each todo are visible inside the list row.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-7.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-8",
-        "expectedBehavior": "Snapshot 8: primary CTA visible and tappable",
+        "expectedBehavior": "List items are visually separated; no row overlaps the row above it.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-8.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-9",
-        "expectedBehavior": "Snapshot 9: primary CTA visible and tappable",
+        "expectedBehavior": "The new-todo input has an associated label (visible or programmatic).",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-9.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-10",
-        "expectedBehavior": "Snapshot 10: primary CTA visible and tappable",
+        "expectedBehavior": "Each todo row has an interactive checkbox to toggle completion.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-10.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-11",
-        "expectedBehavior": "Snapshot 11: primary CTA visible and tappable",
+        "expectedBehavior": "When the error banner is shown, it is fully visible and not occluded.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-func-11.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-12",
-        "expectedBehavior": "Snapshot 12: primary CTA visible and tappable",
+        "expectedBehavior": "A visible focus indicator appears on keyboard-focused interactive elements.",
         "verdict": "pass",
         "seededDefect": "functional",
-        "rationale": "Snapshot appears within tolerance; treated as a cosmetic variation.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-func-12.png",
+        "rationale": "Properties listed concern focus visibility, which cannot be determined from the text description alone; defaulting to pass.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-1",
-        "expectedBehavior": "Snapshot 13: layout integrity preserved",
+        "expectedBehavior": "Application typography renders without breaking layout.",
         "verdict": "fail",
         "seededDefect": "cosmetic",
-        "rationale": "Layout shift exceeded the accessibility-minimum threshold; flagged as functional.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-1.png",
+        "rationale": "Typography change implied; flagging as potentially layout-affecting under the cautious-defaults policy.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-2",
-        "expectedBehavior": "Snapshot 14: layout integrity preserved",
+        "expectedBehavior": "Primary CTA remains visible and visually distinct from neutral chrome.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-2.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-3",
-        "expectedBehavior": "Snapshot 15: layout integrity preserved",
+        "expectedBehavior": "Rounded surface treatment is consistent; no content clipped.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-3.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-4",
-        "expectedBehavior": "Snapshot 16: layout integrity preserved",
+        "expectedBehavior": "Container padding is consistent; touch targets remain reachable.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-4.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-5",
-        "expectedBehavior": "Snapshot 17: layout integrity preserved",
+        "expectedBehavior": "Buttons render with a subtle shadow; remain visually identifiable as buttons.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-5.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-6",
-        "expectedBehavior": "Snapshot 18: layout integrity preserved",
+        "expectedBehavior": "Footer labels render in italic; remain legible.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-6.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-7",
-        "expectedBehavior": "Snapshot 19: layout integrity preserved",
+        "expectedBehavior": "Page background renders without disrupting card legibility.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-7.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-8",
-        "expectedBehavior": "Snapshot 20: layout integrity preserved",
+        "expectedBehavior": "Each row exposes an equivalent delete affordance.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-8.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-9",
-        "expectedBehavior": "Snapshot 21: layout integrity preserved",
+        "expectedBehavior": "Text renders with slightly expanded letter-spacing; remains within container bounds.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-9.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-10",
-        "expectedBehavior": "Snapshot 22: layout integrity preserved",
+        "expectedBehavior": "Filter pills render with slightly increased height; remain on a single row.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-10.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-11",
-        "expectedBehavior": "Snapshot 23: layout integrity preserved",
+        "expectedBehavior": "Add button renders in a primary-blue color; remains identifiable.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-11.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
       {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-12",
-        "expectedBehavior": "Snapshot 24: layout integrity preserved",
+        "expectedBehavior": "Brand wordmark renders larger but stays within the header.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-12.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       }
     ]
   },
@@ -382,7 +406,7 @@
         "author": "agent",
         "promptId": "feature-locator-resolver"
       },
-      "timestamp": "2026-05-26T16:15:11.219Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "authoring",
@@ -392,7 +416,7 @@
         "author": "agent-revised",
         "promptId": "feature-vision-fallback"
       },
-      "timestamp": "2026-05-26T16:15:11.219Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "authoring",
@@ -401,7 +425,7 @@
         "sha": "ghi9012",
         "author": "human"
       },
-      "timestamp": "2026-05-26T16:15:11.219Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -415,9 +439,9 @@
           "todomvc-mobile-1"
         ],
         "outputArtifactId": "PRD-001",
-        "timestamp": "2026-05-26T16:15:11.219Z"
+        "timestamp": "2026-05-27T04:08:42.826Z"
       },
-      "timestamp": "2026-05-26T16:15:11.219Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -431,9 +455,9 @@
           "PRD-001"
         ],
         "outputArtifactId": "testcases-PRD-001",
-        "timestamp": "2026-05-26T16:15:11.219Z"
+        "timestamp": "2026-05-27T04:08:42.826Z"
       },
-      "timestamp": "2026-05-26T16:15:11.219Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -447,9 +471,9 @@
           "TC-01"
         ],
         "outputArtifactId": "AUT-TC-01",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.826Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -459,7 +483,7 @@
         "durationMs": 0,
         "outputArtifactId": "AUT-TC-01"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -473,9 +497,9 @@
           "TC-02"
         ],
         "outputArtifactId": "AUT-TC-02",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.826Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -485,7 +509,7 @@
         "durationMs": 0,
         "outputArtifactId": "AUT-TC-02"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -499,9 +523,9 @@
           "TC-03"
         ],
         "outputArtifactId": "AUT-TC-03",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.826Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -511,7 +535,7 @@
         "durationMs": 0,
         "outputArtifactId": "AUT-TC-03"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -525,9 +549,9 @@
           "TC-04"
         ],
         "outputArtifactId": "AUT-TC-04",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.826Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -537,7 +561,7 @@
         "durationMs": 0,
         "outputArtifactId": "AUT-TC-04"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -551,9 +575,9 @@
           "TC-05"
         ],
         "outputArtifactId": "AUT-TC-05",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.826Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -563,7 +587,7 @@
         "durationMs": 0,
         "outputArtifactId": "AUT-TC-05"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -577,9 +601,9 @@
           "TC-06"
         ],
         "outputArtifactId": "AUT-TC-06",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.826Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -589,7 +613,7 @@
         "durationMs": 0,
         "outputArtifactId": "AUT-TC-06"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -603,9 +627,9 @@
           "TC-07"
         ],
         "outputArtifactId": "AUT-TC-07",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.826Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -615,7 +639,7 @@
         "durationMs": 0,
         "outputArtifactId": "AUT-TC-07"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -629,9 +653,9 @@
           "TC-08"
         ],
         "outputArtifactId": "AUT-TC-08",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.826Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -641,7 +665,7 @@
         "durationMs": 0,
         "outputArtifactId": "AUT-TC-08"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -655,9 +679,9 @@
           "TC-09"
         ],
         "outputArtifactId": "AUT-TC-09",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.826Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -667,7 +691,7 @@
         "durationMs": 0,
         "outputArtifactId": "AUT-TC-09"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -681,9 +705,9 @@
           "TC-10"
         ],
         "outputArtifactId": "AUT-TC-10",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.826Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -693,7 +717,7 @@
         "durationMs": 0,
         "outputArtifactId": "AUT-TC-10"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -707,9 +731,9 @@
           "TC-11"
         ],
         "outputArtifactId": "AUT-TC-11",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.826Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -719,7 +743,7 @@
         "durationMs": 0,
         "outputArtifactId": "AUT-TC-11"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -733,9 +757,9 @@
           "TC-12"
         ],
         "outputArtifactId": "AUT-TC-12",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.826Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "operating",
@@ -745,7 +769,7 @@
         "durationMs": 0,
         "outputArtifactId": "AUT-TC-12"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "executing",
@@ -754,22 +778,22 @@
         "testCaseId": "TC-01",
         "tier": "tier2"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.826Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-1-1779812111220",
+        "id": "heal-1-1779854922827",
         "testCaseId": "TC-01",
         "semanticName": "primary action for TC-01",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier2",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
@@ -778,22 +802,22 @@
         "testCaseId": "TC-02",
         "tier": "tier2"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-2-1779812111220",
+        "id": "heal-2-1779854922827",
         "testCaseId": "TC-02",
         "semanticName": "primary action for TC-02",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier2",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
@@ -802,22 +826,22 @@
         "testCaseId": "TC-03",
         "tier": "tier2"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-3-1779812111220",
+        "id": "heal-3-1779854922827",
         "testCaseId": "TC-03",
         "semanticName": "primary action for TC-03",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier2",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
@@ -826,22 +850,22 @@
         "testCaseId": "TC-04",
         "tier": "tier2"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-4-1779812111220",
+        "id": "heal-4-1779854922827",
         "testCaseId": "TC-04",
         "semanticName": "primary action for TC-04",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier2",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
@@ -850,22 +874,22 @@
         "testCaseId": "TC-05",
         "tier": "tier2"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-5-1779812111220",
+        "id": "heal-5-1779854922827",
         "testCaseId": "TC-05",
         "semanticName": "primary action for TC-05",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier2",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
@@ -874,22 +898,22 @@
         "testCaseId": "TC-06",
         "tier": "tier2"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-6-1779812111220",
+        "id": "heal-6-1779854922827",
         "testCaseId": "TC-06",
         "semanticName": "primary action for TC-06",
         "resolvedStrategy": "dom-healer",
         "success": true,
         "latencyMs": 0,
         "tier": "tier2",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
@@ -898,22 +922,22 @@
         "testCaseId": "TC-07",
         "tier": "tier3"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-7-1779812111220",
+        "id": "heal-7-1779854922827",
         "testCaseId": "TC-07",
         "semanticName": "primary action for TC-07",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier3",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
@@ -922,22 +946,22 @@
         "testCaseId": "TC-08",
         "tier": "tier3"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-8-1779812111220",
+        "id": "heal-8-1779854922827",
         "testCaseId": "TC-08",
         "semanticName": "primary action for TC-08",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier3",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
@@ -946,22 +970,22 @@
         "testCaseId": "TC-09",
         "tier": "tier3"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-9-1779812111220",
+        "id": "heal-9-1779854922827",
         "testCaseId": "TC-09",
         "semanticName": "primary action for TC-09",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier3",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
@@ -970,22 +994,22 @@
         "testCaseId": "TC-10",
         "tier": "tier1"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-10-1779812111220",
+        "id": "heal-10-1779854922827",
         "testCaseId": "TC-10",
         "semanticName": "primary action for TC-10",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier1",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
@@ -994,22 +1018,22 @@
         "testCaseId": "TC-11",
         "tier": "tier1"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-11-1779812111220",
+        "id": "heal-11-1779854922827",
         "testCaseId": "TC-11",
         "semanticName": "primary action for TC-11",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier1",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
@@ -1018,358 +1042,382 @@
         "testCaseId": "TC-12",
         "tier": "tier1"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "healing",
       "payload": {
-        "id": "heal-12-1779812111220",
+        "id": "heal-12-1779854922827",
         "testCaseId": "TC-12",
         "semanticName": "primary action for TC-12",
         "resolvedStrategy": "cache",
         "success": true,
         "latencyMs": 0,
         "tier": "tier1",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-1",
-        "expectedBehavior": "Snapshot 1: primary CTA visible and tappable",
+        "expectedBehavior": "The Add todo CTA is visible and tappable in the header.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-1.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-2",
-        "expectedBehavior": "Snapshot 2: primary CTA visible and tappable",
+        "expectedBehavior": "The new-todo input field displays the full placeholder text without clipping.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-2.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-3",
-        "expectedBehavior": "Snapshot 3: primary CTA visible and tappable",
+        "expectedBehavior": "The Add submit button is present in the header form.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-3.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-4",
-        "expectedBehavior": "Snapshot 4: primary CTA visible and tappable",
+        "expectedBehavior": "Delete buttons meet the 24x24 px accessibility minimum touch target.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-4.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-5",
-        "expectedBehavior": "Snapshot 5: primary CTA visible and tappable",
+        "expectedBehavior": "Body text contrast against the background meets 3:1 minimum.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-5.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-6",
-        "expectedBehavior": "Snapshot 6: primary CTA visible and tappable",
+        "expectedBehavior": "No modal blocks the application without a dismiss affordance.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-6.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-7",
-        "expectedBehavior": "Snapshot 7: primary CTA visible and tappable",
+        "expectedBehavior": "Delete buttons for each todo are visible inside the list row.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-7.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-8",
-        "expectedBehavior": "Snapshot 8: primary CTA visible and tappable",
+        "expectedBehavior": "List items are visually separated; no row overlaps the row above it.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-8.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-9",
-        "expectedBehavior": "Snapshot 9: primary CTA visible and tappable",
+        "expectedBehavior": "The new-todo input has an associated label (visible or programmatic).",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-9.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111220",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-10",
-        "expectedBehavior": "Snapshot 10: primary CTA visible and tappable",
+        "expectedBehavior": "Each todo row has an interactive checkbox to toggle completion.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.220Z"
+        "imagePath": "visual-corpus/images/vis-func-10.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.220Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-11",
-        "expectedBehavior": "Snapshot 11: primary CTA visible and tappable",
+        "expectedBehavior": "When the error banner is shown, it is fully visible and not occluded.",
         "verdict": "fail",
         "seededDefect": "functional",
-        "rationale": "Primary action button is obscured by the modal overlay; user cannot complete the flow.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-func-11.png",
+        "rationale": "Listed property describes a concrete functional violation (visibility, contrast, occlusion, or interaction); flagged as a failure.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.221Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-func-12",
-        "expectedBehavior": "Snapshot 12: primary CTA visible and tappable",
+        "expectedBehavior": "A visible focus indicator appears on keyboard-focused interactive elements.",
         "verdict": "pass",
         "seededDefect": "functional",
-        "rationale": "Snapshot appears within tolerance; treated as a cosmetic variation.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-func-12.png",
+        "rationale": "Properties listed concern focus visibility, which cannot be determined from the text description alone; defaulting to pass.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.221Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-1",
-        "expectedBehavior": "Snapshot 13: layout integrity preserved",
+        "expectedBehavior": "Application typography renders without breaking layout.",
         "verdict": "fail",
         "seededDefect": "cosmetic",
-        "rationale": "Layout shift exceeded the accessibility-minimum threshold; flagged as functional.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-1.png",
+        "rationale": "Typography change implied; flagging as potentially layout-affecting under the cautious-defaults policy.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.221Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-2",
-        "expectedBehavior": "Snapshot 14: layout integrity preserved",
+        "expectedBehavior": "Primary CTA remains visible and visually distinct from neutral chrome.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-2.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.221Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-3",
-        "expectedBehavior": "Snapshot 15: layout integrity preserved",
+        "expectedBehavior": "Rounded surface treatment is consistent; no content clipped.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-3.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.221Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-4",
-        "expectedBehavior": "Snapshot 16: layout integrity preserved",
+        "expectedBehavior": "Container padding is consistent; touch targets remain reachable.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-4.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.221Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-5",
-        "expectedBehavior": "Snapshot 17: layout integrity preserved",
+        "expectedBehavior": "Buttons render with a subtle shadow; remain visually identifiable as buttons.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-5.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.221Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-6",
-        "expectedBehavior": "Snapshot 18: layout integrity preserved",
+        "expectedBehavior": "Footer labels render in italic; remain legible.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-6.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.221Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-7",
-        "expectedBehavior": "Snapshot 19: layout integrity preserved",
+        "expectedBehavior": "Page background renders without disrupting card legibility.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-7.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.221Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-8",
-        "expectedBehavior": "Snapshot 20: layout integrity preserved",
+        "expectedBehavior": "Each row exposes an equivalent delete affordance.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-8.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.221Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-9",
-        "expectedBehavior": "Snapshot 21: layout integrity preserved",
+        "expectedBehavior": "Text renders with slightly expanded letter-spacing; remains within container bounds.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-9.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.221Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-10",
-        "expectedBehavior": "Snapshot 22: layout integrity preserved",
+        "expectedBehavior": "Filter pills render with slightly increased height; remain on a single row.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-10.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.221Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-11",
-        "expectedBehavior": "Snapshot 23: layout integrity preserved",
+        "expectedBehavior": "Add button renders in a primary-blue color; remains identifiable.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-11.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.221Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     },
     {
       "layer": "executing",
       "kind": "assertion",
       "payload": {
-        "id": "assert-12-1779812111221",
+        "id": "assert-12-1779854922827",
         "testCaseId": "vis-cosm-12",
-        "expectedBehavior": "Snapshot 24: layout integrity preserved",
+        "expectedBehavior": "Brand wordmark renders larger but stays within the header.",
         "verdict": "pass",
         "seededDefect": "cosmetic",
-        "rationale": "Only font-rendering and shadow differences detected; functional surface is unchanged.",
-        "timestamp": "2026-05-26T16:15:11.221Z"
+        "imagePath": "visual-corpus/images/vis-cosm-12.png",
+        "rationale": "Variation is consistent with cosmetic surface treatment; no functional property is violated by the description.",
+        "timestamp": "2026-05-27T04:08:42.827Z"
       },
-      "timestamp": "2026-05-26T16:15:11.221Z"
+      "timestamp": "2026-05-27T04:08:42.827Z"
     }
   ]
 }

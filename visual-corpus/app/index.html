@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TodoMVC</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="todoapp" id="root">
+      <header class="header">
+        <h1 id="brand">todos</h1>
+        <form id="new-todo-form" autocomplete="off">
+          <label for="new-todo" class="visually-hidden" id="new-todo-label">What needs to be done?</label>
+          <input
+            id="new-todo"
+            class="new-todo"
+            type="text"
+            placeholder="What needs to be done?"
+            aria-label="What needs to be done?"
+          />
+          <button id="add-button" class="add-button" type="submit" aria-label="Add todo">Add</button>
+        </form>
+      </header>
+
+      <section class="main" id="main">
+        <input id="toggle-all" class="toggle-all" type="checkbox" aria-label="Mark all as complete" />
+        <label for="toggle-all" id="toggle-all-label">Mark all as complete</label>
+        <ul class="todo-list" id="todo-list"></ul>
+      </section>
+
+      <footer class="footer" id="footer">
+        <span class="todo-count" id="todo-count"><strong>0</strong> items left</span>
+        <ul class="filters" id="filters">
+          <li><a href="#/" class="selected" data-filter="all">All</a></li>
+          <li><a href="#/active" data-filter="active">Active</a></li>
+          <li><a href="#/completed" data-filter="completed">Completed</a></li>
+        </ul>
+        <button class="clear-completed" id="clear-completed">Clear completed</button>
+      </footer>
+
+      <div class="error-banner" id="error-banner" role="alert">
+        Could not save todo. Please retry.
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

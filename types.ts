@@ -119,6 +119,12 @@ export interface AssertionEvent {
    * precision/recall evaluation). Production runs leave this `undefined`.
    */
   seededDefect?: 'functional' | 'cosmetic' | 'none';
+  /**
+   * Repo-relative path to the rendered screenshot for this case. Set by the
+   * harness when iterating VISUAL_CORPUS; undefined for production runs that
+   * do not carry a static image artifact.
+   */
+  imagePath?: string;
   rationale: string;
   timestamp: string;
 }

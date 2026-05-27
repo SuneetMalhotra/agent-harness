@@ -146,13 +146,20 @@ export class Intelligence {
     options: {
       testCaseId: string;
       seededDefect?: 'functional' | 'cosmetic' | 'none';
+      imagePath?: string;
     },
   ): Promise<{ verdict: 'pass' | 'fail'; rationale: string }> {
     const seededHint = options.seededDefect ? `\n\n(Internal: SEEDED:${options.seededDefect})` : '';
     const idHint = `\n(Snapshot ID: ${options.testCaseId})`;
+    // NOTE: The reference implementation's visual-assertion service judges
+    // the text+properties description and is NOT a vision model. The image
+    // path is recorded in the AssertionEvent so the audit raters (and any
+    // future vision-enabled provider) can consume the actual screenshot;
+    // see audit/visual-assertion-protocol.md for the disclosed delta.
+    const imageHint = options.imagePath ? `\n(Image path: ${options.imagePath})` : '';
     const resp = await this.provider.generate({
       system: VISUAL_ASSERTION_SYSTEM,
-      user: `Expected behavior: ${expectedBehavior}\n\nCritical properties:\n${properties.map((p) => `- ${p}`).join('\n')}${seededHint}${idHint}`,
+      user: `Expected behavior: ${expectedBehavior}\n\nCritical properties:\n${properties.map((p) => `- ${p}`).join('\n')}${seededHint}${idHint}${imageHint}`,
       responseFormat: 'json',
       temperature: 0,
     });
@@ -164,6 +171,7 @@ export class Intelligence {
       expectedBehavior,
       verdict: parsed.verdict,
       seededDefect: options.seededDefect,
+      imagePath: options.imagePath,
       rationale: parsed.rationale,
       timestamp: new Date().toISOString(),
     };
