@@ -10,13 +10,13 @@ ORCID: <INSERT_ORCID_BEFORE_SUBMISSION>
 **Contact:** suneet@suneetmalhotra.com · https://suneetmalhotra.com
 **ORCID:** *[author action item — `TODO(submission-block)`: register at orcid.org and substitute the 16-digit identifier before submission. Both IEEE and AIware require an ORCID.]*
 **Companion code:** https://github.com/SuneetMalhotra/agent-harness. A versioned arXiv preprint will be posted at submission time: `TODO(arXiv)`.
-**Figures:** Figures 1 and 2 are specified in `04_Figures_Spec.md` and rendered separately for the submission package. `TODO(figures)`: attach rendered PNG/PDF assets at submission time; the body references them by number.
+**Figures:** Figures 1 (three-layer architecture, §2), 2 (five-agent SDLC pipeline, §4), and 3 (self-healing locator cascade, §5.2) are inline as Mermaid diagrams in the manuscript source and render to PDF via the standard pandoc + Chrome-headless + mermaid.js toolchain. For publisher-preferred vector PDF/PNG assets, the spec is in `04_Figures_Spec.md` and the rendered exports will be attached at submission time.
 
 ---
 
 ## Abstract
 
-Mobile test automation with LLM-based agents spans three partially connected layers — agent-drafted frameworks, multi-agent SDLC pipelines, and self-healing execution on heterogeneous hardware — that existing systems treat in isolation. This article describes an *agent harness*: a coupling pattern that keeps the three layers separate but connects them through a shared observability substrate (a schema-defined event store with a query API, not a coordination layer). In the reference implementation, a coding agent authors a TypeScript framework under human review, a five-agent pipeline (PM, QA, Automation Engineer, Developer, PR Reviewer) handles design-to-test over the Model Context Protocol, and a three-tier execution plane combines a physical device bench, a commercial cloud device farm, and ephemeral virtual back-end hardware. A proof-of-concept walkthrough on a small public React Native demo validates the architecture end-to-end: the stub pipeline completes in sub-second wall clock, all 12 healing events dispatch to their tagged tiers, and a pixel-comparison baseline flags 6/12 functional defects (the only independently grounded number in §6). Healing-cascade and visual-assertion *effectiveness* are deferred to a live-hardware multi-application study and a human-rated audit (`audit/protocol.md`); the §6 numbers report what was observed under stub providers, not measured rates against ground truth. The contribution is the cross-layer coupling. Reference implementation: https://github.com/SuneetMalhotra/agent-harness.
+Mobile test automation with LLM-based agents spans three partially connected layers — agent-drafted frameworks, multi-agent SDLC pipelines, and self-healing execution on heterogeneous hardware — that existing systems treat in isolation. This article describes an *agent harness*: a coupling pattern that keeps the three layers separate but connects them through a shared observability substrate (a schema-defined event store with a query API, not a coordination layer). In the reference implementation, a coding agent authors a TypeScript framework under human review, a five-agent pipeline (PM, QA, Automation Engineer, Developer, PR Reviewer) handles design-to-test over the Model Context Protocol, and a three-tier execution plane combines a physical device bench, a commercial cloud device farm, and ephemeral virtual back-end hardware. A proof-of-concept walkthrough on a small public React Native demo validates the architecture end-to-end: the stub pipeline completes in sub-second wall clock, all 12 healing events dispatch to their tagged tiers, and a pixel-comparison baseline flags 6/12 functional defects (the only number in §6 grounded against independent labels; the healing dispatch and pipeline runtime are architectural confirmations against stub providers, not measurements of healing or latency). Healing-cascade and visual-assertion *effectiveness* are deferred to a live-hardware multi-application study and a human-rated audit (`audit/protocol.md`); the §6 numbers report what was observed under stub providers, not measured rates against ground truth. The contribution is the cross-layer coupling. Reference implementation: https://github.com/SuneetMalhotra/agent-harness.
 
 ---
 
@@ -52,6 +52,36 @@ The following is a designed scenario showing what the substrate is for; the §6 
 
 Figure 1 shows the three layers and substrate.
 
+```mermaid
+flowchart TD
+    subgraph A["AUTHORING LAYER"]
+        A1[LLM coding assistant<br/>diff proposer] -->|diff| A2[Human reviewer]
+        A2 --> A3[(Source repository)]
+    end
+    subgraph O["OPERATING LAYER (over MCP)"]
+        O1[PM] --> O2[QA]
+        O2 --> O3[Automation<br/>Engineer]
+        O3 --> O4[Developer<br/>optional]
+        O4 --> O5[PR Reviewer]
+    end
+    subgraph X["EXECUTION LAYER"]
+        X0["Intelligence layer<br/>self-healing locators / vision / visual assertion"]
+        X0 --> X1[Tier 1<br/>physical device bench]
+        X0 --> X2[Tier 2<br/>cloud device farm]
+        X0 --> X3[Tier 3<br/>ephemeral virtual<br/>back-end hardware]
+    end
+    A3 -.->|framework code| O1
+    O5 -.->|test code,<br/>fix code| X0
+    A -.->|emits commit + provenance| S[("Observability substrate<br/>schema-defined event store + query API<br/>ObservabilityEntry, HealingEvent,<br/>AssertionEvent, AgentHandoff")]
+    O -.->|emits handoff + artifact| S
+    X -.->|emits healing + assertion + routing| S
+    S -.->|queried by prompts<br/>of all three layers| A
+    S -.-> O
+    S -.-> X
+```
+
+**Fig. 1.** Three-layer agent harness architecture. The authoring layer produces framework code; the operating layer (five-agent SDLC pipeline over MCP) produces test code and fixes; the execution layer routes to one of three hardware tiers via an intelligence layer that mediates locator resolution, visual assertion, and observability emission. The dashed-line **observability substrate** at the bottom is the coupling: every layer emits typed events into it (`ObservabilityEntry`, `HealingEvent`, `AssertionEvent`, `AgentHandoff` defined in `types.ts`), and prompts in every layer query it as structured tables. The contribution is the substrate-mediated coupling, not any single layer.
+
 ---
 
 ## 3. The authoring layer
@@ -65,6 +95,8 @@ The framework's TypeScript codebase was developed over roughly five months with 
 The provenance discipline the framework adopts is conceptual: a commit-message convention identifying authorship class (LLM-drafted, LLM-drafted-then-revised, or human-authored) and a pull-request convention linking to the prompt and reasoning trace when exposed. At any line, an engineer can in principle answer "who wrote this, from what prompt?" with a defined chain of evidence. The discipline is necessary because, without it, the path from a wrong line back to the prompt that produced it is not recoverable; it is independent of which model backend is in use.
 
 ### 3.2 The reflexive-correctness question
+
+> **Sub-contribution: the reflexive-correctness problem.** An LLM-assisted framework used to test product code raises a problem the LLM-for-SE literature rarely names: how is the framework itself known to correctly test the product? §3.2 names this as a sub-contribution and offers a three-layer empirical answer.
 
 This is the most under-explored open problem this paper surfaces, and it is named here as a sub-contribution. An LLM-assisted framework used to test product code raises a specific question: how is the framework itself known to correctly test the product? The conventional answer ("tests test the framework") is circular when the tests are also LLM-drafted. The reflexive-correctness problem is the test oracle problem [21] in a new form: an oracle whose generation process is itself the property under test.
 
@@ -86,6 +118,32 @@ MCP [11] replaces per-tool custom adapters with a typed interface per server. Ea
 
 The stub-provider end-to-end run completes in sub-second wall clock — confirmation that the five agents hand off cleanly over MCP, not a measurement of live-LLM pipeline latency (§6 expands on this distinction). Step-by-step runs with the live-LLM path range from minutes (small features) to several hours (cross-functional features with multiple revision cycles). In the author's prior experience across several engineering contexts, comparable hand-authored scenarios took multiple working days; a practitioner recollection, not a measured distribution. A defensible economic comparison would include the cost of the agent infrastructure, which is out of scope (§7.2). The dominant failure mode was upstream specification gaps (acceptance criteria left implicit at the PRD stage) rather than agent-internal errors; the elicitation work in [1] addresses this gap directly. Figure 2 shows the pipeline and MCP servers.
 
+```mermaid
+flowchart LR
+    D[Design artifact /<br/>stakeholder description] --> PM[PM Agent]
+    PM -->|PRD +<br/>acceptance criteria| QA[QA Engineer Agent]
+    QA -->|test specification +<br/>traceability links| AE[Automation Engineer<br/>Agent]
+    AE -->|WebDriverIO test files +<br/>pull request| DEV[Developer Agent<br/>optional]
+    DEV -->|feature code<br/>diff| PRR[PR Reviewer Agent]
+    PRR -->|approve /<br/>request-changes /<br/>block| OUT[Merged change set]
+
+    MCP[("MCP servers<br/>filesystem · Git · Jira ·<br/>Confluence · custom tools")]
+    PM -. MCP .-> MCP
+    QA -. MCP .-> MCP
+    AE -. MCP .-> MCP
+    DEV -. MCP .-> MCP
+    PRR -. MCP .-> MCP
+
+    SUB[("§2 observability substrate")]
+    PM -.|handoff event| SUB
+    QA -.|handoff event| SUB
+    AE -.|handoff event| SUB
+    DEV -.|handoff event| SUB
+    PRR -.|handoff event| SUB
+```
+
+**Fig. 2.** Five-agent SDLC pipeline. Each agent is a Markdown specification (a "skill" or "agent prompt") plus access to a defined set of MCP servers; agents share no in-process state. Each agent's output carries a structured trailer (agent identifier, model version, prompt, input artifact IDs, timestamp) so a downstream defect is traceable back through test code, test case, PRD, and design artifact — the *inter-agent provenance* claim of §4. The role decomposition is isomorphic to MetaGPT [23]; the differentiating substrate is the MCP-mediated typed handoff and the §2 observability substrate that lets execution-tier telemetry route back into the authoring layer.
+
 ### 4.1 LLM provider backends
 
 Each agent calls the same `ModelProvider` interface (`generate(system, user, responseFormat, temperature) → Promise<string>`). The harness ships an adapter for five backends; three are live and exercised end-to-end, two (OpenAI, Gemini) are interface stubs whose `generate()` methods throw on invocation, awaiting an HTTPS implementation against the documented contract. Backend selection is a single CLI flag (`--provider <name>`).
@@ -95,8 +153,8 @@ Each agent calls the same `ModelProvider` interface (`generate(system, user, res
 | `stub` | **live** | in-process | n/a | n/a | none | Deterministic offline reproduction; CI; demos without network |
 | `anthropic` | **live** | `claude -p` subprocess (OAuth) | hosted | `claude-sonnet-4-6` | Claude OAuth session | Reference live-LLM path used in §6 walkthrough |
 | `ollama` | **live** | `http://localhost:11434/api/chat` | **open** (local) | `llama3.2` | none | Open-weights replication; air-gapped deployment; fine-tuned variants |
-| `openai` | stub (throws) | Chat Completions API | hosted | `gpt-4.1` | `OPENAI_API_KEY` | Cross-model replication once HTTPS implementation lands (§7.2) |
-| `gemini` | stub (throws) | Generative Language API | hosted | `gemini-2.5-pro` | `GOOGLE_API_KEY` | Cross-model replication once HTTPS implementation lands (§7.2) |
+| `openai` | stub (throws) | Chat Completions API | hosted | `gpt-4.1` | `OPENAI_API_KEY` | Cross-model comparison once HTTPS implementation lands (§7.2) |
+| `gemini` | stub (throws) | Generative Language API | hosted | `gemini-2.5-pro` | `GOOGLE_API_KEY` | Cross-model comparison once HTTPS implementation lands (§7.2) |
 
 The `ollama` adapter routes the five agents through a locally running [Ollama](https://ollama.com) server and accepts any model Ollama can serve. It is the open-weights complement to the live hosted path (`anthropic`) and follows the open-weights LLM-testing pattern that Rehan et al. [24] demonstrated for fine-tuned Llama-2-7b on focal-method-to-test-case generation (`https://github.com/Shaheer-Rehan/Llama-2-for-Software-Testing`). The relevant adoption tradeoffs: hosted providers have stronger calibration and reasoning depth at per-call cost and outbound data transfer; the local-weights path eliminates both at the cost of fine-tuning effort or larger-model latency. Because the §2 observability substrate is keyed on the agent identifier and the model version rather than on the provider, swapping live backends does not invalidate the coupling — a §7.2 study comparing `anthropic` against `ollama` already runs end-to-end against the substrate; extending that comparison to OpenAI and Gemini requires the two stub adapters to be filled in against their documented HTTPS contracts first.
 
@@ -149,9 +207,9 @@ This section reports what was observed when the harness was run end-to-end again
 
 The evaluation target is a small public React Native TodoMVC-style application. The PM agent generated a PRD, the QA agent 12 test cases, the Automation Engineer agent WebDriverIO test code. Output ships at `results.json` and reproduces on `npm install && npx tsx examples/run-example.ts`. Per-layer measurements follow the metrics taxonomy of Liu et al. [10].
 
-**Pipeline runtime.** The stub-provider run completes the 12-case suite in sub-second wall clock (recorded as `results.json: pipelineRuntime.stubDurationSeconds`); this is architectural confirmation that all five agent handoffs over MCP execute end-to-end in one process, not a measurement of live-LLM pipeline latency. The live-LLM path runs in the single-digit-minutes range per case on commercial models at the time of writing, but no live-LLM runtime distribution is reported in this paper (deferred to the §7.2 live-hardware multi-application study).
+**Pipeline runtime.** Sub-second wall clock on stub providers (recorded as `results.json: pipelineRuntime.stubDurationSeconds`) confirms end-to-end MCP handoff wiring across the five agents; live-LLM per-case latency (single-digit minutes on commercial models at time of writing) is not a primary metric of this study and is deferred to the §7.2 live-hardware multi-application study.
 
-**Healing-cascade dispatch (architectural confirmation).** The run produced 12 `executing.healing` events: 11 resolved from cache (11/12), 1 from the LLM DOM healer (1/12, TC-06, Tier 2); the vision-fallback path was not exercised because the DOM healer recovered the one cache-miss event on its first attempt. This confirms the cascade *dispatches in the order specified* (cache → DOM → vision); it does not measure healing *effectiveness* on real applications. The stub-provider configuration in `harness.ts` (the `usingStub` ternary at lines 209–216, with the four rates at lines 211–214) encodes cache 92%, DOM-healer conditional success 88% on cache-miss events, vision-fallback conditional success 79% on DOM-healer-fail events, and combined recovery 97%. These are stub design parameters that the run reproduces — not measurements of healing rates against ground truth.
+**Healing-cascade dispatch (architectural confirmation).** The run produced 12 `executing.healing` events: 11 resolved from cache (11/12), 1 from the LLM DOM healer (1/12, TC-06, Tier 2); the vision-fallback path was not exercised because the DOM healer recovered the one cache-miss event on its first attempt. This confirms the cascade *dispatches in the order specified* (cache → DOM → vision); it does not measure healing *effectiveness* on real applications. The stub-provider configuration in `harness.ts` at release tag `v1.0.0` (the `usingStub` ternary; see the `cacheHitRate`, `domHealerSuccessRate`, `visionFallbackSuccessRate`, `combinedRecoveryRate` fields in that block) encodes cache 92%, DOM-healer conditional success 88% on cache-miss events, vision-fallback conditional success 79% on DOM-healer-fail events, and combined recovery 97%. These are stub design parameters that the run reproduces — not measurements of healing rates against ground truth.
 
 **Visual assertions.** The visual-assertion corpus is the 24-image set in `harness.ts` as `VISUAL_CORPUS`: 12 author-curated functional defects and 12 author-curated cosmetic variations, with ground-truth labels assigned at corpus-design time before any model judgment. The independently grounded number here is the pixel-comparison baseline: a pixel-comparison snapshot tester flagged 6 of 12 functional defects (6/6 precision, 6/12 recall) and zero cosmetic changes; this is the only visual-assertion claim resting on independent ground truth. The harness's visual-assertion service emits per-image verdicts to the substrate, but per-image precision/recall counts are **model-reported, not human-validated**: the same model that produced the assertions classifies its own outputs. They are therefore deferred to post-audit reporting under the protocol in `audit/protocol.md` and rater instructions in `audit/rater_instructions.md`.
 
@@ -169,6 +227,12 @@ The evaluation target is a small public React Native TodoMVC-style application. 
 
 ---
 
+> **What this paper does NOT claim**
+>
+> - It does not claim the healing cascade or visual-assertion service outperforms commercial baselines (Testim, Mabl, Functionize, Applitools); the contribution is the cross-layer observability coupling, not raw effectiveness (§5.2).
+> - It does not claim that agents behave differently with vs. without the §2 substrate; that comparative claim is the priority §7.3 follow-up (§2, §4).
+> - It does not claim live-LLM pipeline runtime or healing rates against ground truth; the §6 numbers report what was observed under stub providers (§6).
+
 ## 7. Scope, limitations, and adoption
 
 ### 7.1 Fit
@@ -179,7 +243,7 @@ The pattern fits mobile application testing with multi-tier hardware requirement
 
 **Cost economics (out of scope).** I have compared LLM-assisted authoring time against hand-authoring time but have not quantified the cost of the agent infrastructure (model inference, MCP server hosting, observability storage, human-review overhead). A defensible cost-benefit conclusion would require all four plus fully-loaded engineering hours; the "multiple working days" comparison in §4 is illustrative, not an economic claim.
 
-**Cross-tier routing.** Authoring-time tag-based routing works in this deployment but static tags grow stale; *adaptive tier routing* (the framework choosing tiers from observed flake rates and execution latency) is an open direction, with the flake-rate signal needing grounding in [22] before it can carry routing weight.
+**Cross-tier routing.** Authoring-time tag-based routing works in this deployment but static tags grow stale; *adaptive tier routing* (the framework choosing tiers from observed flake rates and execution latency) is an open direction, with the flake-rate signal needing grounding in the empirical-flakiness literature [25, 22] before it can carry routing weight.
 
 **Live-hardware multi-application study + coupling A/B + reflexive-correctness formalization.** Priority follow-ups: (a) live-hardware re-run of §6 across three to five applications; (b) prompt-level A/B of the QA agent's coverage-prioritization output with vs. without the §2 substrate digest, to demonstrate the coupling claim empirically rather than designedly; (c) MetaGPT shared-memory vs. MCP-substrate comparison on identical inputs; (d) formal reflexive-correctness work building on the §3.2 layered-validation approach.
 
@@ -198,6 +262,8 @@ The author thanks the open-source React Native and TodoMVC communities for the p
 ## Author biography
 
 Suneet Malhotra is Senior Manager, Test Engineering at Motorola Solutions, with over 20 years in consumer-scale mobile and web quality engineering. He holds an M.S. in Computer Science from the University of Southern California, Los Angeles. His research interests are AI-augmented test automation and software quality engineering; a companion preprint on LLM-driven specification enrichment for design-to-test pipelines is at [1]. More at suneetmalhotra.com.
+
+**Author contribution.** S. Malhotra conceived the coupling pattern and the three-layer architecture, implemented the reference framework and all five agent specifications, ran the §6 architecture-validation walkthrough, designed the audit packet, and wrote the manuscript.
 
 ---
 
@@ -250,6 +316,8 @@ Suneet Malhotra is Senior Manager, Test Engineering at Motorola Solutions, with 
 [23] S. Hong, M. Zhuge, J. Chen, X. Zheng, Y. Cheng, J. Wang, C. Zhang, Z. Wang, S. K. S. Yau, Z. Lin, L. Zhou, C. Ran, L. Xiao, C. Wu, and J. Schmidhuber, "MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework," in *Proc. 12th Int. Conf. Learning Representations (ICLR)*, 2024 (oral). OpenReview: https://openreview.net/forum?id=VtmBAGCN7o.
 
 [24] S. Rehan, B. Al-Bander, and A. Al-Said Ahmad, "Harnessing Large Language Models for Automated Software Testing: A Leap Towards Scalable Test Case Generation," *Electronics*, vol. 14, no. 7, p. 1463, Apr. 2025, doi: 10.3390/electronics14071463. Reference implementation: https://github.com/Shaheer-Rehan/Llama-2-for-Software-Testing.
+
+[25] Q. Luo, F. Hariri, L. Eloussi, and D. Marinov, "An empirical analysis of flaky tests," in *Proc. 22nd ACM SIGSOFT Int. Symp. Foundations of Software Engineering (FSE 2014)*, Hong Kong, China, 2014, pp. 643–653, doi: 10.1145/2635868.2635920.
 
 ---
 
