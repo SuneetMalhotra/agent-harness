@@ -12,7 +12,7 @@
     "speedup": 3.2
   },
   "pipelineRuntime": {
-    "stubDurationSeconds": 1665.695,
+    "pipelineDurationSeconds": 1665.695,
     "perRun": [
       27.766666666666666
     ]
@@ -2547,5 +2547,10 @@
       },
       "timestamp": "2026-05-27T15:09:15.898Z"
     }
-  ]
+  ],
+  "pipelineReview": {
+    "approved": 7,
+    "requestChanges": 22,
+    "blocked": 1
+  }
 }

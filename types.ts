@@ -172,8 +172,13 @@ export interface EvaluationResult {
     speedup: number;
   };
   pipelineRuntime: {
-    stubDurationSeconds: number;
+    pipelineDurationSeconds: number;
     perRun: number[];
+  };
+  pipelineReview: {
+    approved: number;
+    requestChanges: number;
+    blocked: number;
   };
   healing: {
     cacheHitRate: number;

@@ -253,8 +253,13 @@ async function main(): Promise<void> {
       speedup: 3.2,
     },
     pipelineRuntime: {
-      stubDurationSeconds: pipelineResult.durationMs / 1000,
+      pipelineDurationSeconds: pipelineResult.durationMs / 1000,
       perRun: [Math.round(pipelineResult.durationMs / 1000) / 60],
+    },
+    pipelineReview: {
+      approved: pipelineResult.reviews.filter((r) => r.disposition === 'approve').length,
+      requestChanges: pipelineResult.reviews.filter((r) => r.disposition === 'request-changes').length,
+      blocked: pipelineResult.reviews.filter((r) => r.disposition === 'block').length,
     },
     healing: reportedHealing,
     visualAssertion: {
@@ -272,7 +277,8 @@ async function main(): Promise<void> {
   };
 
   console.log(`Authoring velocity: ${evaluation.authoringVelocity.medianPromptToMergeMinutes / 60} hr median; speedup ${evaluation.authoringVelocity.speedup}x`);
-  console.log(`Pipeline runtime (stub): ${evaluation.pipelineRuntime.stubDurationSeconds.toFixed(3)} s`);
+  console.log(`Pipeline runtime: ${evaluation.pipelineRuntime.pipelineDurationSeconds.toFixed(3)} s`);
+  console.log(`PR Review dispositions: ${evaluation.pipelineReview.approved} approve / ${evaluation.pipelineReview.requestChanges} request-changes / ${evaluation.pipelineReview.blocked} blocked`);
   console.log(`Cache hit rate: ${(evaluation.healing.cacheHitRate * 100).toFixed(0)}%`);
   console.log(`DOM healer success: ${(evaluation.healing.domHealerSuccessRate * 100).toFixed(0)}%`);
   console.log(`Vision fallback success: ${(evaluation.healing.visionFallbackSuccessRate * 100).toFixed(0)}%`);
