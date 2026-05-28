@@ -2,9 +2,9 @@
 
 **Author:** Suneet Malhotra
 ORCID: <INSERT_ORCID_BEFORE_SUBMISSION>
-**Affiliation:** Senior Manager, Test Engineering, Motorola Solutions
+**Affiliation:** Independent researcher in AI-augmented test automation
 
-> *First-page footnote.* The reference implementation and the empirical evaluation in §6 were developed by the author independently of any employer, using only public infrastructure and a public TodoMVC web demo encoded in the companion repository. The pattern is target-agnostic — the three-tier execution layer is designed for mobile (BLE/sensor/cellular benches, cloud device farms), web (WebDriverIO + headless browsers, cross-browser farms), and hardware-in-the-loop (physical fixtures, virtual back-end peripherals) — with the §6 walkthrough exercising the web modality on TodoMVC because it is the smallest reproducible public corpus that exercises all five agents and the full cascade end-to-end. The practitioner observations in §1 are drawn from the author's professional experience and have been abstracted to remove any employer-specific or proprietary details; they are presented as motivational context, not as measured data from any specific employer deployment, and no employer-internal systems, products, code, or data are described.
+> *First-page footnote.* The reference implementation and the empirical evaluation in §6 were developed by the author independently, using only public infrastructure and a public TodoMVC web demo encoded in the companion repository. The pattern is target-agnostic — the three-tier execution layer is designed for mobile (BLE/sensor/cellular benches, cloud device farms), web (WebDriverIO + headless browsers, cross-browser farms), and hardware-in-the-loop (physical fixtures, virtual back-end peripherals) — with the §6 walkthrough exercising the web modality on TodoMVC because it is the smallest reproducible public corpus that exercises all five agents and the full cascade end-to-end. The practitioner observations in §1 are drawn from the author's two decades of professional experience and have been abstracted to motivational context; no proprietary systems, products, code, or data are described.
 
 **Target venue:** IEEE Software (Practice column). Backup venue: AIware 2026 Industry/Experience track.
 **Contact:** suneet@suneetmalhotra.com · https://suneetmalhotra.com
@@ -96,7 +96,7 @@ The provenance discipline the framework adopts is conceptual: a commit-message c
 
 ### 3.2 The reflexive-correctness question
 
-> **Sub-contribution: the reflexive-correctness problem.** An LLM-assisted framework used to test product code raises a problem the LLM-for-SE literature rarely names: how is the framework itself known to correctly test the product? §3.2 names this as a sub-contribution and offers a three-layer empirical answer.
+A named sub-contribution: an LLM-assisted framework used to test product code raises the *reflexive-correctness* problem — how the framework itself is known to correctly test the product — which the LLM-for-SE literature rarely confronts; §3.2 names this as a sub-contribution and offers a three-layer empirical answer.
 
 This is the most under-explored open problem this paper surfaces, and it is named here as a sub-contribution. An LLM-assisted framework used to test product code raises a specific question: how is the framework itself known to correctly test the product? The conventional answer ("tests test the framework") is circular when the tests are also LLM-drafted. The reflexive-correctness problem is the test oracle problem [21] in a new form: an oracle whose generation process is itself the property under test.
 
@@ -227,12 +227,6 @@ The evaluation target is a small public TodoMVC-style application. The PM agent 
 
 ---
 
-> **What this paper does NOT claim**
->
-> - It does not claim the healing cascade or visual-assertion service outperforms commercial baselines (Testim, Mabl, Functionize, Applitools); the contribution is the cross-layer observability coupling, with the §6 vision-judge result (κ = 0.667 substantial against the seeded KEY, beating a pixel baseline by +2 functional catches at equal precision) as evidence the substrate is built on a workable judge, not as a market-share claim against productized tools (§5.2).
-> - It does not claim that agents behave differently with vs. without the §2 substrate; that comparative claim is the priority §7.3 follow-up (§2, §4).
-> - It does not claim live-LLM generalization beyond the §6 corpus: one TodoMVC instance, one model family (Claude Sonnet 4.6), 30 generated test cases, 24-image visual corpus. Multi-application and multi-model replication is §7.3 (§6).
-
 ## 7. Scope, limitations, and adoption
 
 ### 7.1 Fit
@@ -263,7 +257,7 @@ The author thanks the open-source TodoMVC community for the public reference des
 
 ## Author biography
 
-Suneet Malhotra is Senior Manager, Test Engineering at Motorola Solutions, with over 20 years in consumer-scale mobile and web quality engineering, including agentic-testing harness design, LLM-augmented test orchestration, and self-healing locator infrastructure for production multi-tier execution environments. He engages with the practitioner community at the BrowserStack Breakpoint conference (2026) and the BrowserStack World Tour (2025). He holds an M.S. in Computer Science from the University of Southern California, Los Angeles. His research interests are AI-augmented test automation, agentic software-engineering pipelines, and software quality engineering at scale; a companion preprint on LLM-driven specification enrichment for design-to-test pipelines is at [1]. Author profile: https://suneetmalhotra.com.
+Suneet Malhotra has over 20 years in consumer-scale mobile and web quality engineering, including agentic-testing harness design, LLM-augmented test orchestration, and self-healing locator infrastructure for production multi-tier execution environments. He engages with the practitioner community at the BrowserStack Breakpoint conference (2026) and the BrowserStack World Tour (2025). He holds an M.S. in Computer Science from the University of Southern California, Los Angeles. His research interests are AI-augmented test automation, agentic software-engineering pipelines, and software quality engineering at scale; a companion preprint on LLM-driven specification enrichment for design-to-test pipelines is at [1]. Author profile: https://suneetmalhotra.com.
 
 **Author contribution.** S. Malhotra conceived the coupling pattern and the three-layer architecture, implemented the reference framework and all five agent specifications, ran the §6 architecture-validation walkthrough, designed the audit packet, and wrote the manuscript.
 
@@ -339,4 +333,4 @@ Suneet Malhotra is Senior Manager, Test Engineering at Motorola Solutions, with 
 
 ---
 
-**Disclosure:** *The views in this article are the author's own and do not represent his employer. The article describes a target-agnostic engineering pattern applicable across mobile, web, and hardware-in-the-loop test automation; the empirical evaluation uses a public TodoMVC web demo encoded in the companion repository. No employer-internal systems, products, code, or data are described.*
+**Disclosure:** *The article describes a target-agnostic engineering pattern applicable across mobile, web, and hardware-in-the-loop test automation; the empirical evaluation uses a public TodoMVC web demo encoded in the companion repository. The work was developed independently using only public infrastructure; no proprietary systems, products, code, or data are described.*
