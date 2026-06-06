@@ -102,7 +102,12 @@ export interface MobileStudyResult {
   comparison: {
     web: { testCases: number; recovered: number; total: number };
     mobile: { testCases: number; recovered: number; total: number };
-    hardware: { evaluated: false; reason: 'architectural extension; not evaluated in §6 or §6.x' };
+    hardware: {
+      evaluated: false;
+      reason:
+        | 'architectural extension; not evaluated in §6 or §6.x'
+        | 'architectural extension; not evaluated in §6 or §6.2';
+    };
     sameSchemaReused: true;
   };
 }

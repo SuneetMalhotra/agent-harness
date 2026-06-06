@@ -27,6 +27,7 @@
     "example": "tsx examples/run-example.ts",
     "example:web": "tsx examples/run-example.ts",
     "example:mobile": "tsx examples/run-mobile-example.ts",
+    "example:mobile:live": "tsx mobile/live-appium-runner.ts",
     "harness:stub": "tsx harness.ts --provider stub",
     "harness:anthropic": "tsx harness.ts --provider anthropic",
     "test:mobile": "tsx tests/mobile-schema.test.ts",
