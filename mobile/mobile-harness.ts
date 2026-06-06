@@ -25,7 +25,11 @@ import {
   TargetModality,
 } from './types.js';
 
-const RUN_ID = `mobile-replay-${new Date().toISOString().replace(/[:.]/g, '-')}`;
+// Deterministic constants so results-mobile.json is byte-stable across
+// runs (required by the README's "byte-stable" reproducibility claim).
+// To start a new logical run-id, bump RUN_EPOCH explicitly in a commit.
+const RUN_EPOCH = '2026-06-06T12:00:00.000Z';
+const RUN_ID = 'mobile-replay-2026-06-06T12-00-00-000Z';
 
 const TARGET_APP = 'Sauce Labs My Demo App (public Android reference application)';
 const TARGET_APP_LICENSE = 'MIT';
@@ -147,7 +151,7 @@ function buildSummary(events: MobileHealingEvent[]): MobileStudyResult {
   return {
     metadata: {
       runId: RUN_ID,
-      timestamp: new Date().toISOString(),
+      timestamp: RUN_EPOCH,
       targetApp: TARGET_APP,
       targetAppLicense: TARGET_APP_LICENSE,
       targetAppReference: TARGET_APP_REFERENCE,
