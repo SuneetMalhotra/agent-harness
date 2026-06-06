@@ -87,6 +87,47 @@ Results are written to `results.json` at the end of every harness run.
 
 ---
 
+## Mobile feasibility study
+
+A small public mobile feasibility study (`mobile/`) exercises the same observability substrate against a public Android reference application — the [Sauce Labs My Demo App](https://github.com/saucelabs/sample-app-mobile) (MIT-licensed). The study demonstrates that the substrate, event schema, and tier-routing model that §6 reports on the web modality also work on the mobile modality. **It is not a production-scale mobile evaluation** and does not claim production-scale mobile generality.
+
+The mobile feasibility study reports:
+- 13 mobile test cases against a public Android reference app
+- One `HealingEvent` emitted per test case onto the shared substrate
+- 12 of 13 cases resolved; 1 unrecovered failure reported (not swallowed)
+- Same schema reused across web (§6) and mobile (§6.x); zero schema drift
+- Hardware-in-the-loop **NOT evaluated** — an architectural extension only
+
+### Deterministic replay command (no Appium, no emulator required)
+
+```bash
+npm run example:mobile          # writes results-mobile.json
+npm run test:mobile             # validates schema + counts; exits 0 on pass
+```
+
+The replay completes in <5 seconds, requires no Android toolchain, no LLM API key, and is byte-stable across runs. The resulting `results-mobile.json` is the source of the §6.x mobile feasibility numbers in the manuscript.
+
+### Optional live-Appium mode
+
+A future live-Appium mode is sketched in [`mobile/README-LIVE-APPIUM.md`](mobile/README-LIVE-APPIUM.md). It is not required to reproduce the manuscript numbers.
+
+### Full paper-reproduction command
+
+```bash
+npm run reproduce:paper         # web example + mobile example + schema tests
+```
+
+### What is and is not claimed
+
+- ✅ Schema and substrate **reuse** across web and mobile
+- ✅ Deterministic **dispatch and event capture** on a public mobile target
+- ✅ The cascade **reports** unrecovered failures rather than swallowing them
+- ❌ NOT a production-scale mobile testing accuracy claim
+- ❌ NOT an LLM-as-judge κ measurement on mobile (web-only at the §6 scale)
+- ❌ NOT a hardware-in-the-loop evaluation (architectural extension only)
+
+---
+
 ## Reproducing the article's numbers
 
 The article reports the following headline figures from §6.1 (public-dataset evaluation):

@@ -25,8 +25,12 @@
   "scripts": {
     "build": "tsc",
     "example": "tsx examples/run-example.ts",
+    "example:web": "tsx examples/run-example.ts",
+    "example:mobile": "tsx examples/run-mobile-example.ts",
     "harness:stub": "tsx harness.ts --provider stub",
     "harness:anthropic": "tsx harness.ts --provider anthropic",
+    "test:mobile": "tsx tests/mobile-schema.test.ts",
+    "reproduce:paper": "npm run example:web && npm run example:mobile && npm run test:mobile",
     "lint": "tsc --noEmit"
   },
   "devDependencies": {
