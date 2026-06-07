@@ -74,7 +74,7 @@ npm run test:mobile         # 22 schema/reconciliation checks; exits 0 on pass
 | Same schema reused (web + mobile) | true | `results-mobile.json: sameSchemaReused` |
 | Hardware-in-the-loop evaluated | false | `results-mobile.json: comparison.hardware.evaluated` |
 
-### What this study does NOT claim
+### What this study does not claim
 
 - Production-scale mobile accuracy
 - LLM-as-judge κ measurement on mobile (web-only at §6.1 scale)

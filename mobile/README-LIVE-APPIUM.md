@@ -5,9 +5,9 @@ The deterministic replay (`npm run example:mobile`) is the source of the
 byte-stable, reviewer-reproducible, and requires no Appium server, Android
 emulator, or LLM API key.
 
-This document describes how a future contributor could wire the same 13
-test cases up against a live Appium session for cross-validation. The live
-path is **not** required to reproduce the manuscript numbers.
+This document records the live-Appium path that would cross-check the same
+13 test cases against a device or emulator. The live path is not required
+to reproduce the manuscript numbers.
 
 ## Public target
 
@@ -24,9 +24,8 @@ used or referenced in this study.
 
 ## Prerequisites for a future live mode
 
-A future PR could implement a `LiveAppiumRunner` in `mobile/live-runner.ts`
-that swaps the deterministic dispatch in `mobile/mobile-harness.ts` for
-real Appium calls. Prerequisites would be:
+A live implementation would swap the deterministic dispatch in
+`mobile/mobile-harness.ts` for real Appium calls. Prerequisites would be:
 
 - Android Studio + Android SDK + emulator OR a USB-connected Android
   device with USB debugging enabled
@@ -56,7 +55,7 @@ The mobile feasibility study reports:
 - Deterministic dispatch and event capture
 - The cascade reports unrecovered failures rather than swallowing them
 
-The mobile feasibility study does NOT report:
+The mobile feasibility study does not report:
 - Production-scale mobile testing accuracy
 - LLM-as-judge κ on mobile screens (not measured at the §6.2 scale)
 - Hardware-in-the-loop evaluation (architectural extension only)
