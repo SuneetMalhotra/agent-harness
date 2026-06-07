@@ -4,7 +4,7 @@ Reference implementation for the Agent Harness coupling pattern.
 
 Companion code for a *Journal of Systems and Software* (JSS) submission:
 
-> Malhotra, S. "Cross-Layer Observability for LLM-Assisted Test Automation: A Reference Architecture with Web and Mobile Feasibility Studies." Submitted to the *Journal of Systems and Software* (Elsevier), 2026.
+> Malhotra, S. "Cross-Layer Observability for LLM-Assisted Test Automation: A Reference Architecture and Web Feasibility Study." Submitted to the *Journal of Systems and Software* (Elsevier), 2026.
 
 ---
 

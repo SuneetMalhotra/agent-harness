@@ -31,7 +31,7 @@ license: MIT
 repository-code: "https://github.com/SuneetMalhotra/agent-harness"
 preferred-citation:
   type: article
-  title: "Cross-Layer Observability for LLM-Assisted Test Automation: A Reference Architecture with Web and Mobile Feasibility Studies"
+  title: "Cross-Layer Observability for LLM-Assisted Test Automation: A Reference Architecture and Web Feasibility Study"
   authors:
     - family-names: Malhotra
       given-names: Suneet
