@@ -89,7 +89,7 @@ Results are written to `results.json` at the end of every harness run. **Note:**
 
 ---
 
-## Mobile feasibility study
+## Mobile module (additional scaffolding — not part of the evaluated study)
 
 A small public mobile feasibility study (`mobile/`) exercises the same observability substrate against a public Android reference application — the [Sauce Labs My Demo App](https://github.com/saucelabs/sample-app-mobile) (MIT-licensed). The study records the same event schema and tier-routing model used in §6.1 on the mobile modality. It is not a production-scale mobile evaluation and does not claim production-scale mobile generality.
 
@@ -97,7 +97,7 @@ The mobile feasibility study reports:
 - 13 mobile test cases against a public Android reference app
 - One `HealingEvent` emitted per test case onto the shared substrate
 - 12 of 13 cases resolved; 1 unrecovered failure reported (not swallowed)
-- Same schema reused across web (§6.1) and mobile (§6.2); zero schema drift
+- Same schema reused across the web evaluation and this mobile scaffolding; zero schema drift
 - Hardware-in-the-loop not evaluated — architectural extension only
 
 ### Deterministic replay command (no Appium, no emulator required)
@@ -107,7 +107,7 @@ npm run example:mobile          # writes results-mobile.json
 npm run test:mobile             # validates schema + counts; exits 0 on pass
 ```
 
-The replay completes in <5 seconds, requires no Android toolchain, no LLM API key, and is byte-stable across runs. The resulting `results-mobile.json` is the source of the §6.2 mobile feasibility numbers in the manuscript.
+The replay completes in <5 seconds, requires no Android toolchain, no LLM API key, and is byte-stable across runs. This module is repository scaffolding for the target-agnostic design; it is **not** part of the article's evaluated study, which is web-only (the calibration study in §6.1).
 
 ### Optional live-Appium mode
 
