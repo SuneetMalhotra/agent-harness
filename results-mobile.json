@@ -1,0 +1,221 @@
+{
+  "metadata": {
+    "runId": "mobile-replay-2026-06-06T12-00-00-000Z",
+    "timestamp": "2026-06-06T12:00:00.000Z",
+    "targetApp": "Sauce Labs My Demo App (public Android reference application)",
+    "targetAppLicense": "MIT",
+    "targetAppReference": "https://github.com/saucelabs/sample-app-mobile",
+    "mode": "deterministic-replay",
+    "nodeVersion": "v25.8.1"
+  },
+  "testCases": 13,
+  "healingEvents": 13,
+  "recovered": 12,
+  "unrecovered": 1,
+  "firstDispatchCorrect": 13,
+  "perStrategyCount": {
+    "accessibilityId": 9,
+    "xpath": 1,
+    "uiautomator": 1,
+    "id": 0,
+    "text": 0,
+    "visionFallback": 1,
+    "unrecovered": 1
+  },
+  "perScreenCount": {
+    "login": 3,
+    "products": 3,
+    "product-detail": 2,
+    "cart": 3,
+    "checkout": 2
+  },
+  "sameSchemaReused": true,
+  "events": [
+    {
+      "id": "MTC-001-h0",
+      "testCaseId": "MTC-001",
+      "semanticName": "username input",
+      "resolvedStrategy": "cache",
+      "success": true,
+      "latencyMs": 120,
+      "tier": "tier1",
+      "timestamp": "2026-06-06T12:00:01.000Z",
+      "targetModality": "mobile",
+      "strategy": "accessibilityId",
+      "screen": "login"
+    },
+    {
+      "id": "MTC-002-h0",
+      "testCaseId": "MTC-002",
+      "semanticName": "password input",
+      "resolvedStrategy": "cache",
+      "success": true,
+      "latencyMs": 120,
+      "tier": "tier1",
+      "timestamp": "2026-06-06T12:00:02.000Z",
+      "targetModality": "mobile",
+      "strategy": "accessibilityId",
+      "screen": "login"
+    },
+    {
+      "id": "MTC-003-h0",
+      "testCaseId": "MTC-003",
+      "semanticName": "login submit button",
+      "resolvedStrategy": "cache",
+      "success": true,
+      "latencyMs": 120,
+      "tier": "tier1",
+      "timestamp": "2026-06-06T12:00:03.000Z",
+      "targetModality": "mobile",
+      "strategy": "accessibilityId",
+      "screen": "login"
+    },
+    {
+      "id": "MTC-004-h0",
+      "testCaseId": "MTC-004",
+      "semanticName": "first product card",
+      "resolvedStrategy": "cache",
+      "success": true,
+      "latencyMs": 120,
+      "tier": "tier1",
+      "timestamp": "2026-06-06T12:00:04.000Z",
+      "targetModality": "mobile",
+      "strategy": "accessibilityId",
+      "screen": "products"
+    },
+    {
+      "id": "MTC-005-h0",
+      "testCaseId": "MTC-005",
+      "semanticName": "product sort dropdown",
+      "resolvedStrategy": "cache",
+      "success": true,
+      "latencyMs": 120,
+      "tier": "tier1",
+      "timestamp": "2026-06-06T12:00:05.000Z",
+      "targetModality": "mobile",
+      "strategy": "accessibilityId",
+      "screen": "products"
+    },
+    {
+      "id": "MTC-006-h0",
+      "testCaseId": "MTC-006",
+      "semanticName": "product description text",
+      "resolvedStrategy": "cache",
+      "success": true,
+      "latencyMs": 180,
+      "tier": "tier1",
+      "timestamp": "2026-06-06T12:00:06.000Z",
+      "targetModality": "mobile",
+      "strategy": "xpath",
+      "screen": "products"
+    },
+    {
+      "id": "MTC-007-h0",
+      "testCaseId": "MTC-007",
+      "semanticName": "add to cart button",
+      "resolvedStrategy": "cache",
+      "success": true,
+      "latencyMs": 120,
+      "tier": "tier1",
+      "timestamp": "2026-06-06T12:00:07.000Z",
+      "targetModality": "mobile",
+      "strategy": "accessibilityId",
+      "screen": "product-detail"
+    },
+    {
+      "id": "MTC-008-h0",
+      "testCaseId": "MTC-008",
+      "semanticName": "price label",
+      "resolvedStrategy": "cache",
+      "success": true,
+      "latencyMs": 240,
+      "tier": "tier1",
+      "timestamp": "2026-06-06T12:00:08.000Z",
+      "targetModality": "mobile",
+      "strategy": "uiautomator",
+      "screen": "product-detail"
+    },
+    {
+      "id": "MTC-009-h0",
+      "testCaseId": "MTC-009",
+      "semanticName": "cart icon badge",
+      "resolvedStrategy": "cache",
+      "success": true,
+      "latencyMs": 120,
+      "tier": "tier2",
+      "timestamp": "2026-06-06T12:00:09.000Z",
+      "targetModality": "mobile",
+      "strategy": "accessibilityId",
+      "screen": "cart"
+    },
+    {
+      "id": "MTC-010-h0",
+      "testCaseId": "MTC-010",
+      "semanticName": "checkout button",
+      "resolvedStrategy": "cache",
+      "success": true,
+      "latencyMs": 120,
+      "tier": "tier2",
+      "timestamp": "2026-06-06T12:00:10.000Z",
+      "targetModality": "mobile",
+      "strategy": "accessibilityId",
+      "screen": "cart"
+    },
+    {
+      "id": "MTC-011-h0",
+      "testCaseId": "MTC-011",
+      "semanticName": "remove item from cart",
+      "resolvedStrategy": "vision-healer",
+      "success": true,
+      "latencyMs": 1800,
+      "tier": "tier2",
+      "timestamp": "2026-06-06T12:00:11.000Z",
+      "targetModality": "mobile",
+      "strategy": "visionFallback",
+      "screen": "cart"
+    },
+    {
+      "id": "MTC-012-h0",
+      "testCaseId": "MTC-012",
+      "semanticName": "shipping address input",
+      "resolvedStrategy": "cache",
+      "success": true,
+      "latencyMs": 120,
+      "tier": "tier3",
+      "timestamp": "2026-06-06T12:00:12.000Z",
+      "targetModality": "mobile",
+      "strategy": "accessibilityId",
+      "screen": "checkout"
+    },
+    {
+      "id": "MTC-013-h0",
+      "testCaseId": "MTC-013",
+      "semanticName": "promo code apply button (overlay-occluded)",
+      "resolvedStrategy": "failed",
+      "success": false,
+      "latencyMs": 4500,
+      "tier": "tier3",
+      "timestamp": "2026-06-06T12:00:13.000Z",
+      "targetModality": "mobile",
+      "strategy": "unrecovered",
+      "screen": "checkout"
+    }
+  ],
+  "comparison": {
+    "web": {
+      "testCases": 30,
+      "recovered": 29,
+      "total": 30
+    },
+    "mobile": {
+      "testCases": 13,
+      "recovered": 12,
+      "total": 13
+    },
+    "hardware": {
+      "evaluated": false,
+      "reason": "architectural extension; not evaluated in §6 or §6.x"
+    },
+    "sameSchemaReused": true
+  }
+}

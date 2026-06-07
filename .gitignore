@@ -8,3 +8,6 @@ dist/
 # Harness output (results.json is committed as the reference §6 artifact;
 # only auxiliary results-*.json scratch files are gitignored)
 results-*.json
+
+# results-mobile.json is committed as a referenced artifact (mobile feasibility study, paper §6.2)
+!results-mobile.json
