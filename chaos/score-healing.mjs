@@ -30,6 +30,7 @@
 import { chromium } from 'playwright';
 import { readFileSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { classify, aggregate } from './metrics.mjs';
 
 const args = Object.fromEntries(
   process.argv.slice(2).reduce((a, v, i, arr) => (v.startsWith('--') ? [...a, [v.slice(2), arr[i + 1]]] : a), [])
@@ -38,7 +39,6 @@ const IN = args.in || 'chaos/perturbations.json';
 const OUT = args.out || 'chaos/results-healing-bench.json';
 const RESOLVER = args.resolver || 'text-role';
 
-const norm = (t) => (t || '').replace(/\s+/g, ' ').trim().toLowerCase();
 
 // ---- break the brittle selector exactly per the recorded difficulty band ----
 async function applyMutation(page, p) {
@@ -140,7 +140,7 @@ async function main() {
 
   for (const p of data.perturbations) {
     const page = await browser.newPage();
-    let outcome = 'error', strategy = null, ms = 0;
+    let outcome = 'error', strategy = null, ms = 0, resolved = null;
     try {
       await page.goto(p.url, { waitUntil: 'domcontentloaded' });
       await page.waitForTimeout(Number(args.settle || 2500));
@@ -153,34 +153,17 @@ async function main() {
       if (!r.handle) outcome = 'miss';
       else {
         const got = await describe(r.handle);
-        const textMatch = norm(got.text) === norm(p.groundTruth.text) && norm(got.text).length > 0;
-        const tagOk = got.tag === p.groundTruth.tag || got.role === p.groundTruth.role;
-        outcome = textMatch && tagOk ? 'success' : 'false-heal';
+        resolved = got;
+        outcome = classify(got, p.groundTruth);
       }
     } catch (e) { outcome = 'error'; }
     await page.close();
-    rows.push({ id: p.id, band: p.difficultyBand, mutation: p.mutation, outcome, strategy, ms });
+    rows.push({ id: p.id, band: p.difficultyBand, mutation: p.mutation, outcome, strategy, ms, target: p.groundTruth.text, resolvedText: resolved?.text ?? null });
   }
   await browser.close();
 
   // ---- aggregate ----
-  const scored = rows.filter((r) => ['success', 'false-heal', 'miss'].includes(r.outcome));
-  const succ = scored.filter((r) => r.outcome === 'success');
-  const byBand = {};
-  for (const r of scored) {
-    byBand[r.band] ??= { n: 0, success: 0 };
-    byBand[r.band].n++; if (r.outcome === 'success') byBand[r.band].success++;
-  }
-  const report = {
-    resolver: RESOLVER, source: IN, scored: scored.length,
-    accuracy: scored.length ? +(succ.length / scored.length).toFixed(3) : null,
-    successCount: succ.length,
-    falseHealRate: scored.length ? +(scored.filter((r) => r.outcome === 'false-heal').length / scored.length).toFixed(3) : null,
-    missRate: scored.length ? +(scored.filter((r) => r.outcome === 'miss').length / scored.length).toFixed(3) : null,
-    meanTimeToHealMs: succ.length ? Math.round(succ.reduce((a, r) => a + (r.ms || 0), 0) / succ.length) : null,
-    accuracyByBand: Object.fromEntries(Object.entries(byBand).map(([b, v]) => [b, +(v.success / v.n).toFixed(3) + ` (${v.success}/${v.n})`])),
-    rows,
-  };
+  const report = aggregate(rows, { resolver: RESOLVER, source: IN });
   writeFileSync(OUT, JSON.stringify(report, null, 2));
   console.log(`[${RESOLVER}] accuracy ${report.accuracy} (${report.successCount}/${report.scored}) · false-heal ${report.falseHealRate} · MTTH ${report.meanTimeToHealMs}ms`);
   console.log('by band:', report.accuracyByBand);
