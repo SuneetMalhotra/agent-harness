@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented here.
 
+## [1.3.4] - 2026-06-07
+
+Manuscript presentation pass (no code or result changes): render the three
+mermaid figures to images in the PDF build (previously dumped as raw source),
+match the Article-1 sans-serif typesetting, and add the author biography photo.
+Adds `scripts/build-paper.sh` (reproducible PDF build) and `paper-assets/`.
+README headline-figures table no longer lists authoring-velocity speedup as an
+empirical result (it is a practitioner observation per the manuscript).
+
+
 ## [1.3.3] - 2026-06-07
 
 JSS submission package, final. Companion code for the article "Cross-Layer Observability for LLM-Assisted Test Automation: A Reference Architecture with Web and Mobile Feasibility Studies" (Malhotra, 2026; prepared for the Journal of Systems and Software, Elsevier). Adds the §6.2 mobile feasibility module, the `ARTIFACTS.md` reproducibility manifest, and Zenodo archival (concept DOI 10.5281/zenodo.20576685). Section references normalized to §6.1 (web) / §6.2 (mobile) / §6.3 (threats). No experiments or result numbers changed.
