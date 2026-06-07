@@ -15,7 +15,7 @@ import { HealingEvent } from '../types.js';
 export type TargetModality = 'web' | 'mobile' | 'hardware';
 
 /**
- * Mobile locator strategies used by the §6.x mobile feasibility study.
+ * Mobile locator strategies used by the §6.2 mobile feasibility study.
  * These mirror the Appium WebDriverIO locator vocabulary.
  *
  *   - accessibilityId : preferred Appium primary strategy; matches
@@ -105,8 +105,7 @@ export interface MobileStudyResult {
     hardware: {
       evaluated: false;
       reason:
-        | 'architectural extension; not evaluated in §6 or §6.x'
-        | 'architectural extension; not evaluated in §6 or §6.2';
+        | 'architectural extension; not evaluated in §6.1 or §6.2';
     };
     sameSchemaReused: true;
   };

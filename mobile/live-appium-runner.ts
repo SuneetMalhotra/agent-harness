@@ -252,7 +252,7 @@ export async function runLiveAppium(): Promise<MobileStudyResult> {
       mobile: { testCases: events.length, recovered, total: events.length },
       hardware: {
         evaluated: false,
-        reason: 'architectural extension; not evaluated in §6 or §6.2',
+        reason: 'architectural extension; not evaluated in §6.1 or §6.2',
       },
       sameSchemaReused: true,
     },

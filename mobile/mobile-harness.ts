@@ -8,7 +8,7 @@
 //
 // This harness is DETERMINISTIC: it does not require Appium, an Android
 // emulator, network access, or an LLM API key. A reviewer can reproduce
-// the §6.x mobile feasibility numbers in <5 seconds via:
+// the §6.2 mobile feasibility numbers in <5 seconds via:
 //   npm run example:mobile
 //
 // An optional live-Appium mode is documented in mobile/README-LIVE-APPIUM.md
@@ -172,7 +172,7 @@ function buildSummary(events: MobileHealingEvent[]): MobileStudyResult {
       mobile: { testCases: events.length, recovered, total: events.length },
       hardware: {
         evaluated: false,
-        reason: 'architectural extension; not evaluated in §6 or §6.x',
+        reason: 'architectural extension; not evaluated in §6.1 or §6.2',
       },
       sameSchemaReused: true,
     },

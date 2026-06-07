@@ -2,9 +2,13 @@
 
 All notable changes to this project will be documented here.
 
+## [1.3.3] - 2026-06-07
+
+JSS submission package, final. Companion code for the article "Cross-Layer Observability for LLM-Assisted Test Automation: A Reference Architecture with Web and Mobile Feasibility Studies" (Malhotra, 2026; prepared for the Journal of Systems and Software, Elsevier). Adds the §6.2 mobile feasibility module, the `ARTIFACTS.md` reproducibility manifest, and Zenodo archival (concept DOI 10.5281/zenodo.20576685). Section references normalized to §6.1 (web) / §6.2 (mobile) / §6.3 (threats). No experiments or result numbers changed.
+
 ## [1.0.0] - 2026-05-25
 
-Initial release. Companion code for the article "An Agent Harness for Mobile Test Automation: Coupling an Agent-Authored Framework, a Multi-Agent SDLC Pipeline, and a Three-Tier Execution Plane" (Malhotra, 2026, IEEE Software — under review).
+Initial release. Companion code for the article later titled "Cross-Layer Observability for LLM-Assisted Test Automation" (Malhotra, 2026).
 
 ### Added
 - `types.ts` — public types: `TestCase`, `TestArtifact`, `HealingEvent`, `AssertionEvent`, `AgentHandoff`, `TierName`, `ObservabilityEntry`.

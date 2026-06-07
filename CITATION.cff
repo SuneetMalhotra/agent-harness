@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this reference implementation, please cite the accompanying article."
-title: "agent-harness: An Agent Harness for Test Automation Across Mobile, Web, and Hardware Targets"
+title: "agent-harness: Cross-Layer Observability for LLM-Assisted Test Automation"
 abstract: >-
   Reference implementation of the cross-layer agent harness pattern: a
   TypeScript framework coupling an authoring layer (LLM coding assistant),
   an operating layer (five-agent SDLC pipeline over MCP), and an execution
   layer (three hardware tiers with intelligent self-healing) through a
-  shared observability substrate. Includes the §6 live-LLM evaluation
+  shared observability substrate. Includes the §6.1 live-LLM evaluation
   artifacts (results.json, 24-image visual corpus, audit packet, LLM-as-a-Judge
   visual-assertion service with seeded ground-truth validation at Cohen's
   kappa = 0.667 substantial).
@@ -25,15 +25,15 @@ keywords:
   - mobile testing
   - web testing
   - hardware-in-the-loop testing
-version: "1.2.0"
-date-released: "2026-05-27"
+version: "1.3.3"
+date-released: "2026-06-07"
 license: MIT
 repository-code: "https://github.com/SuneetMalhotra/agent-harness"
 preferred-citation:
   type: article
-  title: "An Agent Harness for Test Automation Across Mobile, Web, and Hardware Targets"
+  title: "Cross-Layer Observability for LLM-Assisted Test Automation: A Reference Architecture with Web and Mobile Feasibility Studies"
   authors:
     - family-names: Malhotra
       given-names: Suneet
   year: 2026
-  notes: "Companion article (in preparation, target venue: IEEE Software Practice column)."
+  notes: "Companion article (in preparation, target venue: Journal of Systems and Software, Elsevier)."

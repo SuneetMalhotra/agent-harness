@@ -17,7 +17,7 @@ Your job is to judge each image *as a QA artifact*: does it PASS (every checklis
 
 ## (b) Why
 
-IEEE Software peer review flagged the §6 visual-assertion precision/recall numbers as model-reported, not human-validated: the same LLM that authored the underlying test cases produced the verdicts. Your independent verdicts break that loop and produce a Cohen's κ inter-rater agreement number that the published article will cite (per `audit/visual-assertion-protocol.md`).
+Peer review flagged the §6.1 visual-assertion precision/recall numbers as model-reported, not human-validated: the same LLM that authored the underlying test cases produced the verdicts. Your independent verdicts break that loop and produce a Cohen's κ inter-rater agreement number that the published article will cite (per `audit/visual-assertion-protocol.md`).
 
 A second, equally important disclosure: the reference-implementation visual-assertion service in this repo judges the *text* `expected`/`properties` pair, NOT the pixel content of the screenshot. You, as the rater, judge the *image* against the same text rubric. The audit therefore measures whether the LLM's text-only judgment generalizes to a human judgment that also sees the rendered screen. Disagreements between your verdict and the LLM verdict on a given case are a real signal — they are the point of the audit.
 

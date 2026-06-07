@@ -1,8 +1,8 @@
 // types.ts — public types for the Agent Harness reference implementation.
 //
 // This file is part of the companion code for the article
-// "An Agent Harness for Mobile Test Automation: Coupling an Agent-Authored
-// Framework, a Multi-Agent SDLC Pipeline, and a Three-Tier Execution Plane."
+// "Cross-Layer Observability for LLM-Assisted Test Automation:
+// A Reference Architecture with Web and Mobile Feasibility Studies."
 
 /**
  * The three execution-plane tiers.

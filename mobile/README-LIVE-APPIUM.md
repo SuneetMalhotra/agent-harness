@@ -1,7 +1,7 @@
 # Optional live-Appium mode for the mobile feasibility study
 
 The deterministic replay (`npm run example:mobile`) is the source of the
-§6.x mobile feasibility numbers reported in the manuscript. The replay is
+§6.2 mobile feasibility numbers reported in the manuscript. The replay is
 byte-stable, reviewer-reproducible, and requires no Appium server, Android
 emulator, or LLM API key.
 
@@ -41,13 +41,13 @@ real Appium calls. Prerequisites would be:
 
 Live Appium runs vary by ~10-30% in latency depending on emulator warm-up
 state, Android API level, and device load. The deterministic replay
-eliminates that variance and lets the §6.x numbers be cited as exact
+eliminates that variance and lets the §6.2 numbers be cited as exact
 counts (13 test cases, 12 recovered, 1 unrecovered) rather than as
 distributional summaries.
 
 Live mode would add cross-validation evidence (real Appium successfully
 exercises the same semantic locators) but would not strengthen the
-substrate-reuse claim, which is the actual §6.x contribution.
+substrate-reuse claim, which is the actual §6.2 contribution.
 
 ## Scope discipline
 
@@ -58,5 +58,5 @@ The mobile feasibility study reports:
 
 The mobile feasibility study does NOT report:
 - Production-scale mobile testing accuracy
-- LLM-as-judge κ on mobile screens (not measured at the §6.x scale)
+- LLM-as-judge κ on mobile screens (not measured at the §6.2 scale)
 - Hardware-in-the-loop evaluation (architectural extension only)

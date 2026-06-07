@@ -4,8 +4,8 @@
 
 - **Manuscript:** "Cross-Layer Observability for LLM-Assisted Test Automation: A Reference Architecture with Web and Mobile Feasibility Studies"
 - **Target venue:** Journal of Systems and Software (Elsevier) — In Practice / Applied Research Report
-- **Final release tag:** `v1.3.2-jss-final`
-- **Full commit hash:** resolve with `git rev-parse v1.3.2-jss-final^{commit}`
+- **Final release tag:** `v1.3.3-jss-final`
+- **Full commit hash:** resolve with `git rev-parse v1.3.3-jss-final^{commit}`
 - **Node version:** v25.8.1 (package `engines.node`: `>=20.0.0`)
 - **Zenodo DOI:** 10.5281/zenodo.20576685 (concept DOI — resolves to the latest archived version)
 - **Reproduction command:** `npm run reproduce:paper`
@@ -52,7 +52,7 @@ npm run harness:anthropic   # live Claude Sonnet 4.6 run (requires Claude OAuth)
 | Mobile harness runner | `mobile/mobile-harness.ts` | Deterministic replay (no Appium, no emulator, no API key) |
 | Mobile type extensions | `mobile/types.ts` | TargetModality, MobileLocatorStrategy, MobileStudyResult |
 | Schema validation tests | `tests/mobile-schema.test.ts` | 22 reconciliation checks on counts, schema, web-preservation |
-| Optional live-Appium notes | `mobile/README-LIVE-APPIUM.md` | TODO sketch for a future live-Appium mode (not required for §6.2 numbers) |
+| Optional live-Appium notes | `mobile/README-LIVE-APPIUM.md` | Optional/future live-Appium mode (not required for §6.2 numbers) |
 
 ### Reproduction commands
 
