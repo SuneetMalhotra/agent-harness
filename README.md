@@ -138,7 +138,6 @@ The article reports the following headline figures from the committed §6.1 live
 |---|---:|
 | Web test cases | 30 |
 | Web recovered | 29/30 |
-| Authoring velocity speedup | 3.2x |
 | Pipeline runtime (live run) | 1665.695 s (~27.8 min) |
 | Cache hit rate | 0.000 |
 | DOM healer success rate | 1.000 |
@@ -153,6 +152,8 @@ The article reports the following headline figures from the committed §6.1 live
 | Mobile test cases | 13 |
 | Mobile recovered | 12/13 |
 | Hardware-in-the-loop evaluated | false |
+
+`results.json` also records `authoringVelocity.speedup` (≈3.2× over N=5 agent-assisted vs N=3 hand-authored modules). The manuscript reports this as a *practitioner observation, not an empirical result* (§6 — "carries no inferential weight"), so it is excluded from the headline figures above.
 
 To reproduce:
 
