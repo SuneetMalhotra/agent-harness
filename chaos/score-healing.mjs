@@ -45,6 +45,7 @@ async function applyMutation(page, p) {
   return await page.evaluate(({ sel, kind }) => {
     const el = document.querySelector(sel);
     if (!el) return false;
+    el.setAttribute('data-truth', '1');   // persistent identity marker (resolvers never see it)
     const rnd = 'x' + Math.random().toString(36).slice(2, 8);
     // 1) ALWAYS invalidate the recorded brittle selector, whatever its type
     if (sel.startsWith('#')) el.id = rnd;
@@ -65,7 +66,7 @@ async function applyMutation(page, p) {
         [...el.parentElement.children].forEach((c) => { if (c !== el && c.childElementCount === 0) c.textContent = rnd; });
         break;
       case 'attr-reorder-minify':
-        [...el.attributes].forEach((a) => { if (!/^(href|type|value)$/.test(a.name)) el.removeAttribute(a.name); });
+        [...el.attributes].forEach((a) => { if (!/^(href|type|value|data-truth)$/.test(a.name)) el.removeAttribute(a.name); });
         el.className = rnd; break;
     }
     return true;
@@ -136,10 +137,14 @@ async function scoreOne(page, p, resolve) {
   const t0 = Date.now();
   const r = await resolve(page, p, q);
   const ms = Date.now() - t0;
-  let outcome = 'miss', resolved = null;
-  if (r.handle) { resolved = await describe(r.handle); outcome = classify(resolved, p.groundTruth); }
+  let resolved = null, isTruth = false;
+  if (r.handle) {
+    resolved = await describe(r.handle);
+    isTruth = await r.handle.evaluate((n) => n.getAttribute('data-truth') === '1').catch(() => false);
+  }
+  const outcome = classify(!!r.handle, isTruth);
   return { id: p.id, band: p.difficultyBand, mutation: p.mutation, outcome, strategy: r.strategy, ms,
-           target: p.groundTruth.text, resolvedText: resolved?.text ?? null };
+           target: p.groundTruth.text, resolvedText: resolved?.text ?? null, isTruth };
 }
 
 async function main() {

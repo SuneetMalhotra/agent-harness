@@ -37,6 +37,7 @@ MUTATE_JS = r"""
 const sel = arguments[0], kind = arguments[1];
 const el = document.querySelector(sel);
 if (!el) return false;
+el.setAttribute('data-truth','1');
 const rnd = 'x' + Math.random().toString(36).slice(2, 8);
 if (sel.startsWith('#')) el.id = rnd;
 else if (sel.startsWith('[data-testid')) el.setAttribute('data-testid', rnd);
@@ -52,7 +53,7 @@ switch (kind) {
   case 'retext-sibling':
     [...el.parentElement.children].forEach(c => { if (c !== el && c.childElementCount === 0) c.textContent = rnd; }); break;
   case 'attr-reorder-minify':
-    [...el.attributes].forEach(at => { if (!/^(href|type|value)$/.test(at.name)) el.removeAttribute(at.name); });
+    [...el.attributes].forEach(at => { if (!/^(href|type|value|data-truth)$/.test(at.name)) el.removeAttribute(at.name); });
     el.className = rnd; break;
 }
 return true;
@@ -60,11 +61,9 @@ return true;
 
 def norm(t): return " ".join((t or "").split()).lower()
 
-def classify(got, truth):
-    if got is None: return "miss"
-    tm = norm(got["text"]) == norm(truth["text"]) and len(norm(got["text"])) > 0
-    tagok = got["tag"] == truth["tag"] or (got.get("role") and got["role"] == truth.get("role"))
-    return "success" if (tm and tagok) else "false-heal"
+def classify(hashandle, is_truth):
+    if not hashandle: return "miss"
+    return "success" if is_truth else "false-heal"
 
 def new_driver():
     opts = webdriver.ChromeOptions()
@@ -88,14 +87,15 @@ for p in data["perturbations"][: a.n]:
         if not broke:
             rows.append({"id": p["id"], "band": p["difficultyBand"], "outcome": "target-missing"}); continue
         t0 = time.time(); got = None
+        is_truth = False
         try:
             el = d.find_element(By.CSS_SELECTOR, sel)   # healenium heals on failure
-            got = {"tag": el.tag_name, "role": el.get_attribute("role"),
-                   "text": (el.text or el.get_attribute("value") or "").strip()}
+            got = {"tag": el.tag_name, "text": (el.text or el.get_attribute("value") or "").strip()}
+            is_truth = (el.get_attribute("data-truth") == "1")
         except NoSuchElementException:
             got = None
         ms = int((time.time() - t0) * 1000)
-        outcome = classify(got, truth)
+        outcome = classify(got is not None, is_truth)
         rows.append({"id": p["id"], "band": p["difficultyBand"], "mutation": p["mutation"],
                      "outcome": outcome, "strategy": "healenium", "ms": ms,
                      "target": truth["text"], "resolvedText": got["text"] if got else None})

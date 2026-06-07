@@ -9,11 +9,9 @@ export const norm = (t) => (t || '').replace(/\s+/g, ' ').trim().toLowerCase();
  *  - resolved a DIFFERENT element          -> 'false-heal'  (the dangerous false pass)
  * Identity match = exact (normalized) text AND compatible tag/role.
  */
-export function classify(got, truth) {
-  if (!got) return 'miss';
-  const textMatch = norm(got.text) === norm(truth.text) && norm(got.text).length > 0;
-  const tagOk = got.tag === truth.tag || (got.role && got.role === truth.role);
-  return textMatch && tagOk ? 'success' : 'false-heal';
+export function classify(hasHandle, isTruth) {
+  if (!hasHandle) return 'miss';
+  return isTruth ? 'success' : 'false-heal';
 }
 
 /** Aggregate scored rows into the benchmark report metrics. */
