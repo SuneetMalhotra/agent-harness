@@ -29,6 +29,7 @@
 
 import { chromium } from 'playwright';
 import { readFileSync, writeFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 
 const args = Object.fromEntries(
   process.argv.slice(2).reduce((a, v, i, arr) => (v.startsWith('--') ? [...a, [v.slice(2), arr[i + 1]]] : a), [])
@@ -45,11 +46,16 @@ async function applyMutation(page, p) {
     const el = document.querySelector(sel);
     if (!el) return false;
     const rnd = 'x' + Math.random().toString(36).slice(2, 8);
+    // 1) ALWAYS invalidate the recorded brittle selector, whatever its type
+    if (sel.startsWith('#')) el.id = rnd;
+    else if (sel.startsWith('[data-testid')) el.setAttribute('data-testid', rnd);
+    else if (sel.startsWith('.')) el.className = rnd;
+    // 2) band-specific ADDITIONAL difficulty on top of the broken selector
     switch (kind) {
-      case 'rename-class': el.className = rnd + '-v2'; break;
+      case 'rename-class': break; // selector already broken above
       case 'rename-id-testid':
-        if (el.id) el.id = rnd;
-        if (el.getAttribute('data-testid')) el.setAttribute('data-testid', rnd);
+        if (el.id) el.id = rnd + 'b';
+        if (el.getAttribute('data-testid')) el.setAttribute('data-testid', rnd + 'b');
         break;
       case 'restructure-dom': {
         const w = document.createElement('div'); const w2 = document.createElement('div');
@@ -88,12 +94,34 @@ async function resolveTextRole(page, p, q) {
   const el = h.asElement();
   return { handle: el, strategy: 'text-role' };
 }
-// eslint-disable-next-line no-unused-vars
 async function resolveWithCascade(page, p, q) {
-  // TODO(wire): call the repo cascade (intelligence.ts: cache -> DOM-healer -> vision)
-  // It receives the broken page + semantic query q ({role,text,ariaLabel}) and must
-  // return an ElementHandle. Return { handle, strategy: 'cache'|'dom-healer'|'vision' }.
-  throw new Error('cascade resolver not wired — implement resolveWithCascade()');
+  // LLM DOM-healer via `claude -p`: tag visible interactive candidates with a
+  // stable data-heal-idx, send their context to Claude, resolve the chosen idx.
+  const cands = await page.evaluate(() => {
+    const nodes = [...document.querySelectorAll('a,button,input,[role],[onclick],[tabindex],svg')]
+      .filter((n) => n.offsetParent !== null).slice(0, 80);
+    return nodes.map((n, i) => {
+      n.setAttribute('data-heal-idx', String(i));
+      return {
+        i, tag: n.tagName.toLowerCase(), role: n.getAttribute('role') || null,
+        text: (n.innerText || n.value || '').trim().slice(0, 60),
+        aria: n.getAttribute('aria-label') || n.getAttribute('title') || null,
+        near: (n.parentElement?.innerText || '').trim().slice(0, 60),
+      };
+    });
+  });
+  const prompt = `You are a self-healing test locator. The original selector broke after a DOM change. ` +
+    `Target element: role=${q.role}, text=${JSON.stringify(q.text)}, aria=${JSON.stringify(q.ariaLabel)}. ` +
+    `Candidates on the current page (JSON): ${JSON.stringify(cands)}. ` +
+    `Reply with ONLY the integer "i" of the candidate that is the SAME element as the target (match on meaning/role/context, not just exact text), or -1 if none match.`;
+  const env = { ...process.env }; delete env.CLAUDECODE; delete env.CLAUDE_CODE_ENTRYPOINT;
+  let out;
+  try { out = execFileSync('claude', ['-p', prompt], { env, encoding: 'utf8', timeout: 90000, maxBuffer: 1 << 20 }); }
+  catch { return { handle: null, strategy: 'cascade-error' }; }
+  const idx = parseInt((out.match(/-?\d+/) || ['-1'])[0], 10);
+  if (idx < 0) return { handle: null, strategy: 'dom-healer-none' };
+  const h = await page.$(`[data-heal-idx="${idx}"]`).catch(() => null);
+  return { handle: h, strategy: 'dom-healer' };
 }
 // eslint-disable-next-line no-unused-vars
 async function resolveWithHealenium(page, p, q) {
@@ -114,7 +142,8 @@ async function main() {
     const page = await browser.newPage();
     let outcome = 'error', strategy = null, ms = 0;
     try {
-      await page.goto(p.url, { waitUntil: 'networkidle' });
+      await page.goto(p.url, { waitUntil: 'domcontentloaded' });
+      await page.waitForTimeout(Number(args.settle || 2500));
       const broke = await applyMutation(page, p);
       if (!broke) { await page.close(); rows.push({ id: p.id, band: p.difficultyBand, outcome: 'target-missing' }); continue; }
       const q = { role: p.groundTruth.role, text: p.groundTruth.text, ariaLabel: p.groundTruth.ariaLabel };

@@ -1,0 +1,741 @@
+{
+  "url": "https://suneetmalhotra.com",
+  "generatedTargets": 7,
+  "perturbations": [
+    {
+      "id": "P0000",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".text-lg",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Suneet Malhotra",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 241,
+          "y": 46
+        },
+        "box": {
+          "w": 145,
+          "h": 28
+        }
+      }
+    },
+    {
+      "id": "P0001",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".text-lg",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Suneet Malhotra",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 241,
+          "y": 46
+        },
+        "box": {
+          "w": 145,
+          "h": 28
+        }
+      }
+    },
+    {
+      "id": "P0002",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".text-lg",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Suneet Malhotra",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 241,
+          "y": 46
+        },
+        "box": {
+          "w": 145,
+          "h": 28
+        }
+      }
+    },
+    {
+      "id": "P0003",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".text-lg",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Suneet Malhotra",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 241,
+          "y": 46
+        },
+        "box": {
+          "w": 145,
+          "h": 28
+        }
+      }
+    },
+    {
+      "id": "P0004",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".text-lg",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Suneet Malhotra",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 241,
+          "y": 46
+        },
+        "box": {
+          "w": 145,
+          "h": 28
+        }
+      }
+    },
+    {
+      "id": "P0005",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".text-sm",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Home",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 700,
+          "y": 46
+        },
+        "box": {
+          "w": 39,
+          "h": 20
+        }
+      }
+    },
+    {
+      "id": "P0006",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".text-sm",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Home",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 700,
+          "y": 46
+        },
+        "box": {
+          "w": 39,
+          "h": 20
+        }
+      }
+    },
+    {
+      "id": "P0007",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".text-sm",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Home",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 700,
+          "y": 46
+        },
+        "box": {
+          "w": 39,
+          "h": 20
+        }
+      }
+    },
+    {
+      "id": "P0008",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".text-sm",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Home",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 700,
+          "y": 46
+        },
+        "box": {
+          "w": 39,
+          "h": 20
+        }
+      }
+    },
+    {
+      "id": "P0009",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".text-sm",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Home",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 700,
+          "y": 46
+        },
+        "box": {
+          "w": 39,
+          "h": 20
+        }
+      }
+    },
+    {
+      "id": "P0010",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".hidden",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "div",
+        "role": null,
+        "text": "Home\nAbout\nProjects\nBlog\n⌘K\nContact",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 896,
+          "y": 46
+        },
+        "box": {
+          "w": 432,
+          "h": 36
+        }
+      }
+    },
+    {
+      "id": "P0011",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".hidden",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "div",
+        "role": null,
+        "text": "Home\nAbout\nProjects\nBlog\n⌘K\nContact",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 896,
+          "y": 46
+        },
+        "box": {
+          "w": 432,
+          "h": 36
+        }
+      }
+    },
+    {
+      "id": "P0012",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".hidden",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "div",
+        "role": null,
+        "text": "Home\nAbout\nProjects\nBlog\n⌘K\nContact",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 896,
+          "y": 46
+        },
+        "box": {
+          "w": 432,
+          "h": 36
+        }
+      }
+    },
+    {
+      "id": "P0013",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".hidden",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "div",
+        "role": null,
+        "text": "Home\nAbout\nProjects\nBlog\n⌘K\nContact",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 896,
+          "y": 46
+        },
+        "box": {
+          "w": 432,
+          "h": 36
+        }
+      }
+    },
+    {
+      "id": "P0014",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".hidden",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "div",
+        "role": null,
+        "text": "Home\nAbout\nProjects\nBlog\n⌘K\nContact",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 896,
+          "y": 46
+        },
+        "box": {
+          "w": 432,
+          "h": 36
+        }
+      }
+    },
+    {
+      "id": "P0015",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".px-5",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Contact",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1065,
+          "y": 46
+        },
+        "box": {
+          "w": 94,
+          "h": 36
+        }
+      }
+    },
+    {
+      "id": "P0016",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".px-5",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Contact",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1065,
+          "y": 46
+        },
+        "box": {
+          "w": 94,
+          "h": 36
+        }
+      }
+    },
+    {
+      "id": "P0017",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".px-5",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Contact",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1065,
+          "y": 46
+        },
+        "box": {
+          "w": 94,
+          "h": 36
+        }
+      }
+    },
+    {
+      "id": "P0018",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".px-5",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Contact",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1065,
+          "y": 46
+        },
+        "box": {
+          "w": 94,
+          "h": 36
+        }
+      }
+    },
+    {
+      "id": "P0019",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".px-5",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Contact",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1065,
+          "y": 46
+        },
+        "box": {
+          "w": 94,
+          "h": 36
+        }
+      }
+    },
+    {
+      "id": "P0020",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".px-8",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "View Resume",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 552,
+          "y": 640
+        },
+        "box": {
+          "w": 164,
+          "h": 58
+        }
+      }
+    },
+    {
+      "id": "P0021",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".px-8",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "View Resume",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 552,
+          "y": 640
+        },
+        "box": {
+          "w": 164,
+          "h": 58
+        }
+      }
+    },
+    {
+      "id": "P0022",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".px-8",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "View Resume",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 552,
+          "y": 640
+        },
+        "box": {
+          "w": 164,
+          "h": 58
+        }
+      }
+    },
+    {
+      "id": "P0023",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".px-8",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "View Resume",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 552,
+          "y": 640
+        },
+        "box": {
+          "w": 164,
+          "h": 58
+        }
+      }
+    },
+    {
+      "id": "P0024",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".px-8",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "View Resume",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 552,
+          "y": 640
+        },
+        "box": {
+          "w": 164,
+          "h": 58
+        }
+      }
+    },
+    {
+      "id": "P0025",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".inline-flex",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "View all projects",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 640,
+          "y": 1695
+        },
+        "box": {
+          "w": 132,
+          "h": 20
+        }
+      }
+    },
+    {
+      "id": "P0026",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".inline-flex",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "View all projects",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 640,
+          "y": 1695
+        },
+        "box": {
+          "w": 132,
+          "h": 20
+        }
+      }
+    },
+    {
+      "id": "P0027",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".inline-flex",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "View all projects",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 640,
+          "y": 1695
+        },
+        "box": {
+          "w": 132,
+          "h": 20
+        }
+      }
+    },
+    {
+      "id": "P0028",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".inline-flex",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "View all projects",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 640,
+          "y": 1695
+        },
+        "box": {
+          "w": 132,
+          "h": 20
+        }
+      }
+    },
+    {
+      "id": "P0029",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".inline-flex",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "View all projects",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 640,
+          "y": 1695
+        },
+        "box": {
+          "w": 132,
+          "h": 20
+        }
+      }
+    },
+    {
+      "id": "P0030",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".inline-block",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Get in touch",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 640,
+          "y": 3189
+        },
+        "box": {
+          "w": 157,
+          "h": 56
+        }
+      }
+    },
+    {
+      "id": "P0031",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".inline-block",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Get in touch",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 640,
+          "y": 3189
+        },
+        "box": {
+          "w": 157,
+          "h": 56
+        }
+      }
+    },
+    {
+      "id": "P0032",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".inline-block",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Get in touch",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 640,
+          "y": 3189
+        },
+        "box": {
+          "w": 157,
+          "h": 56
+        }
+      }
+    },
+    {
+      "id": "P0033",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".inline-block",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Get in touch",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 640,
+          "y": 3189
+        },
+        "box": {
+          "w": 157,
+          "h": 56
+        }
+      }
+    },
+    {
+      "id": "P0034",
+      "url": "https://suneetmalhotra.com",
+      "brittleSelector": ".inline-block",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Get in touch",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 640,
+          "y": 3189
+        },
+        "box": {
+          "w": 157,
+          "h": 56
+        }
+      }
+    }
+  ]
+}

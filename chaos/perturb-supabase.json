@@ -1,0 +1,1371 @@
+{
+  "url": "http://localhost:54323",
+  "generatedTargets": 13,
+  "perturbations": [
+    {
+      "id": "P0000",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".relative",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Connect",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 262,
+          "y": 24
+        },
+        "box": {
+          "w": 90,
+          "h": 26
+        }
+      }
+    },
+    {
+      "id": "P0001",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".relative",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Connect",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 262,
+          "y": 24
+        },
+        "box": {
+          "w": 90,
+          "h": 26
+        }
+      }
+    },
+    {
+      "id": "P0002",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".relative",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Connect",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 262,
+          "y": 24
+        },
+        "box": {
+          "w": 90,
+          "h": 26
+        }
+      }
+    },
+    {
+      "id": "P0003",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".relative",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Connect",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 262,
+          "y": 24
+        },
+        "box": {
+          "w": 90,
+          "h": 26
+        }
+      }
+    },
+    {
+      "id": "P0004",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".relative",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Connect",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 262,
+          "y": 24
+        },
+        "box": {
+          "w": 90,
+          "h": 26
+        }
+      }
+    },
+    {
+      "id": "P0005",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".flex",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "div",
+        "role": null,
+        "text": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 640,
+          "y": 360
+        },
+        "box": {
+          "w": 1280,
+          "h": 720
+        }
+      }
+    },
+    {
+      "id": "P0006",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".flex",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "div",
+        "role": null,
+        "text": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 640,
+          "y": 360
+        },
+        "box": {
+          "w": 1280,
+          "h": 720
+        }
+      }
+    },
+    {
+      "id": "P0007",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".flex",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "div",
+        "role": null,
+        "text": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 640,
+          "y": 360
+        },
+        "box": {
+          "w": 1280,
+          "h": 720
+        }
+      }
+    },
+    {
+      "id": "P0008",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".flex",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "div",
+        "role": null,
+        "text": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 640,
+          "y": 360
+        },
+        "box": {
+          "w": 1280,
+          "h": 720
+        }
+      }
+    },
+    {
+      "id": "P0009",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".flex",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "div",
+        "role": null,
+        "text": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 640,
+          "y": 360
+        },
+        "box": {
+          "w": 1280,
+          "h": 720
+        }
+      }
+    },
+    {
+      "id": "P0010",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".px-4",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Search...\n\n⌘K",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1004,
+          "y": 24
+        },
+        "box": {
+          "w": 128,
+          "h": 30
+        }
+      }
+    },
+    {
+      "id": "P0011",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".px-4",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Search...\n\n⌘K",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1004,
+          "y": 24
+        },
+        "box": {
+          "w": 128,
+          "h": 30
+        }
+      }
+    },
+    {
+      "id": "P0012",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".px-4",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Search...\n\n⌘K",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1004,
+          "y": 24
+        },
+        "box": {
+          "w": 128,
+          "h": 30
+        }
+      }
+    },
+    {
+      "id": "P0013",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".px-4",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Search...\n\n⌘K",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1004,
+          "y": 24
+        },
+        "box": {
+          "w": 128,
+          "h": 30
+        }
+      }
+    },
+    {
+      "id": "P0014",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".px-4",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Search...\n\n⌘K",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1004,
+          "y": 24
+        },
+        "box": {
+          "w": 128,
+          "h": 30
+        }
+      }
+    },
+    {
+      "id": "P0015",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#help-dropdown-button",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Help",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1092,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0016",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#help-dropdown-button",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Help",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1092,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0017",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#help-dropdown-button",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Help",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1092,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0018",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#help-dropdown-button",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Help",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1092,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0019",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#help-dropdown-button",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Help",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1092,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0020",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#advisor-center-trigger",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Advisor Center",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1132,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0021",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#advisor-center-trigger",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Advisor Center",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1132,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0022",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#advisor-center-trigger",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Advisor Center",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1132,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0023",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#advisor-center-trigger",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Advisor Center",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1132,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0024",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#advisor-center-trigger",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Advisor Center",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1132,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0025",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#editor-trigger",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "SQL Editor",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1172,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0026",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#editor-trigger",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "SQL Editor",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1172,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0027",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#editor-trigger",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "SQL Editor",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1172,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0028",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#editor-trigger",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "SQL Editor",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1172,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0029",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#editor-trigger",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "SQL Editor",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1172,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0030",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#assistant-trigger",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "AI Assistant",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1212,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0031",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#assistant-trigger",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "AI Assistant",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1212,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0032",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#assistant-trigger",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "AI Assistant",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1212,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0033",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#assistant-trigger",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "AI Assistant",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1212,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0034",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#assistant-trigger",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "AI Assistant",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1212,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0035",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#radix-_r_36_",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Settings",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1252,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0036",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#radix-_r_36_",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Settings",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1252,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0037",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#radix-_r_36_",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Settings",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1252,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0038",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#radix-_r_36_",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Settings",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1252,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0039",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#radix-_r_36_",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Settings",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1252,
+          "y": 24
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0040",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".peer\\/menu-button",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Project Overview",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 24,
+          "y": 72
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0041",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".peer\\/menu-button",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Project Overview",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 24,
+          "y": 72
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0042",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".peer\\/menu-button",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Project Overview",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 24,
+          "y": 72
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0043",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".peer\\/menu-button",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Project Overview",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 24,
+          "y": 72
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0044",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".peer\\/menu-button",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "Project Overview",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 24,
+          "y": 72
+        },
+        "box": {
+          "w": 32,
+          "h": 32
+        }
+      }
+    },
+    {
+      "id": "P0045",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#radix-_r_3m_",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "",
+        "ariaLabel": "Sidebar control",
+        "centroid": {
+          "x": 24,
+          "y": 699
+        },
+        "box": {
+          "w": 28,
+          "h": 26
+        }
+      }
+    },
+    {
+      "id": "P0046",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#radix-_r_3m_",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "",
+        "ariaLabel": "Sidebar control",
+        "centroid": {
+          "x": 24,
+          "y": 699
+        },
+        "box": {
+          "w": 28,
+          "h": 26
+        }
+      }
+    },
+    {
+      "id": "P0047",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#radix-_r_3m_",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "",
+        "ariaLabel": "Sidebar control",
+        "centroid": {
+          "x": 24,
+          "y": 699
+        },
+        "box": {
+          "w": 28,
+          "h": 26
+        }
+      }
+    },
+    {
+      "id": "P0048",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#radix-_r_3m_",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "",
+        "ariaLabel": "Sidebar control",
+        "centroid": {
+          "x": 24,
+          "y": 699
+        },
+        "box": {
+          "w": 28,
+          "h": 26
+        }
+      }
+    },
+    {
+      "id": "P0049",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#radix-_r_3m_",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "",
+        "ariaLabel": "Sidebar control",
+        "centroid": {
+          "x": 24,
+          "y": 699
+        },
+        "box": {
+          "w": 28,
+          "h": 26
+        }
+      }
+    },
+    {
+      "id": "P0050",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#radix-_r_4k_",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Copy",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 284,
+          "y": 157
+        },
+        "box": {
+          "w": 73,
+          "h": 26
+        }
+      }
+    },
+    {
+      "id": "P0051",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#radix-_r_4k_",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Copy",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 284,
+          "y": 157
+        },
+        "box": {
+          "w": 73,
+          "h": 26
+        }
+      }
+    },
+    {
+      "id": "P0052",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#radix-_r_4k_",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Copy",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 284,
+          "y": 157
+        },
+        "box": {
+          "w": 73,
+          "h": 26
+        }
+      }
+    },
+    {
+      "id": "P0053",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#radix-_r_4k_",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Copy",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 284,
+          "y": 157
+        },
+        "box": {
+          "w": 73,
+          "h": 26
+        }
+      }
+    },
+    {
+      "id": "P0054",
+      "url": "http://localhost:54323",
+      "brittleSelector": "#radix-_r_4k_",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "button",
+        "role": null,
+        "text": "Copy",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 284,
+          "y": 157
+        },
+        "box": {
+          "w": 73,
+          "h": 26
+        }
+      }
+    },
+    {
+      "id": "P0055",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".absolute",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "span",
+        "role": null,
+        "text": "",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1139,
+          "y": 17
+        },
+        "box": {
+          "w": 6,
+          "h": 6
+        }
+      }
+    },
+    {
+      "id": "P0056",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".absolute",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "span",
+        "role": null,
+        "text": "",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1139,
+          "y": 17
+        },
+        "box": {
+          "w": 6,
+          "h": 6
+        }
+      }
+    },
+    {
+      "id": "P0057",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".absolute",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "span",
+        "role": null,
+        "text": "",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1139,
+          "y": 17
+        },
+        "box": {
+          "w": 6,
+          "h": 6
+        }
+      }
+    },
+    {
+      "id": "P0058",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".absolute",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "span",
+        "role": null,
+        "text": "",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1139,
+          "y": 17
+        },
+        "box": {
+          "w": 6,
+          "h": 6
+        }
+      }
+    },
+    {
+      "id": "P0059",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".absolute",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "span",
+        "role": null,
+        "text": "",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 1139,
+          "y": 17
+        },
+        "box": {
+          "w": 6,
+          "h": 6
+        }
+      }
+    },
+    {
+      "id": "P0060",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".justify-center",
+      "difficultyBand": 1,
+      "mutation": "rename-class",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 25,
+          "y": 24
+        },
+        "box": {
+          "w": 17,
+          "h": 18
+        }
+      }
+    },
+    {
+      "id": "P0061",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".justify-center",
+      "difficultyBand": 2,
+      "mutation": "rename-id-testid",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 25,
+          "y": 24
+        },
+        "box": {
+          "w": 17,
+          "h": 18
+        }
+      }
+    },
+    {
+      "id": "P0062",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".justify-center",
+      "difficultyBand": 3,
+      "mutation": "restructure-dom",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 25,
+          "y": 24
+        },
+        "box": {
+          "w": 17,
+          "h": 18
+        }
+      }
+    },
+    {
+      "id": "P0063",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".justify-center",
+      "difficultyBand": 4,
+      "mutation": "retext-sibling",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 25,
+          "y": 24
+        },
+        "box": {
+          "w": 17,
+          "h": 18
+        }
+      }
+    },
+    {
+      "id": "P0064",
+      "url": "http://localhost:54323",
+      "brittleSelector": ".justify-center",
+      "difficultyBand": 5,
+      "mutation": "attr-reorder-minify",
+      "groundTruth": {
+        "tag": "a",
+        "role": null,
+        "text": "",
+        "ariaLabel": null,
+        "centroid": {
+          "x": 25,
+          "y": 24
+        },
+        "box": {
+          "w": 17,
+          "h": 18
+        }
+      }
+    }
+  ]
+}

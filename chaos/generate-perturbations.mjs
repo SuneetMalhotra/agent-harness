@@ -61,24 +61,34 @@ async function describe(el) {
 async function main() {
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  await page.goto(URL, { waitUntil: 'networkidle' });
+  await page.goto(URL, { waitUntil: 'domcontentloaded' });
+  await page.waitForTimeout(Number(args.settle || 4000)); // let SPAs hydrate
 
   // Seed targets: interactive elements with currently-stable selectors.
   // Customize this list per target app (see chaos/README.md for suneetmalhotra.com / Supabase Studio sets).
   const seeds = await page.$$eval(
-    'a, button, input, [role="button"], [data-testid], [id]',
-    (nodes) =>
-      nodes
-        .filter((n) => n.offsetParent !== null) // visible
-        .slice(0, 60)
-        .map((n, i) => ({
-          idx: i,
-          brittleSelector:
-            (n.id && `#${n.id}`) ||
-            (n.getAttribute('data-testid') && `[data-testid="${n.getAttribute('data-testid')}"]`) ||
-            (n.className && typeof n.className === 'string' && `.${n.className.trim().split(/\s+/)[0]}`) ||
-            n.tagName.toLowerCase(),
-        }))
+    'a, button, input, [role="button"], [role="link"], [role="tab"], [role="menuitem"]',
+    (nodes) => {
+      const out = [];
+      const seen = new Set();
+      for (const n of nodes) {
+        if (n.offsetParent === null) continue;                      // visible only
+        if (n.querySelector('a,button,input,[role="button"]')) continue; // leaf-ish (not a container)
+        const r = n.getBoundingClientRect();
+        if (r.width === 0 || r.width > 400 || r.height > 120) continue;   // discrete control, not a region
+        const text = (n.innerText || n.value || n.getAttribute('aria-label') || '').trim();
+        if (text.length < 1 || text.length > 40) continue;          // short, distinctive label
+        const sel =
+          (n.id && `#${CSS.escape(n.id)}`) ||
+          (n.getAttribute('data-testid') && `[data-testid="${n.getAttribute('data-testid')}"]`) ||
+          (n.className && typeof n.className === 'string' && n.className.trim() && `.${CSS.escape(n.className.trim().split(/\s+/)[0])}`) ||
+          n.tagName.toLowerCase();
+        if (seen.has(sel)) continue; seen.add(sel);
+        out.push({ idx: out.length, brittleSelector: sel });
+        if (out.length >= 40) break;
+      }
+      return out;
+    }
   );
 
   const perturbations = [];

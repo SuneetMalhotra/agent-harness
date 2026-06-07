@@ -1,0 +1,299 @@
+{
+  "resolver": "brittle-only",
+  "source": "chaos/perturb-portfolio.json",
+  "scored": 35,
+  "accuracy": 0,
+  "successCount": 0,
+  "falseHealRate": 0.714,
+  "missRate": 0.286,
+  "meanTimeToHealMs": null,
+  "accuracyByBand": {
+    "1": "0 (0/7)",
+    "2": "0 (0/7)",
+    "3": "0 (0/7)",
+    "4": "0 (0/7)",
+    "5": "0 (0/7)"
+  },
+  "rows": [
+    {
+      "id": "P0000",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 14
+    },
+    {
+      "id": "P0001",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 11
+    },
+    {
+      "id": "P0002",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 10
+    },
+    {
+      "id": "P0003",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 9
+    },
+    {
+      "id": "P0004",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 9
+    },
+    {
+      "id": "P0005",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 10
+    },
+    {
+      "id": "P0006",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 10
+    },
+    {
+      "id": "P0007",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 10
+    },
+    {
+      "id": "P0008",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 10
+    },
+    {
+      "id": "P0009",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 9
+    },
+    {
+      "id": "P0010",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 53
+    },
+    {
+      "id": "P0011",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 12
+    },
+    {
+      "id": "P0012",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 10
+    },
+    {
+      "id": "P0013",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 9
+    },
+    {
+      "id": "P0014",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 9
+    },
+    {
+      "id": "P0015",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "miss",
+      "strategy": "brittle",
+      "ms": 8
+    },
+    {
+      "id": "P0016",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "miss",
+      "strategy": "brittle",
+      "ms": 7
+    },
+    {
+      "id": "P0017",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "miss",
+      "strategy": "brittle",
+      "ms": 7
+    },
+    {
+      "id": "P0018",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "miss",
+      "strategy": "brittle",
+      "ms": 8
+    },
+    {
+      "id": "P0019",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "miss",
+      "strategy": "brittle",
+      "ms": 9
+    },
+    {
+      "id": "P0020",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 10
+    },
+    {
+      "id": "P0021",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 9
+    },
+    {
+      "id": "P0022",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 11
+    },
+    {
+      "id": "P0023",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 9
+    },
+    {
+      "id": "P0024",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 9
+    },
+    {
+      "id": "P0025",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 11
+    },
+    {
+      "id": "P0026",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 10
+    },
+    {
+      "id": "P0027",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 9
+    },
+    {
+      "id": "P0028",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 10
+    },
+    {
+      "id": "P0029",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "brittle",
+      "ms": 9
+    },
+    {
+      "id": "P0030",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "miss",
+      "strategy": "brittle",
+      "ms": 8
+    },
+    {
+      "id": "P0031",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "miss",
+      "strategy": "brittle",
+      "ms": 9
+    },
+    {
+      "id": "P0032",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "miss",
+      "strategy": "brittle",
+      "ms": 9
+    },
+    {
+      "id": "P0033",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "miss",
+      "strategy": "brittle",
+      "ms": 7
+    },
+    {
+      "id": "P0034",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "miss",
+      "strategy": "brittle",
+      "ms": 8
+    }
+  ]
+}
