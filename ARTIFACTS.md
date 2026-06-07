@@ -4,10 +4,10 @@
 
 - **Manuscript:** "Cross-Layer Observability for LLM-Assisted Test Automation: A Reference Architecture with Web and Mobile Feasibility Studies"
 - **Target venue:** Journal of Systems and Software (Elsevier) — In Practice / Applied Research Report
-- **Final release tag:** `v1.3.1-jss-final`
-- **Full commit hash:** resolve with `git rev-parse v1.3.1-jss-final^{commit}`
+- **Final release tag:** `v1.3.2-jss-final`
+- **Full commit hash:** resolve with `git rev-parse v1.3.2-jss-final^{commit}`
 - **Node version:** v25.8.1 (package `engines.node`: `>=20.0.0`)
-- **Zenodo DOI:** to be minted from tag `v1.3.1-jss-final` (not yet assigned)
+- **Zenodo DOI:** 10.5281/zenodo.20576685 (concept DOI — resolves to the latest archived version)
 - **Reproduction command:** `npm run reproduce:paper`
 
 This document inventories every artifact the manuscript depends on.
