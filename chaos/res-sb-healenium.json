@@ -1,0 +1,657 @@
+{
+  "resolver": "healenium",
+  "source": "chaos/perturb-supabase.json",
+  "scored": 64,
+  "accuracy": 0.25,
+  "successCount": 16,
+  "falseHealRate": 0.594,
+  "missRate": 0.156,
+  "meanTimeToHealMs": 336,
+  "rows": [
+    {
+      "id": "P0000",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 73,
+      "target": "Connect",
+      "resolvedText": "Help"
+    },
+    {
+      "id": "P0001",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 93,
+      "target": "Connect",
+      "resolvedText": "Help"
+    },
+    {
+      "id": "P0002",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 79,
+      "target": "Connect",
+      "resolvedText": "Help"
+    },
+    {
+      "id": "P0003",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 70,
+      "target": "Connect",
+      "resolvedText": "Help"
+    },
+    {
+      "id": "P0004",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 71,
+      "target": "Connect",
+      "resolvedText": "Help"
+    },
+    {
+      "id": "P0005",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 127,
+      "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n\u2318K\nHelp\nAdvisor Center\nSQL Edit",
+      "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\nSearch...\nCtrl K\nHelp\nAdvisor Center\nSQL Editor\nAI Assistant\nSettings\nSupabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy\nGet connected\nFramework\nUse a client library\nDirect\nConnection string\nORM\nThird-party library\nMCP\nConnect your agent\nAPI Keys\nManage project keys\nAdvisor found 5 issues\nAsk Assistant\nSECURITY\nCRITICAL\nRLS Disabled in Public\nTable public.users is public, but RLS has not been enabled.\nSECURITY\nCRITICAL\nRLS Disabled in Public\nTable public.options_chain_snapshots is public, but RLS has not been enabled.\nRLS Disabled in Public\nTable is public, but RLS has not been enabled.\nView 1 more issue in Advisor"
+    },
+    {
+      "id": "P0006",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 107,
+      "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n\u2318K\nHelp\nAdvisor Center\nSQL Edit",
+      "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\nSearch...\nCtrl K\nHelp\nAdvisor Center\nSQL Editor\nAI Assistant\nSettings\nSupabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy\nGet connected\nFramework\nUse a client library\nDirect\nConnection string\nORM\nThird-party library\nMCP\nConnect your agent\nAPI Keys\nManage project keys\nAdvisor found 5 issues\nAsk Assistant\nSECURITY\nCRITICAL\nRLS Disabled in Public\nTable public.users is public, but RLS has not been enabled.\nSECURITY\nCRITICAL\nRLS Disabled in Public\nTable public.options_chain_snapshots is public, but RLS has not been enabled.\nRLS Disabled in Public\nTable is public, but RLS has not been enabled.\nView 1 more issue in Advisor"
+    },
+    {
+      "id": "P0007",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 140,
+      "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n\u2318K\nHelp\nAdvisor Center\nSQL Edit",
+      "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\nSearch...\nCtrl K\nHelp\nAdvisor Center\nSQL Editor\nAI Assistant\nSettings\nSupabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy\nGet connected\nFramework\nUse a client library\nDirect\nConnection string\nORM\nThird-party library\nMCP\nConnect your agent\nAPI Keys\nManage project keys\nAdvisor found 5 issues\nAsk Assistant\nSECURITY\nCRITICAL\nRLS Disabled in Public\nTable public.users is public, but RLS has not been enabled.\nSECURITY\nCRITICAL\nRLS Disabled in Public\nTable public.options_chain_snapshots is public, but RLS has not been enabled.\nRLS Disabled in Public\nTable is public, but RLS has not been enabled.\nView 1 more issue in Advisor"
+    },
+    {
+      "id": "P0008",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 107,
+      "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n\u2318K\nHelp\nAdvisor Center\nSQL Edit",
+      "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\nSearch...\nCtrl K\nHelp\nAdvisor Center\nSQL Editor\nAI Assistant\nSettings\nSupabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy\nGet connected\nFramework\nUse a client library\nDirect\nConnection string\nORM\nThird-party library\nMCP\nConnect your agent\nAPI Keys\nManage project keys\nAdvisor found 5 issues\nAsk Assistant\nSECURITY\nCRITICAL\nRLS Disabled in Public\nTable public.users is public, but RLS has not been enabled.\nSECURITY\nCRITICAL\nRLS Disabled in Public\nTable public.options_chain_snapshots is public, but RLS has not been enabled.\nRLS Disabled in Public\nTable is public, but RLS has not been enabled.\nView 1 more issue in Advisor"
+    },
+    {
+      "id": "P0009",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 105,
+      "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n\u2318K\nHelp\nAdvisor Center\nSQL Edit",
+      "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\nSearch...\nCtrl K\nHelp\nAdvisor Center\nSQL Editor\nAI Assistant\nSettings\nSupabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy\nGet connected\nFramework\nUse a client library\nDirect\nConnection string\nORM\nThird-party library\nMCP\nConnect your agent\nAPI Keys\nManage project keys\nAdvisor found 5 issues\nAsk Assistant\nSECURITY\nCRITICAL\nRLS Disabled in Public\nTable public.users is public, but RLS has not been enabled.\nSECURITY\nCRITICAL\nRLS Disabled in Public\nTable public.options_chain_snapshots is public, but RLS has not been enabled.\nRLS Disabled in Public\nTable is public, but RLS has not been enabled.\nView 1 more issue in Advisor"
+    },
+    {
+      "id": "P0010",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 68,
+      "target": "Search...\n\n\u2318K",
+      "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy"
+    },
+    {
+      "id": "P0011",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 67,
+      "target": "Search...\n\n\u2318K",
+      "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy"
+    },
+    {
+      "id": "P0012",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 67,
+      "target": "Search...\n\n\u2318K",
+      "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy"
+    },
+    {
+      "id": "P0013",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 69,
+      "target": "Search...\n\n\u2318K",
+      "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy"
+    },
+    {
+      "id": "P0014",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 69,
+      "target": "Search...\n\n\u2318K",
+      "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy"
+    },
+    {
+      "id": "P0015",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 829,
+      "target": "Help",
+      "resolvedText": "Help"
+    },
+    {
+      "id": "P0016",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 341,
+      "target": "Help",
+      "resolvedText": "Help"
+    },
+    {
+      "id": "P0017",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 333,
+      "target": "Help",
+      "resolvedText": "Help"
+    },
+    {
+      "id": "P0018",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 301,
+      "target": "Help",
+      "resolvedText": "Help"
+    },
+    {
+      "id": "P0019",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 311,
+      "target": "Help",
+      "resolvedText": "AI Assistant"
+    },
+    {
+      "id": "P0020",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 301,
+      "target": "Advisor Center",
+      "resolvedText": "Advisor Center"
+    },
+    {
+      "id": "P0021",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 301,
+      "target": "Advisor Center",
+      "resolvedText": "Advisor Center"
+    },
+    {
+      "id": "P0022",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 284,
+      "target": "Advisor Center",
+      "resolvedText": "Advisor Center"
+    },
+    {
+      "id": "P0023",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 272,
+      "target": "Advisor Center",
+      "resolvedText": "Advisor Center"
+    },
+    {
+      "id": "P0024",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 283,
+      "target": "Advisor Center",
+      "resolvedText": "AI Assistant"
+    },
+    {
+      "id": "P0025",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 335,
+      "target": "SQL Editor",
+      "resolvedText": "SQL Editor"
+    },
+    {
+      "id": "P0026",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 277,
+      "target": "SQL Editor",
+      "resolvedText": "SQL Editor"
+    },
+    {
+      "id": "P0027",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 301,
+      "target": "SQL Editor",
+      "resolvedText": "SQL Editor"
+    },
+    {
+      "id": "P0028",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 311,
+      "target": "SQL Editor",
+      "resolvedText": "SQL Editor"
+    },
+    {
+      "id": "P0029",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 300,
+      "target": "SQL Editor",
+      "resolvedText": "AI Assistant"
+    },
+    {
+      "id": "P0030",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 302,
+      "target": "AI Assistant",
+      "resolvedText": "AI Assistant"
+    },
+    {
+      "id": "P0031",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 299,
+      "target": "AI Assistant",
+      "resolvedText": "AI Assistant"
+    },
+    {
+      "id": "P0032",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 293,
+      "target": "AI Assistant",
+      "resolvedText": "AI Assistant"
+    },
+    {
+      "id": "P0033",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "healenium",
+      "ms": 292,
+      "target": "AI Assistant",
+      "resolvedText": "AI Assistant"
+    },
+    {
+      "id": "P0034",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 269,
+      "target": "AI Assistant",
+      "resolvedText": "Help"
+    },
+    {
+      "id": "P0035",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "miss",
+      "strategy": "healenium",
+      "ms": 27,
+      "target": "Settings",
+      "resolvedText": null
+    },
+    {
+      "id": "P0036",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "miss",
+      "strategy": "healenium",
+      "ms": 26,
+      "target": "Settings",
+      "resolvedText": null
+    },
+    {
+      "id": "P0037",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "miss",
+      "strategy": "healenium",
+      "ms": 32,
+      "target": "Settings",
+      "resolvedText": null
+    },
+    {
+      "id": "P0038",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "miss",
+      "strategy": "healenium",
+      "ms": 26,
+      "target": "Settings",
+      "resolvedText": null
+    },
+    {
+      "id": "P0039",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "miss",
+      "strategy": "healenium",
+      "ms": 27,
+      "target": "Settings",
+      "resolvedText": null
+    },
+    {
+      "id": "P0040",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 77,
+      "target": "Project Overview",
+      "resolvedText": ""
+    },
+    {
+      "id": "P0041",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 79,
+      "target": "Project Overview",
+      "resolvedText": ""
+    },
+    {
+      "id": "P0042",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 97,
+      "target": "Project Overview",
+      "resolvedText": ""
+    },
+    {
+      "id": "P0043",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 65,
+      "target": "Project Overview",
+      "resolvedText": ""
+    },
+    {
+      "id": "P0044",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 65,
+      "target": "Project Overview",
+      "resolvedText": ""
+    },
+    {
+      "id": "P0045",
+      "band": 1,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0046",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "miss",
+      "strategy": "healenium",
+      "ms": 23,
+      "target": "",
+      "resolvedText": null
+    },
+    {
+      "id": "P0047",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "miss",
+      "strategy": "healenium",
+      "ms": 26,
+      "target": "",
+      "resolvedText": null
+    },
+    {
+      "id": "P0048",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "miss",
+      "strategy": "healenium",
+      "ms": 29,
+      "target": "",
+      "resolvedText": null
+    },
+    {
+      "id": "P0049",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "miss",
+      "strategy": "healenium",
+      "ms": 68,
+      "target": "",
+      "resolvedText": null
+    },
+    {
+      "id": "P0050",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "miss",
+      "strategy": "healenium",
+      "ms": 29,
+      "target": "Copy",
+      "resolvedText": null
+    },
+    {
+      "id": "P0051",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 349,
+      "target": "Copy",
+      "resolvedText": "Settings"
+    },
+    {
+      "id": "P0052",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 312,
+      "target": "Copy",
+      "resolvedText": "Settings"
+    },
+    {
+      "id": "P0053",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 318,
+      "target": "Copy",
+      "resolvedText": "Settings"
+    },
+    {
+      "id": "P0054",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 307,
+      "target": "Copy",
+      "resolvedText": "Settings"
+    },
+    {
+      "id": "P0055",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 65,
+      "target": "",
+      "resolvedText": ""
+    },
+    {
+      "id": "P0056",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 66,
+      "target": "",
+      "resolvedText": ""
+    },
+    {
+      "id": "P0057",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 82,
+      "target": "",
+      "resolvedText": ""
+    },
+    {
+      "id": "P0058",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 77,
+      "target": "",
+      "resolvedText": ""
+    },
+    {
+      "id": "P0059",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 66,
+      "target": "",
+      "resolvedText": ""
+    },
+    {
+      "id": "P0060",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 60,
+      "target": "",
+      "resolvedText": "Connect"
+    },
+    {
+      "id": "P0061",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 60,
+      "target": "",
+      "resolvedText": "Connect"
+    },
+    {
+      "id": "P0062",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 62,
+      "target": "",
+      "resolvedText": "Connect"
+    },
+    {
+      "id": "P0063",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 65,
+      "target": "",
+      "resolvedText": "Connect"
+    },
+    {
+      "id": "P0064",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "healenium",
+      "ms": 68,
+      "target": "",
+      "resolvedText": "Connect"
+    }
+  ]
+}
