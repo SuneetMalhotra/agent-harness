@@ -1,0 +1,13 @@
+case_id,group,rater,seconds_to_root_cause,diagnosis,correct(y/n)
+P0000,A,,,,
+P0000,B,,,,
+P0001,A,,,,
+P0001,B,,,,
+P0002,A,,,,
+P0002,B,,,,
+P0003,A,,,,
+P0003,B,,,,
+P0004,A,,,,
+P0004,B,,,,
+P0012,A,,,,
+P0012,B,,,,

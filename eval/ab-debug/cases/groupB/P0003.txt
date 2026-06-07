@@ -1,0 +1,11 @@
+observability.query({ testCase: "P0003", kind: "healing" })
+─ executing.healing  TC=P0003  tier=tier1
+   intent:           { role: null, text: "Connect" }
+   originalSelector: ".relative"      status: BROKEN (DOM mutated: retext-sibling)
+   cascade:          cache(miss) -> dom-healer(text-role)
+   resolvedElement:  { text: "Connect" }
+   groundTruthMatch: FALSE
+   verdict:          FALSE-HEAL — resolver returned a different element than intended
+                     (wanted "Connect", got "Connect").
+─ assertion.visual  TC=P0003   (cross-checks the resolved element against intent)
+   note:             surfaced to the QA-agent digest + the PR-reviewer gate.
