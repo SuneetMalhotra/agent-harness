@@ -2,9 +2,9 @@
 
 Reference implementation for the **Agent Harness** coupling pattern.
 
-Companion code for the IEEE Software Feature article:
+Companion code for a *Journal of Systems and Software* (JSS) submission:
 
-> Malhotra, S. "An Agent Harness for Mobile Test Automation: Coupling an Agent-Authored Framework, a Multi-Agent SDLC Pipeline, and a Three-Tier Execution Plane." *IEEE Software*, 2026 (under review). Preprint: arXiv:2606.NNNNN.
+> Malhotra, S. "Cross-Layer Observability for LLM-Assisted Test Automation: A Reference Architecture with Web and Mobile Feasibility Studies." Submitted to the *Journal of Systems and Software* (Elsevier), 2026.
 
 ---
 
@@ -81,7 +81,7 @@ OLLAMA_HOST=http://remote-gpu:11434 OLLAMA_MODEL=llama3.1:70b \
   npx tsx harness.ts --provider ollama
 ```
 
-The §6 architecture-validation walkthrough was produced against the stub provider; live runs (Anthropic, OpenAI, Gemini, or Ollama) exercise the full pipeline against real models for cross-model and cross-backend comparison (deferred to the §7.2 live-hardware multi-application study).
+The §6.1 architecture-validation walkthrough was produced against the stub provider; live runs (Anthropic, OpenAI, Gemini, or Ollama) exercise the full pipeline against real models for cross-model and cross-backend comparison (deferred to the §7.2 live-hardware multi-application study).
 
 Results are written to `results.json` at the end of every harness run.
 
@@ -89,13 +89,13 @@ Results are written to `results.json` at the end of every harness run.
 
 ## Mobile feasibility study
 
-A small public mobile feasibility study (`mobile/`) exercises the same observability substrate against a public Android reference application — the [Sauce Labs My Demo App](https://github.com/saucelabs/sample-app-mobile) (MIT-licensed). The study demonstrates that the substrate, event schema, and tier-routing model that §6 reports on the web modality also work on the mobile modality. **It is not a production-scale mobile evaluation** and does not claim production-scale mobile generality.
+A small public mobile feasibility study (`mobile/`) exercises the same observability substrate against a public Android reference application — the [Sauce Labs My Demo App](https://github.com/saucelabs/sample-app-mobile) (MIT-licensed). The study demonstrates that the substrate, event schema, and tier-routing model that §6.1 reports on the web modality also work on the mobile modality. **It is not a production-scale mobile evaluation** and does not claim production-scale mobile generality.
 
 The mobile feasibility study reports:
 - 13 mobile test cases against a public Android reference app
 - One `HealingEvent` emitted per test case onto the shared substrate
 - 12 of 13 cases resolved; 1 unrecovered failure reported (not swallowed)
-- Same schema reused across web (§6) and mobile (§6.x); zero schema drift
+- Same schema reused across web (§6.1) and mobile (§6.2); zero schema drift
 - Hardware-in-the-loop **NOT evaluated** — an architectural extension only
 
 ### Deterministic replay command (no Appium, no emulator required)
@@ -105,7 +105,7 @@ npm run example:mobile          # writes results-mobile.json
 npm run test:mobile             # validates schema + counts; exits 0 on pass
 ```
 
-The replay completes in <5 seconds, requires no Android toolchain, no LLM API key, and is byte-stable across runs. The resulting `results-mobile.json` is the source of the §6.x mobile feasibility numbers in the manuscript.
+The replay completes in <5 seconds, requires no Android toolchain, no LLM API key, and is byte-stable across runs. The resulting `results-mobile.json` is the source of the §6.2 mobile feasibility numbers in the manuscript.
 
 ### Optional live-Appium mode
 
@@ -123,7 +123,7 @@ npm run reproduce:paper         # web example + mobile example + schema tests
 - ✅ Deterministic **dispatch and event capture** on a public mobile target
 - ✅ The cascade **reports** unrecovered failures rather than swallowing them
 - ❌ NOT a production-scale mobile testing accuracy claim
-- ❌ NOT an LLM-as-judge κ measurement on mobile (web-only at the §6 scale)
+- ❌ NOT an LLM-as-judge κ measurement on mobile (web-only at the §6.1 scale)
 - ❌ NOT a hardware-in-the-loop evaluation (architectural extension only)
 
 ---
@@ -175,15 +175,14 @@ The harness is deterministic at temperature 0, but model output is not byte-stab
 ## Citing this work
 
 ```bibtex
-@article{Malhotra2026AgentHarness,
+@article{Malhotra2026CrossLayerObservability,
   author  = {Malhotra, Suneet},
-  title   = {An Agent Harness for Mobile Test Automation: Coupling an
-             Agent-Authored Framework, a Multi-Agent SDLC Pipeline,
-             and a Three-Tier Execution Plane},
-  journal = {IEEE Software},
+  title   = {Cross-Layer Observability for {LLM}-Assisted Test Automation:
+             A Reference Architecture with Web and Mobile Feasibility Studies},
+  journal = {Journal of Systems and Software (submitted)},
   year    = {2026},
-  note    = {Under review. Preprint on arXiv:2606.NNNNN. Companion code:
-             https://github.com/SuneetMalhotra/agent-harness}
+  note    = {Companion code: https://github.com/SuneetMalhotra/agent-harness
+             (release tag v1.3.1-jss-final)}
 }
 ```
 
@@ -191,7 +190,7 @@ The harness is deterministic at temperature 0, but model output is not byte-stab
 
 ## Disclosure
 
-The author is Senior Manager, Test Engineering at Motorola Solutions. This work, the article, and this repository reflect the author's independent professional thinking and do not describe any specific employer's systems, products, code, or data. All examples are illustrative and constructed from public sources (a React Native TodoMVC-style demo design encoded in `harness.ts`).
+The author is Senior Manager, Test Engineering at Motorola Solutions. This work, the article, and this repository reflect the author's independent professional thinking and do not describe any specific employer's systems, products, code, data, screenshots, or operational metrics. All examples are illustrative and constructed from public sources (a React Native TodoMVC-style demo design encoded in `harness.ts`).
 
 ## License
 

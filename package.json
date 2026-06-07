@@ -1,7 +1,7 @@
 {
   "name": "agent-harness",
   "version": "1.0.0",
-  "description": "Reference implementation for the Agent Harness coupling pattern (Malhotra, 2026). Companion code to the IEEE Software Feature article.",
+  "description": "Reference implementation for the Agent Harness / cross-layer observability pattern for LLM-assisted test automation.",
   "license": "MIT",
   "author": "Suneet Malhotra",
   "repository": {
