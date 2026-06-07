@@ -182,7 +182,7 @@ The harness is deterministic at temperature 0, but model output is not byte-stab
   journal = {Journal of Systems and Software (submitted)},
   year    = {2026},
   note    = {Companion code: https://github.com/SuneetMalhotra/agent-harness
-             (release tag v1.3.1-jss-final)}
+             (release tag v1.3.2-jss-final)}
 }
 ```
 
