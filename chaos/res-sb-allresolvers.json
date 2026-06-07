@@ -1,0 +1,2011 @@
+{
+  "byResolver": {
+    "brittle-only": {
+      "resolver": "brittle-only",
+      "source": "chaos/perturb-supabase.json",
+      "scored": 65,
+      "accuracy": 0.077,
+      "successCount": 5,
+      "falseHealRate": 0.385,
+      "missRate": 0.538,
+      "meanTimeToHealMs": 17,
+      "accuracyByBand": {
+        "1": "0.077 (1/13)",
+        "2": "0.077 (1/13)",
+        "3": "0.077 (1/13)",
+        "4": "0.077 (1/13)",
+        "5": "0.077 (1/13)"
+      },
+      "rows": [
+        {
+          "id": "P0000",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 15,
+          "target": "Connect",
+          "resolvedText": "Help"
+        },
+        {
+          "id": "P0001",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 15,
+          "target": "Connect",
+          "resolvedText": "Help"
+        },
+        {
+          "id": "P0002",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 15,
+          "target": "Connect",
+          "resolvedText": "Help"
+        },
+        {
+          "id": "P0003",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 11,
+          "target": "Connect",
+          "resolvedText": "Help"
+        },
+        {
+          "id": "P0004",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 16,
+          "target": "Connect",
+          "resolvedText": "Help"
+        },
+        {
+          "id": "P0005",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "success",
+          "strategy": "brittle",
+          "ms": 17,
+          "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit"
+        },
+        {
+          "id": "P0006",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "success",
+          "strategy": "brittle",
+          "ms": 14,
+          "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit"
+        },
+        {
+          "id": "P0007",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "success",
+          "strategy": "brittle",
+          "ms": 14,
+          "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit"
+        },
+        {
+          "id": "P0008",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "brittle",
+          "ms": 18,
+          "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit"
+        },
+        {
+          "id": "P0009",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "brittle",
+          "ms": 20,
+          "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit"
+        },
+        {
+          "id": "P0010",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 12,
+          "target": "Search...\n\n⌘K",
+          "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy"
+        },
+        {
+          "id": "P0011",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 15,
+          "target": "Search...\n\n⌘K",
+          "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy"
+        },
+        {
+          "id": "P0012",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 11,
+          "target": "Search...\n\n⌘K",
+          "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy"
+        },
+        {
+          "id": "P0013",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 17,
+          "target": "Search...\n\n⌘K",
+          "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy"
+        },
+        {
+          "id": "P0014",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 18,
+          "target": "Search...\n\n⌘K",
+          "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy"
+        },
+        {
+          "id": "P0015",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 16,
+          "target": "Help",
+          "resolvedText": null
+        },
+        {
+          "id": "P0016",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 12,
+          "target": "Help",
+          "resolvedText": null
+        },
+        {
+          "id": "P0017",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 12,
+          "target": "Help",
+          "resolvedText": null
+        },
+        {
+          "id": "P0018",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 13,
+          "target": "Help",
+          "resolvedText": null
+        },
+        {
+          "id": "P0019",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 11,
+          "target": "Help",
+          "resolvedText": null
+        },
+        {
+          "id": "P0020",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 9,
+          "target": "Advisor Center",
+          "resolvedText": null
+        },
+        {
+          "id": "P0021",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 10,
+          "target": "Advisor Center",
+          "resolvedText": null
+        },
+        {
+          "id": "P0022",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 9,
+          "target": "Advisor Center",
+          "resolvedText": null
+        },
+        {
+          "id": "P0023",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 12,
+          "target": "Advisor Center",
+          "resolvedText": null
+        },
+        {
+          "id": "P0024",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 17,
+          "target": "Advisor Center",
+          "resolvedText": null
+        },
+        {
+          "id": "P0025",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 14,
+          "target": "SQL Editor",
+          "resolvedText": null
+        },
+        {
+          "id": "P0026",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 17,
+          "target": "SQL Editor",
+          "resolvedText": null
+        },
+        {
+          "id": "P0027",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 15,
+          "target": "SQL Editor",
+          "resolvedText": null
+        },
+        {
+          "id": "P0028",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 16,
+          "target": "SQL Editor",
+          "resolvedText": null
+        },
+        {
+          "id": "P0029",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 16,
+          "target": "SQL Editor",
+          "resolvedText": null
+        },
+        {
+          "id": "P0030",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 16,
+          "target": "AI Assistant",
+          "resolvedText": null
+        },
+        {
+          "id": "P0031",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 16,
+          "target": "AI Assistant",
+          "resolvedText": null
+        },
+        {
+          "id": "P0032",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 17,
+          "target": "AI Assistant",
+          "resolvedText": null
+        },
+        {
+          "id": "P0033",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 17,
+          "target": "AI Assistant",
+          "resolvedText": null
+        },
+        {
+          "id": "P0034",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 16,
+          "target": "AI Assistant",
+          "resolvedText": null
+        },
+        {
+          "id": "P0035",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 12,
+          "target": "Settings",
+          "resolvedText": null
+        },
+        {
+          "id": "P0036",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 17,
+          "target": "Settings",
+          "resolvedText": null
+        },
+        {
+          "id": "P0037",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 16,
+          "target": "Settings",
+          "resolvedText": null
+        },
+        {
+          "id": "P0038",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 17,
+          "target": "Settings",
+          "resolvedText": null
+        },
+        {
+          "id": "P0039",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 17,
+          "target": "Settings",
+          "resolvedText": null
+        },
+        {
+          "id": "P0040",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 18,
+          "target": "Project Overview",
+          "resolvedText": "Table Editor"
+        },
+        {
+          "id": "P0041",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 19,
+          "target": "Project Overview",
+          "resolvedText": "Table Editor"
+        },
+        {
+          "id": "P0042",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 20,
+          "target": "Project Overview",
+          "resolvedText": "Table Editor"
+        },
+        {
+          "id": "P0043",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 18,
+          "target": "Project Overview",
+          "resolvedText": "Table Editor"
+        },
+        {
+          "id": "P0044",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 19,
+          "target": "Project Overview",
+          "resolvedText": "Table Editor"
+        },
+        {
+          "id": "P0045",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 18,
+          "target": "",
+          "resolvedText": null
+        },
+        {
+          "id": "P0046",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 16,
+          "target": "",
+          "resolvedText": null
+        },
+        {
+          "id": "P0047",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 17,
+          "target": "",
+          "resolvedText": null
+        },
+        {
+          "id": "P0048",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 15,
+          "target": "",
+          "resolvedText": null
+        },
+        {
+          "id": "P0049",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 17,
+          "target": "",
+          "resolvedText": null
+        },
+        {
+          "id": "P0050",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 16,
+          "target": "Copy",
+          "resolvedText": null
+        },
+        {
+          "id": "P0051",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 17,
+          "target": "Copy",
+          "resolvedText": null
+        },
+        {
+          "id": "P0052",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 17,
+          "target": "Copy",
+          "resolvedText": null
+        },
+        {
+          "id": "P0053",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 16,
+          "target": "Copy",
+          "resolvedText": null
+        },
+        {
+          "id": "P0054",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "miss",
+          "strategy": "brittle",
+          "ms": 16,
+          "target": "Copy",
+          "resolvedText": null
+        },
+        {
+          "id": "P0055",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 18,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0056",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 19,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0057",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 19,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0058",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 19,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0059",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 19,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0060",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 20,
+          "target": "",
+          "resolvedText": "Connect"
+        },
+        {
+          "id": "P0061",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 18,
+          "target": "",
+          "resolvedText": "Connect"
+        },
+        {
+          "id": "P0062",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 19,
+          "target": "",
+          "resolvedText": "Connect"
+        },
+        {
+          "id": "P0063",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 16,
+          "target": "",
+          "resolvedText": "Connect"
+        },
+        {
+          "id": "P0064",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "false-heal",
+          "strategy": "brittle",
+          "ms": 19,
+          "target": "",
+          "resolvedText": "Connect"
+        }
+      ]
+    },
+    "text-role": {
+      "resolver": "text-role",
+      "source": "chaos/perturb-supabase.json",
+      "scored": 65,
+      "accuracy": 0.385,
+      "successCount": 25,
+      "falseHealRate": 0.538,
+      "missRate": 0.077,
+      "meanTimeToHealMs": 2,
+      "accuracyByBand": {
+        "1": "0.462 (6/13)",
+        "2": "0.462 (6/13)",
+        "3": "0 (0/13)",
+        "4": "0.538 (7/13)",
+        "5": "0.462 (6/13)"
+      },
+      "rows": [
+        {
+          "id": "P0000",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Connect",
+          "resolvedText": "Connect"
+        },
+        {
+          "id": "P0001",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Connect",
+          "resolvedText": "Connect"
+        },
+        {
+          "id": "P0002",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Connect",
+          "resolvedText": "Connect"
+        },
+        {
+          "id": "P0003",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "Connect",
+          "resolvedText": "Connect"
+        },
+        {
+          "id": "P0004",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Connect",
+          "resolvedText": "Connect"
+        },
+        {
+          "id": "P0005",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "miss",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "resolvedText": null
+        },
+        {
+          "id": "P0006",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "miss",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "resolvedText": null
+        },
+        {
+          "id": "P0007",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "miss",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "resolvedText": null
+        },
+        {
+          "id": "P0008",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "miss",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "resolvedText": null
+        },
+        {
+          "id": "P0009",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "miss",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "resolvedText": null
+        },
+        {
+          "id": "P0010",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 0,
+          "target": "Search...\n\n⌘K",
+          "resolvedText": "Search...\n\n⌘K"
+        },
+        {
+          "id": "P0011",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Search...\n\n⌘K",
+          "resolvedText": "Search...\n\n⌘K"
+        },
+        {
+          "id": "P0012",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Search...\n\n⌘K",
+          "resolvedText": "Search...\n\n⌘K"
+        },
+        {
+          "id": "P0013",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Search...\n\n⌘K",
+          "resolvedText": "Search...\n\n⌘K"
+        },
+        {
+          "id": "P0014",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Search...\n\n⌘K",
+          "resolvedText": "Search...\n\n⌘K"
+        },
+        {
+          "id": "P0015",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "Help",
+          "resolvedText": "Help"
+        },
+        {
+          "id": "P0016",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "Help",
+          "resolvedText": "Help"
+        },
+        {
+          "id": "P0017",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "Help",
+          "resolvedText": "Help"
+        },
+        {
+          "id": "P0018",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "Help",
+          "resolvedText": "Help"
+        },
+        {
+          "id": "P0019",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "Help",
+          "resolvedText": "Help"
+        },
+        {
+          "id": "P0020",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "Advisor Center",
+          "resolvedText": "Advisor Center"
+        },
+        {
+          "id": "P0021",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Advisor Center",
+          "resolvedText": "Advisor Center"
+        },
+        {
+          "id": "P0022",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "Advisor Center",
+          "resolvedText": "Advisor Center"
+        },
+        {
+          "id": "P0023",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "Advisor Center",
+          "resolvedText": "Advisor Center"
+        },
+        {
+          "id": "P0024",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "Advisor Center",
+          "resolvedText": "Advisor Center"
+        },
+        {
+          "id": "P0025",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "SQL Editor",
+          "resolvedText": "SQL Editor"
+        },
+        {
+          "id": "P0026",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "SQL Editor",
+          "resolvedText": "SQL Editor"
+        },
+        {
+          "id": "P0027",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "SQL Editor",
+          "resolvedText": "SQL Editor"
+        },
+        {
+          "id": "P0028",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "SQL Editor",
+          "resolvedText": "SQL Editor"
+        },
+        {
+          "id": "P0029",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "SQL Editor",
+          "resolvedText": "SQL Editor"
+        },
+        {
+          "id": "P0030",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "AI Assistant",
+          "resolvedText": "AI Assistant"
+        },
+        {
+          "id": "P0031",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "AI Assistant",
+          "resolvedText": "AI Assistant"
+        },
+        {
+          "id": "P0032",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "AI Assistant",
+          "resolvedText": "AI Assistant"
+        },
+        {
+          "id": "P0033",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "AI Assistant",
+          "resolvedText": "AI Assistant"
+        },
+        {
+          "id": "P0034",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "AI Assistant",
+          "resolvedText": "AI Assistant"
+        },
+        {
+          "id": "P0035",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Settings",
+          "resolvedText": "Settings"
+        },
+        {
+          "id": "P0036",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "Settings",
+          "resolvedText": "Settings"
+        },
+        {
+          "id": "P0037",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "Settings",
+          "resolvedText": "Settings"
+        },
+        {
+          "id": "P0038",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "Settings",
+          "resolvedText": "Settings"
+        },
+        {
+          "id": "P0039",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "Settings",
+          "resolvedText": "Settings"
+        },
+        {
+          "id": "P0040",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Project Overview",
+          "resolvedText": "Project Overview"
+        },
+        {
+          "id": "P0041",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Project Overview",
+          "resolvedText": "Project Overview"
+        },
+        {
+          "id": "P0042",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Project Overview",
+          "resolvedText": "Project Overview"
+        },
+        {
+          "id": "P0043",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Project Overview",
+          "resolvedText": "Project Overview"
+        },
+        {
+          "id": "P0044",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "Project Overview",
+          "resolvedText": "Project Overview"
+        },
+        {
+          "id": "P0045",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0046",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0047",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0048",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0049",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0050",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "Copy",
+          "resolvedText": "Copy"
+        },
+        {
+          "id": "P0051",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "Copy",
+          "resolvedText": "Copy"
+        },
+        {
+          "id": "P0052",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "Copy",
+          "resolvedText": "Copy"
+        },
+        {
+          "id": "P0053",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "Copy",
+          "resolvedText": "Copy"
+        },
+        {
+          "id": "P0054",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "text-role",
+          "ms": 3,
+          "target": "Copy",
+          "resolvedText": "Copy"
+        },
+        {
+          "id": "P0055",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0056",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0057",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0058",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0059",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0060",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0061",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 2,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0062",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0063",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0064",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "false-heal",
+          "strategy": "text-role",
+          "ms": 1,
+          "target": "",
+          "resolvedText": ""
+        }
+      ]
+    },
+    "cascade": {
+      "resolver": "cascade",
+      "source": "chaos/perturb-supabase.json",
+      "scored": 65,
+      "accuracy": 0.631,
+      "successCount": 41,
+      "falseHealRate": 0.231,
+      "missRate": 0.138,
+      "meanTimeToHealMs": 5466,
+      "accuracyByBand": {
+        "1": "0.615 (8/13)",
+        "2": "0.615 (8/13)",
+        "3": "0.615 (8/13)",
+        "4": "0.615 (8/13)",
+        "5": "0.692 (9/13)"
+      },
+      "rows": [
+        {
+          "id": "P0000",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5953,
+          "target": "Connect",
+          "resolvedText": "Connect"
+        },
+        {
+          "id": "P0001",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 9191,
+          "target": "Connect",
+          "resolvedText": "Connect"
+        },
+        {
+          "id": "P0002",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5560,
+          "target": "Connect",
+          "resolvedText": "Connect"
+        },
+        {
+          "id": "P0003",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5972,
+          "target": "Connect",
+          "resolvedText": "Connect"
+        },
+        {
+          "id": "P0004",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 4841,
+          "target": "Connect",
+          "resolvedText": "Connect"
+        },
+        {
+          "id": "P0005",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 5504,
+          "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0006",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 5186,
+          "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "resolvedText": "LATEST"
+        },
+        {
+          "id": "P0007",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 4986,
+          "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "resolvedText": "Advisor Center"
+        },
+        {
+          "id": "P0008",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 10760,
+          "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0009",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 10603,
+          "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0010",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 4569,
+          "target": "Search...\n\n⌘K",
+          "resolvedText": "Search...\n\n⌘K"
+        },
+        {
+          "id": "P0011",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 4661,
+          "target": "Search...\n\n⌘K",
+          "resolvedText": "Search...\n\n⌘K"
+        },
+        {
+          "id": "P0012",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 4585,
+          "target": "Search...\n\n⌘K",
+          "resolvedText": "Search...\n\n⌘K"
+        },
+        {
+          "id": "P0013",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5364,
+          "target": "Search...\n\n⌘K",
+          "resolvedText": "Search...\n\n⌘K"
+        },
+        {
+          "id": "P0014",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5043,
+          "target": "Search...\n\n⌘K",
+          "resolvedText": "Search...\n\n⌘K"
+        },
+        {
+          "id": "P0015",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5453,
+          "target": "Help",
+          "resolvedText": "Help"
+        },
+        {
+          "id": "P0016",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5045,
+          "target": "Help",
+          "resolvedText": "Help"
+        },
+        {
+          "id": "P0017",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 4732,
+          "target": "Help",
+          "resolvedText": "Help"
+        },
+        {
+          "id": "P0018",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 4503,
+          "target": "Help",
+          "resolvedText": "Help"
+        },
+        {
+          "id": "P0019",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5542,
+          "target": "Help",
+          "resolvedText": "Help"
+        },
+        {
+          "id": "P0020",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 4822,
+          "target": "Advisor Center",
+          "resolvedText": "Advisor Center"
+        },
+        {
+          "id": "P0021",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5763,
+          "target": "Advisor Center",
+          "resolvedText": "Advisor Center"
+        },
+        {
+          "id": "P0022",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 7422,
+          "target": "Advisor Center",
+          "resolvedText": "Advisor Center"
+        },
+        {
+          "id": "P0023",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 4789,
+          "target": "Advisor Center",
+          "resolvedText": "Advisor Center"
+        },
+        {
+          "id": "P0024",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5417,
+          "target": "Advisor Center",
+          "resolvedText": "Advisor Center"
+        },
+        {
+          "id": "P0025",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 9860,
+          "target": "SQL Editor",
+          "resolvedText": "SQL Editor"
+        },
+        {
+          "id": "P0026",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 6112,
+          "target": "SQL Editor",
+          "resolvedText": "SQL Editor"
+        },
+        {
+          "id": "P0027",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 10016,
+          "target": "SQL Editor",
+          "resolvedText": "SQL Editor"
+        },
+        {
+          "id": "P0028",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 10129,
+          "target": "SQL Editor",
+          "resolvedText": "SQL Editor"
+        },
+        {
+          "id": "P0029",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5525,
+          "target": "SQL Editor",
+          "resolvedText": "SQL Editor"
+        },
+        {
+          "id": "P0030",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5699,
+          "target": "AI Assistant",
+          "resolvedText": "AI Assistant"
+        },
+        {
+          "id": "P0031",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 4988,
+          "target": "AI Assistant",
+          "resolvedText": "AI Assistant"
+        },
+        {
+          "id": "P0032",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5821,
+          "target": "AI Assistant",
+          "resolvedText": "AI Assistant"
+        },
+        {
+          "id": "P0033",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5097,
+          "target": "AI Assistant",
+          "resolvedText": "AI Assistant"
+        },
+        {
+          "id": "P0034",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 4715,
+          "target": "AI Assistant",
+          "resolvedText": "AI Assistant"
+        },
+        {
+          "id": "P0035",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 6522,
+          "target": "Settings",
+          "resolvedText": "Settings"
+        },
+        {
+          "id": "P0036",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 4856,
+          "target": "Settings",
+          "resolvedText": "Settings"
+        },
+        {
+          "id": "P0037",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 4946,
+          "target": "Settings",
+          "resolvedText": "Settings"
+        },
+        {
+          "id": "P0038",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 4718,
+          "target": "Settings",
+          "resolvedText": "Settings"
+        },
+        {
+          "id": "P0039",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 6144,
+          "target": "Settings",
+          "resolvedText": "Settings"
+        },
+        {
+          "id": "P0040",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5568,
+          "target": "Project Overview",
+          "resolvedText": "Project Overview"
+        },
+        {
+          "id": "P0041",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5998,
+          "target": "Project Overview",
+          "resolvedText": "Project Overview"
+        },
+        {
+          "id": "P0042",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5313,
+          "target": "Project Overview",
+          "resolvedText": "Project Overview"
+        },
+        {
+          "id": "P0043",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5586,
+          "target": "Project Overview",
+          "resolvedText": "Project Overview"
+        },
+        {
+          "id": "P0044",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5062,
+          "target": "Project Overview",
+          "resolvedText": "Project Overview"
+        },
+        {
+          "id": "P0045",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 5378,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0046",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 4908,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0047",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 4813,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0048",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 5245,
+          "target": "",
+          "resolvedText": ""
+        },
+        {
+          "id": "P0049",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "miss",
+          "strategy": "dom-healer-none",
+          "ms": 15102,
+          "target": "",
+          "resolvedText": null
+        },
+        {
+          "id": "P0050",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 4987,
+          "target": "Copy",
+          "resolvedText": "Copy"
+        },
+        {
+          "id": "P0051",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5657,
+          "target": "Copy",
+          "resolvedText": "Copy"
+        },
+        {
+          "id": "P0052",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 7632,
+          "target": "Copy",
+          "resolvedText": "Copy"
+        },
+        {
+          "id": "P0053",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 4977,
+          "target": "Copy",
+          "resolvedText": "Copy"
+        },
+        {
+          "id": "P0054",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "success",
+          "strategy": "dom-healer",
+          "ms": 5050,
+          "target": "Copy",
+          "resolvedText": "Copy"
+        },
+        {
+          "id": "P0055",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "miss",
+          "strategy": "dom-healer-none",
+          "ms": 11101,
+          "target": "",
+          "resolvedText": null
+        },
+        {
+          "id": "P0056",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 6874,
+          "target": "",
+          "resolvedText": "Connect"
+        },
+        {
+          "id": "P0057",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "miss",
+          "strategy": "dom-healer-none",
+          "ms": 11790,
+          "target": "",
+          "resolvedText": null
+        },
+        {
+          "id": "P0058",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "miss",
+          "strategy": "dom-healer-none",
+          "ms": 9610,
+          "target": "",
+          "resolvedText": null
+        },
+        {
+          "id": "P0059",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "miss",
+          "strategy": "dom-healer-none",
+          "ms": 9787,
+          "target": "",
+          "resolvedText": null
+        },
+        {
+          "id": "P0060",
+          "band": 1,
+          "mutation": "rename-class",
+          "outcome": "miss",
+          "strategy": "dom-healer-none",
+          "ms": 11775,
+          "target": "",
+          "resolvedText": null
+        },
+        {
+          "id": "P0061",
+          "band": 2,
+          "mutation": "rename-id-testid",
+          "outcome": "miss",
+          "strategy": "dom-healer-none",
+          "ms": 10113,
+          "target": "",
+          "resolvedText": null
+        },
+        {
+          "id": "P0062",
+          "band": 3,
+          "mutation": "restructure-dom",
+          "outcome": "miss",
+          "strategy": "dom-healer-none",
+          "ms": 13449,
+          "target": "",
+          "resolvedText": null
+        },
+        {
+          "id": "P0063",
+          "band": 4,
+          "mutation": "retext-sibling",
+          "outcome": "miss",
+          "strategy": "dom-healer-none",
+          "ms": 10019,
+          "target": "",
+          "resolvedText": null
+        },
+        {
+          "id": "P0064",
+          "band": 5,
+          "mutation": "attr-reorder-minify",
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 4946,
+          "target": "",
+          "resolvedText": "Connect"
+        }
+      ]
+    }
+  }
+}
