@@ -3,7 +3,7 @@
 ## Submission
 
 - **Manuscript:** "Cross-Layer Observability for LLM-Assisted Test Automation: A Reference Architecture with Web and Mobile Feasibility Studies"
-- **Target venue:** Journal of Systems and Software (Elsevier) — In Practice / Applied Research Report
+- **Target venue:** Journal of Systems and Software (Elsevier), In Practice / Applied Research Report track
 - **Final release tag:** `v1.3.3-jss-final`
 - **Full commit hash:** resolve with `git rev-parse v1.3.3-jss-final^{commit}`
 - **Node version:** v25.8.1 (package `engines.node`: `>=20.0.0`)
@@ -42,7 +42,7 @@ npm run harness:stub        # full §6.1 stub-provider run; writes results.json
 npm run harness:anthropic   # live Claude Sonnet 4.6 run (requires Claude OAuth)
 ```
 
-## Mobile feasibility study (§6.2 — new)
+## Mobile feasibility study (§6.2)
 
 | Artifact | Path | What it backs |
 |---|---|---|
@@ -85,9 +85,9 @@ npm run test:mobile         # 22 schema/reconciliation checks; exits 0 on pass
 
 | Modality | Test cases | Recovered | Total | Evaluated? |
 |---|---:|---:|---:|---|
-| Web (§6.1) | 30 | 29 | 30 | ✅ |
-| Mobile (§6.2) | 13 | 12 | 13 | ✅ |
-| Hardware-in-the-loop | — | — | — | ❌ architectural extension only |
+| Web (§6.1) | 30 | 29 | 30 | yes |
+| Mobile (§6.2) | 13 | 12 | 13 | yes |
+| Hardware-in-the-loop | — | — | — | no; architectural extension only |
 
 The `results-mobile.json: comparison` section in the JSON output encodes
 the same comparison machine-readably.

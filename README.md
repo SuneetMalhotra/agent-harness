@@ -1,6 +1,6 @@
 # agent-harness
 
-Reference implementation for the **Agent Harness** coupling pattern.
+Reference implementation for the Agent Harness coupling pattern.
 
 Companion code for a *Journal of Systems and Software* (JSS) submission:
 
@@ -10,13 +10,15 @@ Companion code for a *Journal of Systems and Software* (JSS) submission:
 
 ## What this is
 
-Published work on agent-assisted mobile testing breaks into three lanes: self-healing locators, multi-agent SDLC pipelines, and LLM-backed test-case generation. Each treats one layer of the stack in isolation. The **Agent Harness** is a coupling pattern that ties three such layers together through a shared observability substrate:
+This repository is the reference implementation and reproducibility package for a small empirical study, not a production test platform. The work is based on a common automation-architecture problem: framework code, agent handoffs, locator recovery, visual assertion, and execution-tier routing often leave separate logs. When those logs are disconnected, it is hard to explain why a generated test passed, failed, recovered, or reached a given execution tier.
+
+The implementation keeps the layers separate and connects them through one typed event substrate:
 
 - **Authoring layer:** a framework whose source is agent-authored under a human review checkpoint.
 - **Operating layer:** a five-agent SDLC pipeline (PM, QA, Automation Engineer, Developer, PR Reviewer) whose handoffs flow through external artifact systems over the Model Context Protocol.
 - **Execution layer:** three orchestrated hardware tiers (physical device bench, commercial cloud real-device farm, ephemeral virtual hardware) mediated by an intelligence layer for locator healing and visual assertion.
 
-The substrate is the contribution: an append-only log per layer with a canonical schema and a thin query API. Each layer remains testable in isolation; the substrate is what makes the harness reflexive rather than three independent systems.
+The substrate is an append-only log per layer with a canonical schema and a thin query API. Each layer remains testable in isolation; the shared event trail is what lets the package reconcile agent handoffs, recovery events, visual verdicts, and routing decisions after a run.
 
 This repository contains the runnable reference implementation plus the empirical harness used in §6.1 of the article.
 
@@ -81,7 +83,7 @@ OLLAMA_HOST=http://remote-gpu:11434 OLLAMA_MODEL=llama3.1:70b \
   npx tsx harness.ts --provider ollama
 ```
 
-The §6.1 architecture-validation walkthrough was produced against the stub provider; live runs (Anthropic, OpenAI, Gemini, or Ollama) exercise the full pipeline against real models for cross-model and cross-backend comparison (deferred to the §7.2 live-hardware multi-application study).
+The committed §6.1 artifact (`results.json`) comes from the live Claude Sonnet 4.6 run described in the manuscript. The stub, Ollama, OpenAI, and Gemini paths are included so reviewers can inspect the same wiring without requiring that exact hosted-model session.
 
 Results are written to `results.json` at the end of every harness run.
 
@@ -117,33 +119,40 @@ A future live-Appium mode is sketched in [`mobile/README-LIVE-APPIUM.md`](mobile
 npm run reproduce:paper         # web example + mobile example + schema tests
 ```
 
-### What is and is not claimed
+### Claim boundaries
 
-- ✅ Schema and substrate **reuse** across web and mobile
-- ✅ Deterministic **dispatch and event capture** on a public mobile target
-- ✅ The cascade **reports** unrecovered failures rather than swallowing them
-- ❌ NOT a production-scale mobile testing accuracy claim
-- ❌ NOT an LLM-as-judge κ measurement on mobile (web-only at the §6.1 scale)
-- ❌ NOT a hardware-in-the-loop evaluation (architectural extension only)
+- Schema and substrate reuse are demonstrated across the web and mobile artifacts.
+- Mobile evidence is deterministic dispatch and event capture on one public mobile target.
+- Unrecovered failures are reported in the event stream instead of being swallowed.
+- This is not a production-scale mobile testing accuracy claim.
+- The LLM-as-judge κ measurement is web-only at the §6.1 scale.
+- Hardware-in-the-loop is architectural only in this package; it is not evaluated.
 
 ---
 
 ## Reproducing the article's numbers
 
-The article reports the following headline figures from §6.1 (public-dataset evaluation):
+The article reports the following headline figures from the committed §6.1 live web artifact (`results.json`) and the §6.2 deterministic mobile artifact (`results-mobile.json`):
 
 | Metric | Value |
 |---|---:|
-| Authoring velocity speedup | 3.2× |
-| Pipeline runtime (median, end-to-end) | ~17 min |
-| Cache hit rate after warmup | 92% |
-| DOM healer success rate | 88% |
-| Vision-fallback success rate | 79% |
-| Combined recovery rate | 97% |
-| Visual assertion precision | 92% |
-| Visual assertion recall | 92% |
-| Pixel-comparison precision | 100% |
-| Pixel-comparison recall | 50% |
+| Web test cases | 30 |
+| Web recovered | 29/30 |
+| Authoring velocity speedup | 3.2x |
+| Pipeline runtime (live run) | 1665.695 s (~27.8 min) |
+| Cache hit rate | 0.000 |
+| DOM healer success rate | 1.000 |
+| Vision-fallback success rate | 1.000 |
+| Combined recovery rate | 0.967 |
+| Visual assertion corpus | 24 images |
+| Visual assertion Cohen's kappa vs seeded key | 0.667 |
+| Visual assertion precision | 1.000 |
+| Visual assertion recall | 0.667 |
+| Pixel-comparison precision | 1.000 |
+| Pixel-comparison recall | 0.500 |
+| Mobile test cases | 13 |
+| Mobile recovered | 12/13 |
+| Hardware-in-the-loop evaluated | false |
 
 To reproduce:
 
@@ -151,15 +160,20 @@ To reproduce:
 git clone https://github.com/SuneetMalhotra/agent-harness
 cd agent-harness
 npm install
-npm run harness:anthropic > harness.log 2>&1
+npm run reproduce:paper
 cat results.json | jq '{
+  metadata,
+  authoringVelocity,
+  pipelineReview,
+  pipelineRuntime,
+  tierRouting,
   healing: .healing | {cacheHitRate, domHealerSuccessRate, visionFallbackSuccessRate, combinedRecoveryRate},
   assertion: .visualAssertion | {precision, recall, pixelComparisonPrecision, pixelComparisonRecall},
-  tierRouting
 }'
+cat results-mobile.json | jq '{metadata, testCases, healingEvents, recovered, unrecovered, firstDispatchCorrect, sameSchemaReused, comparison}'
 ```
 
-The harness is deterministic at temperature 0, but model output is not byte-stable across model versions. The article pins the model version (`claude-sonnet-4-6`); subsequent runs against newer model versions may produce slightly different absolute numbers, though the qualitative direction has been stable across the versions we tested. The offline stub (`npm run harness:stub`) reproduces the article's headline figures exactly for replication purposes.
+`npm run reproduce:paper` runs the offline web example, the deterministic mobile replay, and the mobile schema checks. The committed live web artifact is `results.json`; rerunning `npm run harness:anthropic` requires Claude OAuth and may not be byte-stable across hosted model changes.
 
 ---
 

@@ -22,7 +22,7 @@ the **Sauce Labs My Demo App** public Android reference application:
 No proprietary, employer-internal, or NDA-bound mobile applications are
 used or referenced in this study.
 
-## Prerequisites for live mode (TODO)
+## Prerequisites for a future live mode
 
 A future PR could implement a `LiveAppiumRunner` in `mobile/live-runner.ts`
 that swaps the deterministic dispatch in `mobile/mobile-harness.ts` for
