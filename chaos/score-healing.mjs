@@ -131,42 +131,49 @@ async function resolveWithHealenium(page, p, q) {
 }
 const RESOLVERS = { 'brittle-only': resolveBrittleOnly, 'text-role': resolveTextRole, cascade: resolveWithCascade, healenium: resolveWithHealenium };
 
+async function scoreOne(page, p, resolve) {
+  const q = { role: p.groundTruth.role, text: p.groundTruth.text, ariaLabel: p.groundTruth.ariaLabel };
+  const t0 = Date.now();
+  const r = await resolve(page, p, q);
+  const ms = Date.now() - t0;
+  let outcome = 'miss', resolved = null;
+  if (r.handle) { resolved = await describe(r.handle); outcome = classify(resolved, p.groundTruth); }
+  return { id: p.id, band: p.difficultyBand, mutation: p.mutation, outcome, strategy: r.strategy, ms,
+           target: p.groundTruth.text, resolvedText: resolved?.text ?? null };
+}
+
 async function main() {
   const data = JSON.parse(readFileSync(IN, 'utf8'));
-  const resolve = RESOLVERS[RESOLVER];
-  if (!resolve) throw new Error(`unknown resolver: ${RESOLVER}`);
+  // RESOLVER='all' runs every resolver on the SAME loaded+mutated DOM per case,
+  // so the head-to-head is fair even on a live/drifting target.
+  const list = RESOLVER === 'all' ? ['brittle-only', 'text-role', 'cascade'] : [RESOLVER];
+  for (const n of list) if (!RESOLVERS[n]) throw new Error(`unknown resolver: ${n}`);
   const browser = await chromium.launch();
-  const rows = [];
+  const rowsByR = Object.fromEntries(list.map((n) => [n, []]));
 
   for (const p of data.perturbations) {
     const page = await browser.newPage();
-    let outcome = 'error', strategy = null, ms = 0, resolved = null;
     try {
       await page.goto(p.url, { waitUntil: 'domcontentloaded' });
       await page.waitForTimeout(Number(args.settle || 2500));
       const broke = await applyMutation(page, p);
-      if (!broke) { await page.close(); rows.push({ id: p.id, band: p.difficultyBand, outcome: 'target-missing' }); continue; }
-      const q = { role: p.groundTruth.role, text: p.groundTruth.text, ariaLabel: p.groundTruth.ariaLabel };
-      const t0 = Date.now();
-      const r = await resolve(page, p, q);
-      ms = Date.now() - t0; strategy = r.strategy;
-      if (!r.handle) outcome = 'miss';
-      else {
-        const got = await describe(r.handle);
-        resolved = got;
-        outcome = classify(got, p.groundTruth);
+      if (!broke) { for (const n of list) rowsByR[n].push({ id: p.id, band: p.difficultyBand, outcome: 'target-missing' }); await page.close(); continue; }
+      for (const n of list) {                       // all resolvers see the identical mutated DOM
+        try { rowsByR[n].push(await scoreOne(page, p, RESOLVERS[n])); }
+        catch { rowsByR[n].push({ id: p.id, band: p.difficultyBand, outcome: 'error' }); }
       }
-    } catch (e) { outcome = 'error'; }
+    } catch { for (const n of list) rowsByR[n].push({ id: p.id, band: p.difficultyBand, outcome: 'error' }); }
     await page.close();
-    rows.push({ id: p.id, band: p.difficultyBand, mutation: p.mutation, outcome, strategy, ms, target: p.groundTruth.text, resolvedText: resolved?.text ?? null });
   }
   await browser.close();
 
-  // ---- aggregate ----
-  const report = aggregate(rows, { resolver: RESOLVER, source: IN });
-  writeFileSync(OUT, JSON.stringify(report, null, 2));
-  console.log(`[${RESOLVER}] accuracy ${report.accuracy} (${report.successCount}/${report.scored}) · false-heal ${report.falseHealRate} · MTTH ${report.meanTimeToHealMs}ms`);
-  console.log('by band:', report.accuracyByBand);
+  const reports = Object.fromEntries(list.map((n) => [n, aggregate(rowsByR[n], { resolver: n, source: IN })]));
+  const out = RESOLVER === 'all' ? { byResolver: reports } : reports[RESOLVER];
+  writeFileSync(OUT, JSON.stringify(out, null, 2));
+  for (const n of list) {
+    const r = reports[n];
+    console.log(`[${n}] accuracy ${r.accuracy} (${r.successCount}/${r.scored}) · false-heal ${r.falseHealRate} · miss ${r.missRate} · MTTH ${r.meanTimeToHealMs}ms`);
+  }
   console.log(`wrote ${OUT}`);
 }
 main().catch((e) => { console.error(e); process.exit(1); });
