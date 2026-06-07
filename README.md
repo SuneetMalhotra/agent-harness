@@ -85,7 +85,7 @@ OLLAMA_HOST=http://remote-gpu:11434 OLLAMA_MODEL=llama3.1:70b \
 
 The committed §6.1 artifact (`results.json`) comes from the live Claude Sonnet 4.6 run described in the manuscript. The stub, Ollama, OpenAI, and Gemini paths are included so reviewers can inspect the same wiring without requiring that exact hosted-model session.
 
-Results are written to `results.json` at the end of every harness run.
+Results are written to `results.json` at the end of every harness run. **Note:** `npm run harness:stub`, `npm run harness:anthropic`, and `npm run example` overwrite `results.json` — but the committed `results.json` is the live §6.1 artifact from the manuscript. To inspect the article's numbers, run `npm run reproduce:paper` (which does **not** overwrite it), or restore the committed file afterward with `git checkout results.json`.
 
 ---
 
