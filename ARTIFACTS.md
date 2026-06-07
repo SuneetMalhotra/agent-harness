@@ -1,7 +1,17 @@
 # ARTIFACTS — reproducibility manifest
 
+## Submission
+
+- **Manuscript:** "Cross-Layer Observability for LLM-Assisted Test Automation: A Reference Architecture with Web and Mobile Feasibility Studies"
+- **Target venue:** Journal of Systems and Software (Elsevier) — In Practice / Applied Research Report
+- **Final release tag:** `v1.3.1-jss-final`
+- **Full commit hash:** resolve with `git rev-parse v1.3.1-jss-final^{commit}`
+- **Node version:** v25.8.1 (package `engines.node`: `>=20.0.0`)
+- **Zenodo DOI:** to be minted from tag `v1.3.1-jss-final` (not yet assigned)
+- **Reproduction command:** `npm run reproduce:paper`
+
 This document inventories every artifact the manuscript depends on.
-A reviewer should be able to verify each claim in §6 and §6.x by
+A reviewer should be able to verify each claim in §6.1 and §6.2 by
 inspecting the files below and running the documented commands.
 
 ## Versioning
@@ -13,7 +23,7 @@ git rev-parse HEAD
 
 Recommended Node version: **>=20.0.0** (see `package.json` `engines` field).
 
-## Web feasibility study (§6)
+## Web feasibility study (§6.1)
 
 | Artifact | Path | What it backs |
 |---|---|---|
@@ -32,17 +42,17 @@ npm run harness:stub        # full §6.1 stub-provider run; writes results.json
 npm run harness:anthropic   # live Claude Sonnet 4.6 run (requires Claude OAuth)
 ```
 
-## Mobile feasibility study (§6.x — new)
+## Mobile feasibility study (§6.2 — new)
 
 | Artifact | Path | What it backs |
 |---|---|---|
-| Mobile evaluation result | `results-mobile.json` | All §6.x mobile dispatch/recovery/event-capture numbers |
+| Mobile evaluation result | `results-mobile.json` | All §6.2 mobile dispatch/recovery/event-capture numbers |
 | Mobile test catalog | `mobile/mobile-test-cases.ts` | 13 deterministic test cases on the public Sauce Labs sample app |
 | Public-app screen catalog | `mobile/sample-app.ts` | Encoded reference to the public Sauce Labs Android demo |
 | Mobile harness runner | `mobile/mobile-harness.ts` | Deterministic replay (no Appium, no emulator, no API key) |
 | Mobile type extensions | `mobile/types.ts` | TargetModality, MobileLocatorStrategy, MobileStudyResult |
 | Schema validation tests | `tests/mobile-schema.test.ts` | 22 reconciliation checks on counts, schema, web-preservation |
-| Optional live-Appium notes | `mobile/README-LIVE-APPIUM.md` | TODO sketch for a future live-Appium mode (not required for §6.x numbers) |
+| Optional live-Appium notes | `mobile/README-LIVE-APPIUM.md` | TODO sketch for a future live-Appium mode (not required for §6.2 numbers) |
 
 ### Reproduction commands
 
@@ -67,7 +77,7 @@ npm run test:mobile         # 22 schema/reconciliation checks; exits 0 on pass
 ### What this study does NOT claim
 
 - Production-scale mobile accuracy
-- LLM-as-judge κ measurement on mobile (web-only at §6 scale)
+- LLM-as-judge κ measurement on mobile (web-only at §6.1 scale)
 - Hardware-in-the-loop evaluation
 - Generalization beyond the 13 deterministic cases on one public app
 
@@ -75,8 +85,8 @@ npm run test:mobile         # 22 schema/reconciliation checks; exits 0 on pass
 
 | Modality | Test cases | Recovered | Total | Evaluated? |
 |---|---:|---:|---:|---|
-| Web (§6) | 30 | 29 | 30 | ✅ |
-| Mobile (§6.x) | 13 | 12 | 13 | ✅ |
+| Web (§6.1) | 30 | 29 | 30 | ✅ |
+| Mobile (§6.2) | 13 | 12 | 13 | ✅ |
 | Hardware-in-the-loop | — | — | — | ❌ architectural extension only |
 
 The `results-mobile.json: comparison` section in the JSON output encodes
