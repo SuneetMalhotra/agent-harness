@@ -740,7 +740,7 @@
     {
       "id": "P0035",
       "url": "http://localhost:54323",
-      "brittleSelector": "#radix-_r_1e_",
+      "brittleSelector": "#radix-_r_2s_",
       "difficultyBand": 1,
       "mutation": "rename-class",
       "groundTruth": {
@@ -761,7 +761,7 @@
     {
       "id": "P0036",
       "url": "http://localhost:54323",
-      "brittleSelector": "#radix-_r_1e_",
+      "brittleSelector": "#radix-_r_2s_",
       "difficultyBand": 2,
       "mutation": "rename-id-testid",
       "groundTruth": {
@@ -782,7 +782,7 @@
     {
       "id": "P0037",
       "url": "http://localhost:54323",
-      "brittleSelector": "#radix-_r_1e_",
+      "brittleSelector": "#radix-_r_2s_",
       "difficultyBand": 3,
       "mutation": "restructure-dom",
       "groundTruth": {
@@ -803,7 +803,7 @@
     {
       "id": "P0038",
       "url": "http://localhost:54323",
-      "brittleSelector": "#radix-_r_1e_",
+      "brittleSelector": "#radix-_r_2s_",
       "difficultyBand": 4,
       "mutation": "retext-sibling",
       "groundTruth": {
@@ -824,7 +824,7 @@
     {
       "id": "P0039",
       "url": "http://localhost:54323",
-      "brittleSelector": "#radix-_r_1e_",
+      "brittleSelector": "#radix-_r_2s_",
       "difficultyBand": 5,
       "mutation": "attr-reorder-minify",
       "groundTruth": {
@@ -950,7 +950,7 @@
     {
       "id": "P0045",
       "url": "http://localhost:54323",
-      "brittleSelector": "#radix-_r_1u_",
+      "brittleSelector": "#radix-_r_3c_",
       "difficultyBand": 1,
       "mutation": "rename-class",
       "groundTruth": {
@@ -971,7 +971,7 @@
     {
       "id": "P0046",
       "url": "http://localhost:54323",
-      "brittleSelector": "#radix-_r_1u_",
+      "brittleSelector": "#radix-_r_3c_",
       "difficultyBand": 2,
       "mutation": "rename-id-testid",
       "groundTruth": {
@@ -992,7 +992,7 @@
     {
       "id": "P0047",
       "url": "http://localhost:54323",
-      "brittleSelector": "#radix-_r_1u_",
+      "brittleSelector": "#radix-_r_3c_",
       "difficultyBand": 3,
       "mutation": "restructure-dom",
       "groundTruth": {
@@ -1013,7 +1013,7 @@
     {
       "id": "P0048",
       "url": "http://localhost:54323",
-      "brittleSelector": "#radix-_r_1u_",
+      "brittleSelector": "#radix-_r_3c_",
       "difficultyBand": 4,
       "mutation": "retext-sibling",
       "groundTruth": {
@@ -1034,7 +1034,7 @@
     {
       "id": "P0049",
       "url": "http://localhost:54323",
-      "brittleSelector": "#radix-_r_1u_",
+      "brittleSelector": "#radix-_r_3c_",
       "difficultyBand": 5,
       "mutation": "attr-reorder-minify",
       "groundTruth": {
@@ -1055,7 +1055,7 @@
     {
       "id": "P0050",
       "url": "http://localhost:54323",
-      "brittleSelector": "#radix-_r_2s_",
+      "brittleSelector": "#radix-_r_4a_",
       "difficultyBand": 1,
       "mutation": "rename-class",
       "groundTruth": {
@@ -1076,7 +1076,7 @@
     {
       "id": "P0051",
       "url": "http://localhost:54323",
-      "brittleSelector": "#radix-_r_2s_",
+      "brittleSelector": "#radix-_r_4a_",
       "difficultyBand": 2,
       "mutation": "rename-id-testid",
       "groundTruth": {
@@ -1097,7 +1097,7 @@
     {
       "id": "P0052",
       "url": "http://localhost:54323",
-      "brittleSelector": "#radix-_r_2s_",
+      "brittleSelector": "#radix-_r_4a_",
       "difficultyBand": 3,
       "mutation": "restructure-dom",
       "groundTruth": {
@@ -1118,7 +1118,7 @@
     {
       "id": "P0053",
       "url": "http://localhost:54323",
-      "brittleSelector": "#radix-_r_2s_",
+      "brittleSelector": "#radix-_r_4a_",
       "difficultyBand": 4,
       "mutation": "retext-sibling",
       "groundTruth": {
@@ -1139,7 +1139,7 @@
     {
       "id": "P0054",
       "url": "http://localhost:54323",
-      "brittleSelector": "#radix-_r_2s_",
+      "brittleSelector": "#radix-_r_4a_",
       "difficultyBand": 5,
       "mutation": "attr-reorder-minify",
       "groundTruth": {

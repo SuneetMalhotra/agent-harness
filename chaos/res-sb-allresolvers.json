@@ -3,18 +3,18 @@
     "brittle-only": {
       "resolver": "brittle-only",
       "source": "chaos/perturb-supabase.json",
-      "scored": 65,
-      "accuracy": 0.077,
-      "successCount": 5,
-      "falseHealRate": 0.385,
-      "missRate": 0.538,
-      "meanTimeToHealMs": 17,
+      "scored": 56,
+      "accuracy": 0,
+      "successCount": 0,
+      "falseHealRate": 0.536,
+      "missRate": 0.464,
+      "meanTimeToHealMs": null,
       "accuracyByBand": {
-        "1": "0.077 (1/13)",
-        "2": "0.077 (1/13)",
-        "3": "0.077 (1/13)",
-        "4": "0.077 (1/13)",
-        "5": "0.077 (1/13)"
+        "1": "0 (0/11)",
+        "2": "0 (0/11)",
+        "3": "0 (0/11)",
+        "4": "0 (0/12)",
+        "5": "0 (0/11)"
       },
       "rows": [
         {
@@ -23,9 +23,10 @@
           "mutation": "rename-class",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 15,
+          "ms": 16,
           "target": "Connect",
-          "resolvedText": "Help"
+          "resolvedText": "Help",
+          "isTruth": false
         },
         {
           "id": "P0001",
@@ -33,9 +34,10 @@
           "mutation": "rename-id-testid",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 15,
+          "ms": 11,
           "target": "Connect",
-          "resolvedText": "Help"
+          "resolvedText": "Help",
+          "isTruth": false
         },
         {
           "id": "P0002",
@@ -43,9 +45,10 @@
           "mutation": "restructure-dom",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 15,
+          "ms": 11,
           "target": "Connect",
-          "resolvedText": "Help"
+          "resolvedText": "Help",
+          "isTruth": false
         },
         {
           "id": "P0003",
@@ -55,7 +58,8 @@
           "strategy": "brittle",
           "ms": 11,
           "target": "Connect",
-          "resolvedText": "Help"
+          "resolvedText": "Help",
+          "isTruth": false
         },
         {
           "id": "P0004",
@@ -63,59 +67,65 @@
           "mutation": "attr-reorder-minify",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 16,
+          "ms": 12,
           "target": "Connect",
-          "resolvedText": "Help"
+          "resolvedText": "Help",
+          "isTruth": false
         },
         {
           "id": "P0005",
           "band": 1,
           "mutation": "rename-class",
-          "outcome": "success",
+          "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 17,
+          "ms": 14,
           "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
-          "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit"
+          "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "isTruth": false
         },
         {
           "id": "P0006",
           "band": 2,
           "mutation": "rename-id-testid",
-          "outcome": "success",
+          "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 14,
+          "ms": 15,
           "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
-          "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit"
+          "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "isTruth": false
         },
         {
           "id": "P0007",
           "band": 3,
           "mutation": "restructure-dom",
-          "outcome": "success",
+          "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 14,
+          "ms": 12,
           "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
-          "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit"
+          "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "isTruth": false
         },
         {
           "id": "P0008",
           "band": 4,
           "mutation": "retext-sibling",
-          "outcome": "success",
+          "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 18,
+          "ms": 13,
           "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
-          "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit"
+          "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "isTruth": false
         },
         {
           "id": "P0009",
           "band": 5,
           "mutation": "attr-reorder-minify",
-          "outcome": "success",
+          "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 20,
+          "ms": 15,
           "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
-          "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit"
+          "resolvedText": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+          "isTruth": false
         },
         {
           "id": "P0010",
@@ -123,9 +133,10 @@
           "mutation": "rename-class",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 12,
+          "ms": 10,
           "target": "Search...\n\n⌘K",
-          "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy"
+          "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy",
+          "isTruth": false
         },
         {
           "id": "P0011",
@@ -133,9 +144,10 @@
           "mutation": "rename-id-testid",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 15,
+          "ms": 10,
           "target": "Search...\n\n⌘K",
-          "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy"
+          "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy",
+          "isTruth": false
         },
         {
           "id": "P0012",
@@ -143,9 +155,10 @@
           "mutation": "restructure-dom",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 11,
+          "ms": 12,
           "target": "Search...\n\n⌘K",
-          "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy"
+          "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy",
+          "isTruth": false
         },
         {
           "id": "P0013",
@@ -153,9 +166,10 @@
           "mutation": "retext-sibling",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 17,
+          "ms": 12,
           "target": "Search...\n\n⌘K",
-          "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy"
+          "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy",
+          "isTruth": false
         },
         {
           "id": "P0014",
@@ -163,9 +177,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 18,
+          "ms": 11,
           "target": "Search...\n\n⌘K",
-          "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy"
+          "resolvedText": "Supabase Studio (CLI)\nhttp://127.0.0.1:54321\nCopy",
+          "isTruth": false
         },
         {
           "id": "P0015",
@@ -173,9 +188,10 @@
           "mutation": "rename-class",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 16,
+          "ms": 18,
           "target": "Help",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0016",
@@ -183,9 +199,10 @@
           "mutation": "rename-id-testid",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 12,
+          "ms": 14,
           "target": "Help",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0017",
@@ -195,7 +212,8 @@
           "strategy": "brittle",
           "ms": 12,
           "target": "Help",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0018",
@@ -203,9 +221,10 @@
           "mutation": "retext-sibling",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 13,
+          "ms": 17,
           "target": "Help",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0019",
@@ -213,9 +232,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 11,
+          "ms": 17,
           "target": "Help",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0020",
@@ -223,9 +243,10 @@
           "mutation": "rename-class",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 9,
+          "ms": 14,
           "target": "Advisor Center",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0021",
@@ -233,9 +254,10 @@
           "mutation": "rename-id-testid",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 10,
+          "ms": 15,
           "target": "Advisor Center",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0022",
@@ -243,9 +265,10 @@
           "mutation": "restructure-dom",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 9,
+          "ms": 14,
           "target": "Advisor Center",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0023",
@@ -253,9 +276,10 @@
           "mutation": "retext-sibling",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 12,
+          "ms": 9,
           "target": "Advisor Center",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0024",
@@ -263,9 +287,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 17,
+          "ms": 13,
           "target": "Advisor Center",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0025",
@@ -273,9 +298,10 @@
           "mutation": "rename-class",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 14,
+          "ms": 11,
           "target": "SQL Editor",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0026",
@@ -283,9 +309,10 @@
           "mutation": "rename-id-testid",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 17,
+          "ms": 12,
           "target": "SQL Editor",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0027",
@@ -293,9 +320,10 @@
           "mutation": "restructure-dom",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 15,
+          "ms": 11,
           "target": "SQL Editor",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0028",
@@ -303,9 +331,10 @@
           "mutation": "retext-sibling",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 16,
+          "ms": 12,
           "target": "SQL Editor",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0029",
@@ -313,9 +342,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 16,
+          "ms": 13,
           "target": "SQL Editor",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0030",
@@ -323,9 +353,10 @@
           "mutation": "rename-class",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 16,
+          "ms": 11,
           "target": "AI Assistant",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0031",
@@ -333,9 +364,10 @@
           "mutation": "rename-id-testid",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 16,
+          "ms": 13,
           "target": "AI Assistant",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0032",
@@ -343,9 +375,10 @@
           "mutation": "restructure-dom",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 17,
+          "ms": 14,
           "target": "AI Assistant",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0033",
@@ -353,9 +386,10 @@
           "mutation": "retext-sibling",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 17,
+          "ms": 14,
           "target": "AI Assistant",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0034",
@@ -363,9 +397,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 16,
+          "ms": 10,
           "target": "AI Assistant",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0035",
@@ -375,7 +410,8 @@
           "strategy": "brittle",
           "ms": 12,
           "target": "Settings",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0036",
@@ -383,9 +419,10 @@
           "mutation": "rename-id-testid",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 17,
+          "ms": 14,
           "target": "Settings",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0037",
@@ -395,7 +432,8 @@
           "strategy": "brittle",
           "ms": 16,
           "target": "Settings",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0038",
@@ -403,9 +441,10 @@
           "mutation": "retext-sibling",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 17,
+          "ms": 14,
           "target": "Settings",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0039",
@@ -413,9 +452,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 17,
+          "ms": 9,
           "target": "Settings",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0040",
@@ -423,9 +463,10 @@
           "mutation": "rename-class",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 18,
+          "ms": 21,
           "target": "Project Overview",
-          "resolvedText": "Table Editor"
+          "resolvedText": "Table Editor",
+          "isTruth": false
         },
         {
           "id": "P0041",
@@ -433,9 +474,10 @@
           "mutation": "rename-id-testid",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 19,
+          "ms": 18,
           "target": "Project Overview",
-          "resolvedText": "Table Editor"
+          "resolvedText": "Table Editor",
+          "isTruth": false
         },
         {
           "id": "P0042",
@@ -443,9 +485,10 @@
           "mutation": "restructure-dom",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 20,
+          "ms": 18,
           "target": "Project Overview",
-          "resolvedText": "Table Editor"
+          "resolvedText": "Table Editor",
+          "isTruth": false
         },
         {
           "id": "P0043",
@@ -453,9 +496,10 @@
           "mutation": "retext-sibling",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 18,
+          "ms": 16,
           "target": "Project Overview",
-          "resolvedText": "Table Editor"
+          "resolvedText": "Table Editor",
+          "isTruth": false
         },
         {
           "id": "P0044",
@@ -463,39 +507,25 @@
           "mutation": "attr-reorder-minify",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 19,
+          "ms": 18,
           "target": "Project Overview",
-          "resolvedText": "Table Editor"
+          "resolvedText": "Table Editor",
+          "isTruth": false
         },
         {
           "id": "P0045",
           "band": 1,
-          "mutation": "rename-class",
-          "outcome": "miss",
-          "strategy": "brittle",
-          "ms": 18,
-          "target": "",
-          "resolvedText": null
+          "outcome": "target-missing"
         },
         {
           "id": "P0046",
           "band": 2,
-          "mutation": "rename-id-testid",
-          "outcome": "miss",
-          "strategy": "brittle",
-          "ms": 16,
-          "target": "",
-          "resolvedText": null
+          "outcome": "target-missing"
         },
         {
           "id": "P0047",
           "band": 3,
-          "mutation": "restructure-dom",
-          "outcome": "miss",
-          "strategy": "brittle",
-          "ms": 17,
-          "target": "",
-          "resolvedText": null
+          "outcome": "target-missing"
         },
         {
           "id": "P0048",
@@ -503,69 +533,40 @@
           "mutation": "retext-sibling",
           "outcome": "miss",
           "strategy": "brittle",
-          "ms": 15,
+          "ms": 16,
           "target": "",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0049",
           "band": 5,
-          "mutation": "attr-reorder-minify",
-          "outcome": "miss",
-          "strategy": "brittle",
-          "ms": 17,
-          "target": "",
-          "resolvedText": null
+          "outcome": "target-missing"
         },
         {
           "id": "P0050",
           "band": 1,
-          "mutation": "rename-class",
-          "outcome": "miss",
-          "strategy": "brittle",
-          "ms": 16,
-          "target": "Copy",
-          "resolvedText": null
+          "outcome": "target-missing"
         },
         {
           "id": "P0051",
           "band": 2,
-          "mutation": "rename-id-testid",
-          "outcome": "miss",
-          "strategy": "brittle",
-          "ms": 17,
-          "target": "Copy",
-          "resolvedText": null
+          "outcome": "target-missing"
         },
         {
           "id": "P0052",
           "band": 3,
-          "mutation": "restructure-dom",
-          "outcome": "miss",
-          "strategy": "brittle",
-          "ms": 17,
-          "target": "Copy",
-          "resolvedText": null
+          "outcome": "target-missing"
         },
         {
           "id": "P0053",
           "band": 4,
-          "mutation": "retext-sibling",
-          "outcome": "miss",
-          "strategy": "brittle",
-          "ms": 16,
-          "target": "Copy",
-          "resolvedText": null
+          "outcome": "target-missing"
         },
         {
           "id": "P0054",
           "band": 5,
-          "mutation": "attr-reorder-minify",
-          "outcome": "miss",
-          "strategy": "brittle",
-          "ms": 16,
-          "target": "Copy",
-          "resolvedText": null
+          "outcome": "target-missing"
         },
         {
           "id": "P0055",
@@ -573,9 +574,10 @@
           "mutation": "rename-class",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 18,
+          "ms": 19,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0056",
@@ -585,7 +587,8 @@
           "strategy": "brittle",
           "ms": 19,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0057",
@@ -593,9 +596,10 @@
           "mutation": "restructure-dom",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 19,
+          "ms": 17,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0058",
@@ -605,7 +609,8 @@
           "strategy": "brittle",
           "ms": 19,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0059",
@@ -613,9 +618,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 19,
+          "ms": 16,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0060",
@@ -623,9 +629,10 @@
           "mutation": "rename-class",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 20,
+          "ms": 16,
           "target": "",
-          "resolvedText": "Connect"
+          "resolvedText": "Connect",
+          "isTruth": false
         },
         {
           "id": "P0061",
@@ -633,9 +640,10 @@
           "mutation": "rename-id-testid",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 18,
+          "ms": 16,
           "target": "",
-          "resolvedText": "Connect"
+          "resolvedText": "Connect",
+          "isTruth": false
         },
         {
           "id": "P0062",
@@ -643,9 +651,10 @@
           "mutation": "restructure-dom",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 19,
+          "ms": 13,
           "target": "",
-          "resolvedText": "Connect"
+          "resolvedText": "Connect",
+          "isTruth": false
         },
         {
           "id": "P0063",
@@ -653,9 +662,10 @@
           "mutation": "retext-sibling",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 16,
+          "ms": 14,
           "target": "",
-          "resolvedText": "Connect"
+          "resolvedText": "Connect",
+          "isTruth": false
         },
         {
           "id": "P0064",
@@ -663,27 +673,28 @@
           "mutation": "attr-reorder-minify",
           "outcome": "false-heal",
           "strategy": "brittle",
-          "ms": 19,
+          "ms": 14,
           "target": "",
-          "resolvedText": "Connect"
+          "resolvedText": "Connect",
+          "isTruth": false
         }
       ]
     },
     "text-role": {
       "resolver": "text-role",
       "source": "chaos/perturb-supabase.json",
-      "scored": 65,
-      "accuracy": 0.385,
-      "successCount": 25,
-      "falseHealRate": 0.538,
-      "missRate": 0.077,
+      "scored": 56,
+      "accuracy": 0.339,
+      "successCount": 19,
+      "falseHealRate": 0.571,
+      "missRate": 0.089,
       "meanTimeToHealMs": 2,
       "accuracyByBand": {
-        "1": "0.462 (6/13)",
-        "2": "0.462 (6/13)",
-        "3": "0 (0/13)",
-        "4": "0.538 (7/13)",
-        "5": "0.462 (6/13)"
+        "1": "0.364 (4/11)",
+        "2": "0.364 (4/11)",
+        "3": "0 (0/11)",
+        "4": "0.5 (6/12)",
+        "5": "0.455 (5/11)"
       },
       "rows": [
         {
@@ -694,7 +705,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "Connect",
-          "resolvedText": "Connect"
+          "resolvedText": "Connect",
+          "isTruth": false
         },
         {
           "id": "P0001",
@@ -704,7 +716,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "Connect",
-          "resolvedText": "Connect"
+          "resolvedText": "Connect",
+          "isTruth": false
         },
         {
           "id": "P0002",
@@ -714,7 +727,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "Connect",
-          "resolvedText": "Connect"
+          "resolvedText": "Connect",
+          "isTruth": false
         },
         {
           "id": "P0003",
@@ -722,9 +736,10 @@
           "mutation": "retext-sibling",
           "outcome": "false-heal",
           "strategy": "text-role",
-          "ms": 3,
+          "ms": 1,
           "target": "Connect",
-          "resolvedText": "Connect"
+          "resolvedText": "Connect",
+          "isTruth": false
         },
         {
           "id": "P0004",
@@ -734,7 +749,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "Connect",
-          "resolvedText": "Connect"
+          "resolvedText": "Connect",
+          "isTruth": false
         },
         {
           "id": "P0005",
@@ -742,9 +758,10 @@
           "mutation": "rename-class",
           "outcome": "miss",
           "strategy": "text-role",
-          "ms": 1,
+          "ms": 2,
           "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0006",
@@ -752,9 +769,10 @@
           "mutation": "rename-id-testid",
           "outcome": "miss",
           "strategy": "text-role",
-          "ms": 2,
+          "ms": 1,
           "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0007",
@@ -764,7 +782,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0008",
@@ -774,7 +793,8 @@
           "strategy": "text-role",
           "ms": 2,
           "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0009",
@@ -782,9 +802,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "miss",
           "strategy": "text-role",
-          "ms": 2,
+          "ms": 1,
           "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0010",
@@ -792,9 +813,10 @@
           "mutation": "rename-class",
           "outcome": "success",
           "strategy": "text-role",
-          "ms": 0,
+          "ms": 1,
           "target": "Search...\n\n⌘K",
-          "resolvedText": "Search...\n\n⌘K"
+          "resolvedText": "Search...\n\n⌘K",
+          "isTruth": true
         },
         {
           "id": "P0011",
@@ -804,7 +826,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "Search...\n\n⌘K",
-          "resolvedText": "Search...\n\n⌘K"
+          "resolvedText": "Search...\n\n⌘K",
+          "isTruth": true
         },
         {
           "id": "P0012",
@@ -814,7 +837,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "Search...\n\n⌘K",
-          "resolvedText": "Search...\n\n⌘K"
+          "resolvedText": "Search...\n\n⌘K",
+          "isTruth": false
         },
         {
           "id": "P0013",
@@ -824,7 +848,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "Search...\n\n⌘K",
-          "resolvedText": "Search...\n\n⌘K"
+          "resolvedText": "Search...\n\n⌘K",
+          "isTruth": true
         },
         {
           "id": "P0014",
@@ -834,7 +859,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "Search...\n\n⌘K",
-          "resolvedText": "Search...\n\n⌘K"
+          "resolvedText": "Search...\n\n⌘K",
+          "isTruth": true
         },
         {
           "id": "P0015",
@@ -844,7 +870,8 @@
           "strategy": "text-role",
           "ms": 2,
           "target": "Help",
-          "resolvedText": "Help"
+          "resolvedText": "Help",
+          "isTruth": true
         },
         {
           "id": "P0016",
@@ -854,7 +881,8 @@
           "strategy": "text-role",
           "ms": 2,
           "target": "Help",
-          "resolvedText": "Help"
+          "resolvedText": "Help",
+          "isTruth": true
         },
         {
           "id": "P0017",
@@ -862,9 +890,10 @@
           "mutation": "restructure-dom",
           "outcome": "false-heal",
           "strategy": "text-role",
-          "ms": 2,
+          "ms": 3,
           "target": "Help",
-          "resolvedText": "Help"
+          "resolvedText": "Help",
+          "isTruth": false
         },
         {
           "id": "P0018",
@@ -872,9 +901,10 @@
           "mutation": "retext-sibling",
           "outcome": "success",
           "strategy": "text-role",
-          "ms": 2,
+          "ms": 3,
           "target": "Help",
-          "resolvedText": "Help"
+          "resolvedText": "Help",
+          "isTruth": true
         },
         {
           "id": "P0019",
@@ -884,7 +914,8 @@
           "strategy": "text-role",
           "ms": 2,
           "target": "Help",
-          "resolvedText": "Help"
+          "resolvedText": "Help",
+          "isTruth": true
         },
         {
           "id": "P0020",
@@ -894,7 +925,8 @@
           "strategy": "text-role",
           "ms": 2,
           "target": "Advisor Center",
-          "resolvedText": "Advisor Center"
+          "resolvedText": "Advisor Center",
+          "isTruth": false
         },
         {
           "id": "P0021",
@@ -904,7 +936,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "Advisor Center",
-          "resolvedText": "Advisor Center"
+          "resolvedText": "Advisor Center",
+          "isTruth": false
         },
         {
           "id": "P0022",
@@ -914,7 +947,8 @@
           "strategy": "text-role",
           "ms": 2,
           "target": "Advisor Center",
-          "resolvedText": "Advisor Center"
+          "resolvedText": "Advisor Center",
+          "isTruth": false
         },
         {
           "id": "P0023",
@@ -924,7 +958,8 @@
           "strategy": "text-role",
           "ms": 2,
           "target": "Advisor Center",
-          "resolvedText": "Advisor Center"
+          "resolvedText": "Advisor Center",
+          "isTruth": true
         },
         {
           "id": "P0024",
@@ -932,9 +967,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "false-heal",
           "strategy": "text-role",
-          "ms": 3,
+          "ms": 2,
           "target": "Advisor Center",
-          "resolvedText": "Advisor Center"
+          "resolvedText": "Advisor Center",
+          "isTruth": false
         },
         {
           "id": "P0025",
@@ -944,7 +980,8 @@
           "strategy": "text-role",
           "ms": 2,
           "target": "SQL Editor",
-          "resolvedText": "SQL Editor"
+          "resolvedText": "SQL Editor",
+          "isTruth": true
         },
         {
           "id": "P0026",
@@ -954,7 +991,8 @@
           "strategy": "text-role",
           "ms": 3,
           "target": "SQL Editor",
-          "resolvedText": "SQL Editor"
+          "resolvedText": "SQL Editor",
+          "isTruth": true
         },
         {
           "id": "P0027",
@@ -964,7 +1002,8 @@
           "strategy": "text-role",
           "ms": 2,
           "target": "SQL Editor",
-          "resolvedText": "SQL Editor"
+          "resolvedText": "SQL Editor",
+          "isTruth": false
         },
         {
           "id": "P0028",
@@ -974,7 +1013,8 @@
           "strategy": "text-role",
           "ms": 2,
           "target": "SQL Editor",
-          "resolvedText": "SQL Editor"
+          "resolvedText": "SQL Editor",
+          "isTruth": true
         },
         {
           "id": "P0029",
@@ -982,9 +1022,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "success",
           "strategy": "text-role",
-          "ms": 3,
+          "ms": 2,
           "target": "SQL Editor",
-          "resolvedText": "SQL Editor"
+          "resolvedText": "SQL Editor",
+          "isTruth": true
         },
         {
           "id": "P0030",
@@ -994,7 +1035,8 @@
           "strategy": "text-role",
           "ms": 2,
           "target": "AI Assistant",
-          "resolvedText": "AI Assistant"
+          "resolvedText": "AI Assistant",
+          "isTruth": true
         },
         {
           "id": "P0031",
@@ -1004,7 +1046,8 @@
           "strategy": "text-role",
           "ms": 2,
           "target": "AI Assistant",
-          "resolvedText": "AI Assistant"
+          "resolvedText": "AI Assistant",
+          "isTruth": true
         },
         {
           "id": "P0032",
@@ -1014,7 +1057,8 @@
           "strategy": "text-role",
           "ms": 2,
           "target": "AI Assistant",
-          "resolvedText": "AI Assistant"
+          "resolvedText": "AI Assistant",
+          "isTruth": false
         },
         {
           "id": "P0033",
@@ -1022,9 +1066,10 @@
           "mutation": "retext-sibling",
           "outcome": "success",
           "strategy": "text-role",
-          "ms": 3,
+          "ms": 2,
           "target": "AI Assistant",
-          "resolvedText": "AI Assistant"
+          "resolvedText": "AI Assistant",
+          "isTruth": true
         },
         {
           "id": "P0034",
@@ -1034,27 +1079,30 @@
           "strategy": "text-role",
           "ms": 2,
           "target": "AI Assistant",
-          "resolvedText": "AI Assistant"
+          "resolvedText": "AI Assistant",
+          "isTruth": true
         },
         {
           "id": "P0035",
           "band": 1,
           "mutation": "rename-class",
-          "outcome": "success",
+          "outcome": "false-heal",
           "strategy": "text-role",
-          "ms": 1,
+          "ms": 3,
           "target": "Settings",
-          "resolvedText": "Settings"
+          "resolvedText": "Settings",
+          "isTruth": false
         },
         {
           "id": "P0036",
           "band": 2,
           "mutation": "rename-id-testid",
-          "outcome": "success",
+          "outcome": "false-heal",
           "strategy": "text-role",
-          "ms": 3,
+          "ms": 2,
           "target": "Settings",
-          "resolvedText": "Settings"
+          "resolvedText": "Settings",
+          "isTruth": false
         },
         {
           "id": "P0037",
@@ -1062,9 +1110,10 @@
           "mutation": "restructure-dom",
           "outcome": "false-heal",
           "strategy": "text-role",
-          "ms": 3,
+          "ms": 2,
           "target": "Settings",
-          "resolvedText": "Settings"
+          "resolvedText": "Settings",
+          "isTruth": false
         },
         {
           "id": "P0038",
@@ -1072,9 +1121,10 @@
           "mutation": "retext-sibling",
           "outcome": "success",
           "strategy": "text-role",
-          "ms": 3,
+          "ms": 2,
           "target": "Settings",
-          "resolvedText": "Settings"
+          "resolvedText": "Settings",
+          "isTruth": true
         },
         {
           "id": "P0039",
@@ -1082,9 +1132,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "success",
           "strategy": "text-role",
-          "ms": 3,
+          "ms": 2,
           "target": "Settings",
-          "resolvedText": "Settings"
+          "resolvedText": "Settings",
+          "isTruth": true
         },
         {
           "id": "P0040",
@@ -1094,7 +1145,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "Project Overview",
-          "resolvedText": "Project Overview"
+          "resolvedText": "Project Overview",
+          "isTruth": false
         },
         {
           "id": "P0041",
@@ -1104,7 +1156,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "Project Overview",
-          "resolvedText": "Project Overview"
+          "resolvedText": "Project Overview",
+          "isTruth": false
         },
         {
           "id": "P0042",
@@ -1114,7 +1167,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "Project Overview",
-          "resolvedText": "Project Overview"
+          "resolvedText": "Project Overview",
+          "isTruth": false
         },
         {
           "id": "P0043",
@@ -1124,7 +1178,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "Project Overview",
-          "resolvedText": "Project Overview"
+          "resolvedText": "Project Overview",
+          "isTruth": false
         },
         {
           "id": "P0044",
@@ -1134,37 +1189,23 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "Project Overview",
-          "resolvedText": "Project Overview"
+          "resolvedText": "Project Overview",
+          "isTruth": false
         },
         {
           "id": "P0045",
           "band": 1,
-          "mutation": "rename-class",
-          "outcome": "false-heal",
-          "strategy": "text-role",
-          "ms": 3,
-          "target": "",
-          "resolvedText": ""
+          "outcome": "target-missing"
         },
         {
           "id": "P0046",
           "band": 2,
-          "mutation": "rename-id-testid",
-          "outcome": "false-heal",
-          "strategy": "text-role",
-          "ms": 2,
-          "target": "",
-          "resolvedText": ""
+          "outcome": "target-missing"
         },
         {
           "id": "P0047",
           "band": 3,
-          "mutation": "restructure-dom",
-          "outcome": "false-heal",
-          "strategy": "text-role",
-          "ms": 3,
-          "target": "",
-          "resolvedText": ""
+          "outcome": "target-missing"
         },
         {
           "id": "P0048",
@@ -1172,69 +1213,40 @@
           "mutation": "retext-sibling",
           "outcome": "false-heal",
           "strategy": "text-role",
-          "ms": 2,
+          "ms": 3,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0049",
           "band": 5,
-          "mutation": "attr-reorder-minify",
-          "outcome": "false-heal",
-          "strategy": "text-role",
-          "ms": 3,
-          "target": "",
-          "resolvedText": ""
+          "outcome": "target-missing"
         },
         {
           "id": "P0050",
           "band": 1,
-          "mutation": "rename-class",
-          "outcome": "success",
-          "strategy": "text-role",
-          "ms": 3,
-          "target": "Copy",
-          "resolvedText": "Copy"
+          "outcome": "target-missing"
         },
         {
           "id": "P0051",
           "band": 2,
-          "mutation": "rename-id-testid",
-          "outcome": "success",
-          "strategy": "text-role",
-          "ms": 3,
-          "target": "Copy",
-          "resolvedText": "Copy"
+          "outcome": "target-missing"
         },
         {
           "id": "P0052",
           "band": 3,
-          "mutation": "restructure-dom",
-          "outcome": "false-heal",
-          "strategy": "text-role",
-          "ms": 3,
-          "target": "Copy",
-          "resolvedText": "Copy"
+          "outcome": "target-missing"
         },
         {
           "id": "P0053",
           "band": 4,
-          "mutation": "retext-sibling",
-          "outcome": "success",
-          "strategy": "text-role",
-          "ms": 3,
-          "target": "Copy",
-          "resolvedText": "Copy"
+          "outcome": "target-missing"
         },
         {
           "id": "P0054",
           "band": 5,
-          "mutation": "attr-reorder-minify",
-          "outcome": "success",
-          "strategy": "text-role",
-          "ms": 3,
-          "target": "Copy",
-          "resolvedText": "Copy"
+          "outcome": "target-missing"
         },
         {
           "id": "P0055",
@@ -1242,9 +1254,10 @@
           "mutation": "rename-class",
           "outcome": "false-heal",
           "strategy": "text-role",
-          "ms": 2,
+          "ms": 1,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0056",
@@ -1254,7 +1267,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0057",
@@ -1264,7 +1278,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0058",
@@ -1272,9 +1287,10 @@
           "mutation": "retext-sibling",
           "outcome": "false-heal",
           "strategy": "text-role",
-          "ms": 2,
+          "ms": 1,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0059",
@@ -1284,7 +1300,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0060",
@@ -1292,9 +1309,10 @@
           "mutation": "rename-class",
           "outcome": "false-heal",
           "strategy": "text-role",
-          "ms": 2,
+          "ms": 1,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0061",
@@ -1302,9 +1320,10 @@
           "mutation": "rename-id-testid",
           "outcome": "false-heal",
           "strategy": "text-role",
-          "ms": 2,
+          "ms": 1,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0062",
@@ -1314,7 +1333,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0063",
@@ -1324,7 +1344,8 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0064",
@@ -1334,25 +1355,26 @@
           "strategy": "text-role",
           "ms": 1,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         }
       ]
     },
     "cascade": {
       "resolver": "cascade",
       "source": "chaos/perturb-supabase.json",
-      "scored": 65,
-      "accuracy": 0.631,
-      "successCount": 41,
-      "falseHealRate": 0.231,
-      "missRate": 0.138,
-      "meanTimeToHealMs": 5466,
+      "scored": 56,
+      "accuracy": 0.625,
+      "successCount": 35,
+      "falseHealRate": 0.268,
+      "missRate": 0.107,
+      "meanTimeToHealMs": 4802,
       "accuracyByBand": {
-        "1": "0.615 (8/13)",
-        "2": "0.615 (8/13)",
-        "3": "0.615 (8/13)",
-        "4": "0.615 (8/13)",
-        "5": "0.692 (9/13)"
+        "1": "0.636 (7/11)",
+        "2": "0.545 (6/11)",
+        "3": "0.545 (6/11)",
+        "4": "0.667 (8/12)",
+        "5": "0.727 (8/11)"
       },
       "rows": [
         {
@@ -1361,9 +1383,10 @@
           "mutation": "rename-class",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5953,
+          "ms": 5315,
           "target": "Connect",
-          "resolvedText": "Connect"
+          "resolvedText": "Connect",
+          "isTruth": true
         },
         {
           "id": "P0001",
@@ -1371,9 +1394,10 @@
           "mutation": "rename-id-testid",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 9191,
+          "ms": 6596,
           "target": "Connect",
-          "resolvedText": "Connect"
+          "resolvedText": "Connect",
+          "isTruth": true
         },
         {
           "id": "P0002",
@@ -1381,9 +1405,10 @@
           "mutation": "restructure-dom",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5560,
+          "ms": 4805,
           "target": "Connect",
-          "resolvedText": "Connect"
+          "resolvedText": "Connect",
+          "isTruth": true
         },
         {
           "id": "P0003",
@@ -1391,9 +1416,10 @@
           "mutation": "retext-sibling",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5972,
+          "ms": 4886,
           "target": "Connect",
-          "resolvedText": "Connect"
+          "resolvedText": "Connect",
+          "isTruth": true
         },
         {
           "id": "P0004",
@@ -1401,9 +1427,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 4841,
+          "ms": 5691,
           "target": "Connect",
-          "resolvedText": "Connect"
+          "resolvedText": "Connect",
+          "isTruth": true
         },
         {
           "id": "P0005",
@@ -1411,9 +1438,10 @@
           "mutation": "rename-class",
           "outcome": "false-heal",
           "strategy": "dom-healer",
-          "ms": 5504,
+          "ms": 9925,
           "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0006",
@@ -1421,19 +1449,21 @@
           "mutation": "rename-id-testid",
           "outcome": "false-heal",
           "strategy": "dom-healer",
-          "ms": 5186,
+          "ms": 12111,
           "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
-          "resolvedText": "LATEST"
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0007",
           "band": 3,
           "mutation": "restructure-dom",
-          "outcome": "false-heal",
-          "strategy": "dom-healer",
-          "ms": 4986,
+          "outcome": "miss",
+          "strategy": "dom-healer-none",
+          "ms": 5327,
           "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
-          "resolvedText": "Advisor Center"
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0008",
@@ -1441,9 +1471,10 @@
           "mutation": "retext-sibling",
           "outcome": "false-heal",
           "strategy": "dom-healer",
-          "ms": 10760,
+          "ms": 8167,
           "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0009",
@@ -1451,9 +1482,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "false-heal",
           "strategy": "dom-healer",
-          "ms": 10603,
+          "ms": 7787,
           "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0010",
@@ -1461,9 +1493,10 @@
           "mutation": "rename-class",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 4569,
+          "ms": 4521,
           "target": "Search...\n\n⌘K",
-          "resolvedText": "Search...\n\n⌘K"
+          "resolvedText": "Search...\n\n⌘K",
+          "isTruth": true
         },
         {
           "id": "P0011",
@@ -1471,9 +1504,10 @@
           "mutation": "rename-id-testid",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 4661,
+          "ms": 4785,
           "target": "Search...\n\n⌘K",
-          "resolvedText": "Search...\n\n⌘K"
+          "resolvedText": "Search...\n\n⌘K",
+          "isTruth": true
         },
         {
           "id": "P0012",
@@ -1481,9 +1515,10 @@
           "mutation": "restructure-dom",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 4585,
+          "ms": 4998,
           "target": "Search...\n\n⌘K",
-          "resolvedText": "Search...\n\n⌘K"
+          "resolvedText": "Search...\n\n⌘K",
+          "isTruth": true
         },
         {
           "id": "P0013",
@@ -1491,9 +1526,10 @@
           "mutation": "retext-sibling",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5364,
+          "ms": 5109,
           "target": "Search...\n\n⌘K",
-          "resolvedText": "Search...\n\n⌘K"
+          "resolvedText": "Search...\n\n⌘K",
+          "isTruth": true
         },
         {
           "id": "P0014",
@@ -1501,9 +1537,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5043,
+          "ms": 4699,
           "target": "Search...\n\n⌘K",
-          "resolvedText": "Search...\n\n⌘K"
+          "resolvedText": "Search...\n\n⌘K",
+          "isTruth": true
         },
         {
           "id": "P0015",
@@ -1511,9 +1548,10 @@
           "mutation": "rename-class",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5453,
+          "ms": 4455,
           "target": "Help",
-          "resolvedText": "Help"
+          "resolvedText": "Help",
+          "isTruth": true
         },
         {
           "id": "P0016",
@@ -1521,9 +1559,10 @@
           "mutation": "rename-id-testid",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5045,
+          "ms": 4817,
           "target": "Help",
-          "resolvedText": "Help"
+          "resolvedText": "Help",
+          "isTruth": true
         },
         {
           "id": "P0017",
@@ -1531,9 +1570,10 @@
           "mutation": "restructure-dom",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 4732,
+          "ms": 4493,
           "target": "Help",
-          "resolvedText": "Help"
+          "resolvedText": "Help",
+          "isTruth": true
         },
         {
           "id": "P0018",
@@ -1541,9 +1581,10 @@
           "mutation": "retext-sibling",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 4503,
+          "ms": 4388,
           "target": "Help",
-          "resolvedText": "Help"
+          "resolvedText": "Help",
+          "isTruth": true
         },
         {
           "id": "P0019",
@@ -1551,9 +1592,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5542,
+          "ms": 4939,
           "target": "Help",
-          "resolvedText": "Help"
+          "resolvedText": "Help",
+          "isTruth": true
         },
         {
           "id": "P0020",
@@ -1561,9 +1603,10 @@
           "mutation": "rename-class",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 4822,
+          "ms": 5103,
           "target": "Advisor Center",
-          "resolvedText": "Advisor Center"
+          "resolvedText": "Advisor Center",
+          "isTruth": true
         },
         {
           "id": "P0021",
@@ -1571,9 +1614,10 @@
           "mutation": "rename-id-testid",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5763,
+          "ms": 5488,
           "target": "Advisor Center",
-          "resolvedText": "Advisor Center"
+          "resolvedText": "Advisor Center",
+          "isTruth": true
         },
         {
           "id": "P0022",
@@ -1581,9 +1625,10 @@
           "mutation": "restructure-dom",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 7422,
+          "ms": 5245,
           "target": "Advisor Center",
-          "resolvedText": "Advisor Center"
+          "resolvedText": "Advisor Center",
+          "isTruth": true
         },
         {
           "id": "P0023",
@@ -1591,9 +1636,10 @@
           "mutation": "retext-sibling",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 4789,
+          "ms": 4932,
           "target": "Advisor Center",
-          "resolvedText": "Advisor Center"
+          "resolvedText": "Advisor Center",
+          "isTruth": true
         },
         {
           "id": "P0024",
@@ -1601,19 +1647,21 @@
           "mutation": "attr-reorder-minify",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5417,
+          "ms": 4565,
           "target": "Advisor Center",
-          "resolvedText": "Advisor Center"
+          "resolvedText": "Advisor Center",
+          "isTruth": true
         },
         {
           "id": "P0025",
           "band": 1,
           "mutation": "rename-class",
-          "outcome": "false-heal",
+          "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 9860,
+          "ms": 4532,
           "target": "SQL Editor",
-          "resolvedText": "SQL Editor"
+          "resolvedText": "SQL Editor",
+          "isTruth": true
         },
         {
           "id": "P0026",
@@ -1621,9 +1669,10 @@
           "mutation": "rename-id-testid",
           "outcome": "false-heal",
           "strategy": "dom-healer",
-          "ms": 6112,
+          "ms": 4569,
           "target": "SQL Editor",
-          "resolvedText": "SQL Editor"
+          "resolvedText": "SQL Editor",
+          "isTruth": false
         },
         {
           "id": "P0027",
@@ -1631,9 +1680,10 @@
           "mutation": "restructure-dom",
           "outcome": "false-heal",
           "strategy": "dom-healer",
-          "ms": 10016,
+          "ms": 11032,
           "target": "SQL Editor",
-          "resolvedText": "SQL Editor"
+          "resolvedText": "SQL Editor",
+          "isTruth": false
         },
         {
           "id": "P0028",
@@ -1641,19 +1691,21 @@
           "mutation": "retext-sibling",
           "outcome": "false-heal",
           "strategy": "dom-healer",
-          "ms": 10129,
+          "ms": 7718,
           "target": "SQL Editor",
-          "resolvedText": "SQL Editor"
+          "resolvedText": "SQL Editor",
+          "isTruth": false
         },
         {
           "id": "P0029",
           "band": 5,
           "mutation": "attr-reorder-minify",
-          "outcome": "success",
+          "outcome": "false-heal",
           "strategy": "dom-healer",
-          "ms": 5525,
+          "ms": 5352,
           "target": "SQL Editor",
-          "resolvedText": "SQL Editor"
+          "resolvedText": "SQL Editor",
+          "isTruth": false
         },
         {
           "id": "P0030",
@@ -1661,9 +1713,10 @@
           "mutation": "rename-class",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5699,
+          "ms": 5095,
           "target": "AI Assistant",
-          "resolvedText": "AI Assistant"
+          "resolvedText": "AI Assistant",
+          "isTruth": true
         },
         {
           "id": "P0031",
@@ -1671,9 +1724,10 @@
           "mutation": "rename-id-testid",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 4988,
+          "ms": 4642,
           "target": "AI Assistant",
-          "resolvedText": "AI Assistant"
+          "resolvedText": "AI Assistant",
+          "isTruth": true
         },
         {
           "id": "P0032",
@@ -1681,9 +1735,10 @@
           "mutation": "restructure-dom",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5821,
+          "ms": 4517,
           "target": "AI Assistant",
-          "resolvedText": "AI Assistant"
+          "resolvedText": "AI Assistant",
+          "isTruth": true
         },
         {
           "id": "P0033",
@@ -1691,9 +1746,10 @@
           "mutation": "retext-sibling",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5097,
+          "ms": 5163,
           "target": "AI Assistant",
-          "resolvedText": "AI Assistant"
+          "resolvedText": "AI Assistant",
+          "isTruth": true
         },
         {
           "id": "P0034",
@@ -1701,39 +1757,43 @@
           "mutation": "attr-reorder-minify",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 4715,
+          "ms": 7200,
           "target": "AI Assistant",
-          "resolvedText": "AI Assistant"
+          "resolvedText": "AI Assistant",
+          "isTruth": true
         },
         {
           "id": "P0035",
           "band": 1,
           "mutation": "rename-class",
-          "outcome": "success",
+          "outcome": "false-heal",
           "strategy": "dom-healer",
-          "ms": 6522,
+          "ms": 4760,
           "target": "Settings",
-          "resolvedText": "Settings"
+          "resolvedText": "Settings",
+          "isTruth": false
         },
         {
           "id": "P0036",
           "band": 2,
           "mutation": "rename-id-testid",
-          "outcome": "success",
+          "outcome": "false-heal",
           "strategy": "dom-healer",
-          "ms": 4856,
+          "ms": 2503,
           "target": "Settings",
-          "resolvedText": "Settings"
+          "resolvedText": "Settings",
+          "isTruth": false
         },
         {
           "id": "P0037",
           "band": 3,
           "mutation": "restructure-dom",
-          "outcome": "success",
+          "outcome": "false-heal",
           "strategy": "dom-healer",
-          "ms": 4946,
+          "ms": 2602,
           "target": "Settings",
-          "resolvedText": "Settings"
+          "resolvedText": "Settings",
+          "isTruth": false
         },
         {
           "id": "P0038",
@@ -1741,9 +1801,10 @@
           "mutation": "retext-sibling",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 4718,
+          "ms": 4781,
           "target": "Settings",
-          "resolvedText": "Settings"
+          "resolvedText": "Settings",
+          "isTruth": true
         },
         {
           "id": "P0039",
@@ -1751,9 +1812,10 @@
           "mutation": "attr-reorder-minify",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 6144,
+          "ms": 2576,
           "target": "Settings",
-          "resolvedText": "Settings"
+          "resolvedText": "Settings",
+          "isTruth": true
         },
         {
           "id": "P0040",
@@ -1761,9 +1823,10 @@
           "mutation": "rename-class",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5568,
+          "ms": 3440,
           "target": "Project Overview",
-          "resolvedText": "Project Overview"
+          "resolvedText": "Project Overview",
+          "isTruth": true
         },
         {
           "id": "P0041",
@@ -1771,9 +1834,10 @@
           "mutation": "rename-id-testid",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5998,
+          "ms": 3408,
           "target": "Project Overview",
-          "resolvedText": "Project Overview"
+          "resolvedText": "Project Overview",
+          "isTruth": true
         },
         {
           "id": "P0042",
@@ -1781,9 +1845,10 @@
           "mutation": "restructure-dom",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5313,
+          "ms": 2715,
           "target": "Project Overview",
-          "resolvedText": "Project Overview"
+          "resolvedText": "Project Overview",
+          "isTruth": true
         },
         {
           "id": "P0043",
@@ -1791,9 +1856,10 @@
           "mutation": "retext-sibling",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5586,
+          "ms": 2653,
           "target": "Project Overview",
-          "resolvedText": "Project Overview"
+          "resolvedText": "Project Overview",
+          "isTruth": true
         },
         {
           "id": "P0044",
@@ -1801,109 +1867,66 @@
           "mutation": "attr-reorder-minify",
           "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5062,
+          "ms": 6340,
           "target": "Project Overview",
-          "resolvedText": "Project Overview"
+          "resolvedText": "Project Overview",
+          "isTruth": true
         },
         {
           "id": "P0045",
           "band": 1,
-          "mutation": "rename-class",
-          "outcome": "false-heal",
-          "strategy": "dom-healer",
-          "ms": 5378,
-          "target": "",
-          "resolvedText": ""
+          "outcome": "target-missing"
         },
         {
           "id": "P0046",
           "band": 2,
-          "mutation": "rename-id-testid",
-          "outcome": "false-heal",
-          "strategy": "dom-healer",
-          "ms": 4908,
-          "target": "",
-          "resolvedText": ""
+          "outcome": "target-missing"
         },
         {
           "id": "P0047",
           "band": 3,
-          "mutation": "restructure-dom",
-          "outcome": "false-heal",
-          "strategy": "dom-healer",
-          "ms": 4813,
-          "target": "",
-          "resolvedText": ""
+          "outcome": "target-missing"
         },
         {
           "id": "P0048",
           "band": 4,
           "mutation": "retext-sibling",
-          "outcome": "false-heal",
+          "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 5245,
+          "ms": 2997,
           "target": "",
-          "resolvedText": ""
+          "resolvedText": "",
+          "isTruth": true
         },
         {
           "id": "P0049",
           "band": 5,
-          "mutation": "attr-reorder-minify",
-          "outcome": "miss",
-          "strategy": "dom-healer-none",
-          "ms": 15102,
-          "target": "",
-          "resolvedText": null
+          "outcome": "target-missing"
         },
         {
           "id": "P0050",
           "band": 1,
-          "mutation": "rename-class",
-          "outcome": "success",
-          "strategy": "dom-healer",
-          "ms": 4987,
-          "target": "Copy",
-          "resolvedText": "Copy"
+          "outcome": "target-missing"
         },
         {
           "id": "P0051",
           "band": 2,
-          "mutation": "rename-id-testid",
-          "outcome": "success",
-          "strategy": "dom-healer",
-          "ms": 5657,
-          "target": "Copy",
-          "resolvedText": "Copy"
+          "outcome": "target-missing"
         },
         {
           "id": "P0052",
           "band": 3,
-          "mutation": "restructure-dom",
-          "outcome": "success",
-          "strategy": "dom-healer",
-          "ms": 7632,
-          "target": "Copy",
-          "resolvedText": "Copy"
+          "outcome": "target-missing"
         },
         {
           "id": "P0053",
           "band": 4,
-          "mutation": "retext-sibling",
-          "outcome": "success",
-          "strategy": "dom-healer",
-          "ms": 4977,
-          "target": "Copy",
-          "resolvedText": "Copy"
+          "outcome": "target-missing"
         },
         {
           "id": "P0054",
           "band": 5,
-          "mutation": "attr-reorder-minify",
-          "outcome": "success",
-          "strategy": "dom-healer",
-          "ms": 5050,
-          "target": "Copy",
-          "resolvedText": "Copy"
+          "outcome": "target-missing"
         },
         {
           "id": "P0055",
@@ -1911,39 +1934,43 @@
           "mutation": "rename-class",
           "outcome": "miss",
           "strategy": "dom-healer-none",
-          "ms": 11101,
+          "ms": 11599,
           "target": "",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0056",
           "band": 2,
           "mutation": "rename-id-testid",
-          "outcome": "false-heal",
-          "strategy": "dom-healer",
-          "ms": 6874,
+          "outcome": "miss",
+          "strategy": "dom-healer-none",
+          "ms": 7888,
           "target": "",
-          "resolvedText": "Connect"
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0057",
           "band": 3,
           "mutation": "restructure-dom",
-          "outcome": "miss",
-          "strategy": "dom-healer-none",
-          "ms": 11790,
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 11551,
           "target": "",
-          "resolvedText": null
+          "resolvedText": "Connect",
+          "isTruth": false
         },
         {
           "id": "P0058",
           "band": 4,
           "mutation": "retext-sibling",
-          "outcome": "miss",
-          "strategy": "dom-healer-none",
-          "ms": 9610,
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 8394,
           "target": "",
-          "resolvedText": null
+          "resolvedText": "",
+          "isTruth": false
         },
         {
           "id": "P0059",
@@ -1951,29 +1978,32 @@
           "mutation": "attr-reorder-minify",
           "outcome": "miss",
           "strategy": "dom-healer-none",
-          "ms": 9787,
+          "ms": 5991,
           "target": "",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0060",
           "band": 1,
           "mutation": "rename-class",
-          "outcome": "miss",
-          "strategy": "dom-healer-none",
-          "ms": 11775,
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 2563,
           "target": "",
-          "resolvedText": null
+          "resolvedText": "Connect",
+          "isTruth": false
         },
         {
           "id": "P0061",
           "band": 2,
           "mutation": "rename-id-testid",
-          "outcome": "miss",
-          "strategy": "dom-healer-none",
-          "ms": 10113,
+          "outcome": "false-heal",
+          "strategy": "dom-healer",
+          "ms": 11558,
           "target": "",
-          "resolvedText": null
+          "resolvedText": "Connect",
+          "isTruth": false
         },
         {
           "id": "P0062",
@@ -1981,9 +2011,10 @@
           "mutation": "restructure-dom",
           "outcome": "miss",
           "strategy": "dom-healer-none",
-          "ms": 13449,
+          "ms": 5585,
           "target": "",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0063",
@@ -1991,19 +2022,21 @@
           "mutation": "retext-sibling",
           "outcome": "miss",
           "strategy": "dom-healer-none",
-          "ms": 10019,
+          "ms": 15751,
           "target": "",
-          "resolvedText": null
+          "resolvedText": null,
+          "isTruth": false
         },
         {
           "id": "P0064",
           "band": 5,
           "mutation": "attr-reorder-minify",
-          "outcome": "false-heal",
+          "outcome": "success",
           "strategy": "dom-healer",
-          "ms": 4946,
+          "ms": 8196,
           "target": "",
-          "resolvedText": "Connect"
+          "resolvedText": "",
+          "isTruth": true
         }
       ]
     }

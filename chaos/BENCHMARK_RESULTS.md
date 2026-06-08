@@ -1,24 +1,18 @@
-# Adversarial locator-healing benchmark — results
+# Adversarial locator-healing benchmark — results (identity oracle)
 
-Target: **Supabase Studio** (local, complex React admin UI). 65 labeled perturbations across 5 difficulty bands. All resolvers scored on the **identical loaded+mutated DOM per case** (live app drifts between runs). Healing success = resolved the **correct** element (ground-truth tag/role/text), false-heal = wrong element (silent pass), miss = nothing.
+Target: **Supabase Studio** (local, complex React admin UI). 65 labeled perturbations, 5 difficulty bands (11–12 each); 56 resolved on the scoring load (9 dropped to live-app drift). **Oracle: identity marker** — the true target is tagged with a persistent `data-truth` attribute before mutation; success = the resolved element IS that node (immune to text collisions, icon-only elements, layout shifts). The 3 Playwright resolvers share the identical per-case DOM; Healenium runs its own Selenium sessions on the same set.
 
-| Resolver | Recovery (correct element) | False-heal | Miss | Median heal time |
+| Resolver | Recovery | False-heal | Miss | Median heal |
 |---|---:|---:|---:|---:|
-| brittle-only (broken selector) | 8% (5/65) | 0.38 | 0.54 | 17 ms |
-| text-role heuristic (vision-free) | 39% (25/65) | 0.54 | 0.08 | 2 ms |
-| Healenium (self-healing Selenium, proxy + record-then-heal) | 25% (16/64) | 0.59 | 0.16 | 336 ms |
-| LLM DOM-healer (`claude-sonnet-4-6` via `claude -p`) | **63% (41/65)** | 0.23 | 0.14 | ~5.5 s |
+| brittle-only (broken selector) | 0% (0/56) | 0.54 | 0.46 | — |
+| Healenium 3.5.1 / proxy 2.2.1 (self-healing Selenium) | 21% (12/57) | 0.79 | 0.00 | 315 ms |
+| text-role heuristic (vision-free) | 34% (19/56) | 0.57 | 0.09 | 2 ms |
+| **LLM DOM-healer (`claude-sonnet-4-6` via `claude -p`)** | **63% (35/56)** | 0.27 | 0.11 | ~4.8 s |
 
-By difficulty band — text-role collapses to 0% on DOM restructuring (band 3); the LLM healer holds:
-- text-role: b1 0.46, b2 0.46, b3 **0.00**, b4 0.54, b5 0.46
-- LLM healer: b1 0.62, b2 0.62, b3 **0.62**, b4 0.62, b5 0.69
+By band — LLM healer 55–73% across all bands; text-role collapses to 0/11 on DOM restructuring:
+- LLM healer: b1 7/11, b2 6/11, b3 6/11, b4 8/12, b5 8/11
+- text-role: b1 4/11, b2 4/11, b3 **0/11**, b4 6/12, b5 5/11
 
-Complementarity: LLM healer recovers 19 cases the heuristic misses; heuristic recovers only 3 the healer misses. Ensemble (union) ≈ 0.68.
+Healenium by selector type: **`#id` invoked, 12/27 (44%) success**; **utility-class 0/30, all false-heal (proxy never invoked — broken class matches a sibling, no `NoSuchElement`)**. Highest false-heal (0.79) overall.
 
-Reproduce: `node chaos/generate-perturbations.mjs --url http://localhost:54323 --out chaos/perturb-supabase.json --settle 6000 && node chaos/score-healing.mjs --in chaos/perturb-supabase.json --resolver all --out chaos/res-sb-allresolvers.json`
-
-Caveats: one application, one model family, 65 cases, DOM-healer-only proxy (no cache/vision tiers), Supabase Studio UI may be partly in pre-training data. Healenium structural-similarity baseline + more apps + 2nd model = priority extensions.
-
-
-## Healenium breakdown (added)
-Real Healenium 3.5.1 stack (hlm-backend + proxy 2.2.1 + Selenium grid + Chrome), verified healing (20 heal attempts, 8 selectors stored). By selector type: **`#id` targets 47% recovered (16/34)** — heals on true zero-match via tree similarity; **class targets 0/30, all false-heal** — broken utility-class selector matches a sibling, so no zero-match fires. This is why algorithmic selector-healing degrades on modern utility-class UIs, and why the intent-based LLM healer (63%) wins.
+Caveats: one app, one model family, 56 perturbations, DOM-healer-only proxy; Supabase Studio may be partly in pre-training data. 27% false-heal → promising but not unsupervised-CI-safe.
