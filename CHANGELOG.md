@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented here.
 
+## [1.4.0] - 2026-06-07
+
+JSS-ready submission. Adds the empirical evidence that closes the round-2 reviews: a coupling A/B (§6.4 — cross-layer digest improves healing 60→68%, directional, McNemar p≈0.23) and generalization across a second application (Grafana) and a second, open-weights model family (Hermes-3) (§6.3 — LLM healer 55–68% across both). Identity-oracle benchmark, Healenium baseline, honest scope/contamination/false-heal disclosures. A simulated hostile JSS In-Practice review returns Accept (sole non-blocking future-work: a powered confirmatory A/B).
+
+
 ## [1.3.4] - 2026-06-07
 
 Manuscript presentation pass (no code or result changes): render the three
