@@ -22,10 +22,11 @@ text=re.sub(r"```mermaid\n(.*?)\n```", repl, text, flags=re.S)
 open(out,"w",encoding='utf-8').write(text); print(f"extracted {n} figures")
 PY
 
-# 2) render each figure
+# 2) render each figure (larger font for legibility per reviewer note)
+echo '{"themeVariables":{"fontSize":"20px"}}' > "$WORK/mmd.json"
 for f in "$FIGS"/*.mmd; do
   npx -y @mermaid-js/mermaid-cli@10.9.1 -i "$f" -o "${f%.mmd}.png" \
-    -p "$WORK/pptr.json" -b white -w 1600 -t neutral >/dev/null 2>&1
+    -p "$WORK/pptr.json" -c "$WORK/mmd.json" -b white -w 1600 -t neutral >/dev/null 2>&1
 done
 
 # 3) CSS — match Article 1 (Liberation Sans / Arial, left-aligned, bold headings, no rules)
@@ -44,7 +45,7 @@ pre code{background:none;padding:0;}
 table{border-collapse:collapse;width:100%;font-size:9pt;margin:8pt 0;}
 th,td{border:1px solid #ccc;padding:3pt 6pt;text-align:left;vertical-align:top;} th{background:#f0f0f0;}
 a{color:#0a3d62;text-decoration:none;}
-img{max-width:100%;display:block;margin:10pt auto 2pt;}
+img{max-width:100%;max-height:8.4in;width:auto;height:auto;display:block;margin:10pt auto 2pt;break-inside:avoid;page-break-inside:avoid;}
 img.authorphoto{width:1.85in;margin:2pt 0 6pt 0;}
 CSS
 
