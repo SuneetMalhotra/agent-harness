@@ -25,7 +25,7 @@ keywords:
   - mobile testing
   - web testing
   - hardware-in-the-loop testing
-version: "1.4.5"
+version: "1.4.6"
 date-released: "2026-06-07"
 license: MIT
 repository-code: "https://github.com/SuneetMalhotra/agent-harness"
