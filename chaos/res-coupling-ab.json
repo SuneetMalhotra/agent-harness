@@ -1,0 +1,409 @@
+{
+  "n": 57,
+  "variantA": {
+    "recovery": 0.596,
+    "recoveryCount": 34,
+    "falseHeal": 0.281
+  },
+  "variantB": {
+    "recovery": 0.684,
+    "recoveryCount": 39,
+    "falseHeal": 0.263
+  },
+  "discordant": {
+    "A_only": 3,
+    "B_only": 8
+  },
+  "rows": [
+    {
+      "id": "P0000",
+      "band": 1,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0001",
+      "band": 2,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0002",
+      "band": 3,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0003",
+      "band": 4,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0004",
+      "band": 5,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0005",
+      "band": 1,
+      "A": "false-heal",
+      "B": "false-heal"
+    },
+    {
+      "id": "P0006",
+      "band": 2,
+      "A": "false-heal",
+      "B": "false-heal"
+    },
+    {
+      "id": "P0007",
+      "band": 3,
+      "A": "false-heal",
+      "B": "false-heal"
+    },
+    {
+      "id": "P0008",
+      "band": 4,
+      "A": "false-heal",
+      "B": "false-heal"
+    },
+    {
+      "id": "P0009",
+      "band": 5,
+      "A": "miss",
+      "B": "false-heal"
+    },
+    {
+      "id": "P0010",
+      "band": 1,
+      "A": "success",
+      "B": "miss"
+    },
+    {
+      "id": "P0011",
+      "band": 2,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0012",
+      "band": 3,
+      "A": "success",
+      "B": "miss"
+    },
+    {
+      "id": "P0013",
+      "band": 4,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0014",
+      "band": 5,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0015",
+      "band": 1,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0016",
+      "band": 2,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0017",
+      "band": 3,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0018",
+      "band": 4,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0019",
+      "band": 5,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0020",
+      "band": 1,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0021",
+      "band": 2,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0022",
+      "band": 3,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0023",
+      "band": 4,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0024",
+      "band": 5,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0025",
+      "band": 1,
+      "A": "false-heal",
+      "B": "success"
+    },
+    {
+      "id": "P0026",
+      "band": 2,
+      "A": "false-heal",
+      "B": "success"
+    },
+    {
+      "id": "P0027",
+      "band": 3,
+      "A": "success",
+      "B": "miss"
+    },
+    {
+      "id": "P0028",
+      "band": 4,
+      "A": "false-heal",
+      "B": "success"
+    },
+    {
+      "id": "P0029",
+      "band": 5,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0030",
+      "band": 1,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0031",
+      "band": 2,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0032",
+      "band": 3,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0033",
+      "band": 4,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0034",
+      "band": 5,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0035",
+      "band": 1,
+      "A": "false-heal",
+      "B": "false-heal"
+    },
+    {
+      "id": "P0036",
+      "band": 2,
+      "A": "false-heal",
+      "B": "false-heal"
+    },
+    {
+      "id": "P0037",
+      "band": 3,
+      "A": "false-heal",
+      "B": "false-heal"
+    },
+    {
+      "id": "P0038",
+      "band": 4,
+      "A": "false-heal",
+      "B": "false-heal"
+    },
+    {
+      "id": "P0039",
+      "band": 5,
+      "A": "false-heal",
+      "B": "false-heal"
+    },
+    {
+      "id": "P0040",
+      "band": 1,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0041",
+      "band": 2,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0042",
+      "band": 3,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0043",
+      "band": 4,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0044",
+      "band": 5,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0045",
+      "band": 1,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0046",
+      "band": 2,
+      "A": "target-missing",
+      "B": "target-missing"
+    },
+    {
+      "id": "P0047",
+      "band": 3,
+      "A": "target-missing",
+      "B": "target-missing"
+    },
+    {
+      "id": "P0048",
+      "band": 4,
+      "A": "target-missing",
+      "B": "target-missing"
+    },
+    {
+      "id": "P0049",
+      "band": 5,
+      "A": "target-missing",
+      "B": "target-missing"
+    },
+    {
+      "id": "P0050",
+      "band": 1,
+      "A": "success",
+      "B": "success"
+    },
+    {
+      "id": "P0051",
+      "band": 2,
+      "A": "target-missing",
+      "B": "target-missing"
+    },
+    {
+      "id": "P0052",
+      "band": 3,
+      "A": "target-missing",
+      "B": "target-missing"
+    },
+    {
+      "id": "P0053",
+      "band": 4,
+      "A": "target-missing",
+      "B": "target-missing"
+    },
+    {
+      "id": "P0054",
+      "band": 5,
+      "A": "target-missing",
+      "B": "target-missing"
+    },
+    {
+      "id": "P0055",
+      "band": 1,
+      "A": "miss",
+      "B": "false-heal"
+    },
+    {
+      "id": "P0056",
+      "band": 2,
+      "A": "miss",
+      "B": "false-heal"
+    },
+    {
+      "id": "P0057",
+      "band": 3,
+      "A": "miss",
+      "B": "false-heal"
+    },
+    {
+      "id": "P0058",
+      "band": 4,
+      "A": "false-heal",
+      "B": "false-heal"
+    },
+    {
+      "id": "P0059",
+      "band": 5,
+      "A": "false-heal",
+      "B": "false-heal"
+    },
+    {
+      "id": "P0060",
+      "band": 1,
+      "A": "false-heal",
+      "B": "success"
+    },
+    {
+      "id": "P0061",
+      "band": 2,
+      "A": "miss",
+      "B": "success"
+    },
+    {
+      "id": "P0062",
+      "band": 3,
+      "A": "miss",
+      "B": "success"
+    },
+    {
+      "id": "P0063",
+      "band": 4,
+      "A": "miss",
+      "B": "success"
+    },
+    {
+      "id": "P0064",
+      "band": 5,
+      "A": "false-heal",
+      "B": "success"
+    }
+  ]
+}

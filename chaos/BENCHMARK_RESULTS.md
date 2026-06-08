@@ -16,3 +16,24 @@ By band — LLM healer 55–73% across all bands; text-role collapses to 0/11 on
 Healenium by selector type: **`#id` invoked, 12/27 (44%) success**; **utility-class 0/30, all false-heal (proxy never invoked — broken class matches a sibling, no `NoSuchElement`)**. Highest false-heal (0.79) overall.
 
 Caveats: one app, one model family, 56 perturbations, DOM-healer-only proxy; Supabase Studio may be partly in pre-training data. 27% false-heal → promising but not unsupervised-CI-safe.
+
+---
+## Generalization (§6.3) + coupling A/B (§6.4) — added
+
+**Two apps × two models** (correct-element recovery, identity oracle):
+
+| Resolver | Supabase Studio | Grafana |
+|---|---:|---:|
+| brittle-only | 0% (0/56) | 0% (0/80) |
+| text-role | 34% (19/56) | 20% (16/80) |
+| LLM healer — Claude Sonnet 4.6 | 62% (35/56) | 68% (54/80) |
+| LLM healer — Hermes-3 (open-weights, Ollama) | 64% (36/56) | 55% (44/80) |
+
+LLM healing (both models) recovers 55–68% across both apps; far above text-role (20–34%) and brittle (0%). Generalizes beyond one app and one model.
+
+**Coupling A/B** (Supabase, N=57 paired; Variant A = intent only, Variant B = intent + cross-layer substrate digest):
+- Variant A recovery 60% (34) · Variant B recovery **68% (39)** · false-heal 0.28 → 0.26
+- discordant: B-only 8, A-only 3 → exact McNemar **p ≈ 0.23** (directional, not significant)
+- First direct evidence the cross-layer digest helps the healer; larger study needed to confirm.
+
+Artifacts: `chaos/res-coupling-ab.json`, `chaos/res-sb-ollama.json`, `chaos/res-gf-allresolvers.json`, `chaos/res-gf-ollama.json`. Grafana via `docker run -e GF_AUTH_ANONYMOUS_ENABLED=true ... grafana/grafana`.

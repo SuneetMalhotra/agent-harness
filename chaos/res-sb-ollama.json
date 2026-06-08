@@ -1,0 +1,680 @@
+{
+  "resolver": "ollama",
+  "source": "chaos/perturb-supabase.json",
+  "scored": 56,
+  "accuracy": 0.643,
+  "successCount": 36,
+  "falseHealRate": 0.357,
+  "missRate": 0,
+  "meanTimeToHealMs": 2752,
+  "accuracyByBand": {
+    "1": "0.667 (8/12)",
+    "2": "0.636 (7/11)",
+    "3": "0.636 (7/11)",
+    "4": "0.636 (7/11)",
+    "5": "0.636 (7/11)"
+  },
+  "rows": [
+    {
+      "id": "P0000",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 8526,
+      "target": "Connect",
+      "resolvedText": "Connect",
+      "isTruth": true
+    },
+    {
+      "id": "P0001",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 218,
+      "target": "Connect",
+      "resolvedText": "Connect",
+      "isTruth": true
+    },
+    {
+      "id": "P0002",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 206,
+      "target": "Connect",
+      "resolvedText": "Connect",
+      "isTruth": true
+    },
+    {
+      "id": "P0003",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 223,
+      "target": "Connect",
+      "resolvedText": "Connect",
+      "isTruth": true
+    },
+    {
+      "id": "P0004",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 208,
+      "target": "Connect",
+      "resolvedText": "Connect",
+      "isTruth": true
+    },
+    {
+      "id": "P0005",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 5452,
+      "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+      "resolvedText": "LATEST",
+      "isTruth": false
+    },
+    {
+      "id": "P0006",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 208,
+      "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+      "resolvedText": "LATEST",
+      "isTruth": false
+    },
+    {
+      "id": "P0007",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 210,
+      "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+      "resolvedText": "LATEST",
+      "isTruth": false
+    },
+    {
+      "id": "P0008",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 207,
+      "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+      "resolvedText": "LATEST",
+      "isTruth": false
+    },
+    {
+      "id": "P0009",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 210,
+      "target": "Supabase Studio (CLI)\nConnect\nLATEST\n\nSearch...\n\n⌘K\nHelp\nAdvisor Center\nSQL Edit",
+      "resolvedText": "LATEST",
+      "isTruth": false
+    },
+    {
+      "id": "P0010",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 5394,
+      "target": "Search...\n\n⌘K",
+      "resolvedText": "Search...\n\n⌘K",
+      "isTruth": true
+    },
+    {
+      "id": "P0011",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 213,
+      "target": "Search...\n\n⌘K",
+      "resolvedText": "Search...\n\n⌘K",
+      "isTruth": true
+    },
+    {
+      "id": "P0012",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 4990,
+      "target": "Search...\n\n⌘K",
+      "resolvedText": "Search...\n\n⌘K",
+      "isTruth": true
+    },
+    {
+      "id": "P0013",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 5056,
+      "target": "Search...\n\n⌘K",
+      "resolvedText": "Search...\n\n⌘K",
+      "isTruth": true
+    },
+    {
+      "id": "P0014",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 206,
+      "target": "Search...\n\n⌘K",
+      "resolvedText": "Search...\n\n⌘K",
+      "isTruth": true
+    },
+    {
+      "id": "P0015",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 5368,
+      "target": "Help",
+      "resolvedText": "Help",
+      "isTruth": true
+    },
+    {
+      "id": "P0016",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 209,
+      "target": "Help",
+      "resolvedText": "Help",
+      "isTruth": true
+    },
+    {
+      "id": "P0017",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 4833,
+      "target": "Help",
+      "resolvedText": "Help",
+      "isTruth": true
+    },
+    {
+      "id": "P0018",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 4902,
+      "target": "Help",
+      "resolvedText": "Help",
+      "isTruth": true
+    },
+    {
+      "id": "P0019",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 290,
+      "target": "Help",
+      "resolvedText": "Help",
+      "isTruth": true
+    },
+    {
+      "id": "P0020",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 5423,
+      "target": "Advisor Center",
+      "resolvedText": "Advisor Center",
+      "isTruth": true
+    },
+    {
+      "id": "P0021",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 343,
+      "target": "Advisor Center",
+      "resolvedText": "Advisor Center",
+      "isTruth": true
+    },
+    {
+      "id": "P0022",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 252,
+      "target": "Advisor Center",
+      "resolvedText": "Advisor Center",
+      "isTruth": true
+    },
+    {
+      "id": "P0023",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 5342,
+      "target": "Advisor Center",
+      "resolvedText": "Advisor Center",
+      "isTruth": true
+    },
+    {
+      "id": "P0024",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 5305,
+      "target": "Advisor Center",
+      "resolvedText": "Advisor Center",
+      "isTruth": true
+    },
+    {
+      "id": "P0025",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 5402,
+      "target": "SQL Editor",
+      "resolvedText": "SQL Editor",
+      "isTruth": true
+    },
+    {
+      "id": "P0026",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 210,
+      "target": "SQL Editor",
+      "resolvedText": "SQL Editor",
+      "isTruth": true
+    },
+    {
+      "id": "P0027",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 4638,
+      "target": "SQL Editor",
+      "resolvedText": "SQL Editor",
+      "isTruth": true
+    },
+    {
+      "id": "P0028",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 4631,
+      "target": "SQL Editor",
+      "resolvedText": "SQL Editor",
+      "isTruth": true
+    },
+    {
+      "id": "P0029",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 208,
+      "target": "SQL Editor",
+      "resolvedText": "SQL Editor",
+      "isTruth": true
+    },
+    {
+      "id": "P0030",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 5369,
+      "target": "AI Assistant",
+      "resolvedText": "AI Assistant",
+      "isTruth": true
+    },
+    {
+      "id": "P0031",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 284,
+      "target": "AI Assistant",
+      "resolvedText": "AI Assistant",
+      "isTruth": true
+    },
+    {
+      "id": "P0032",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 4501,
+      "target": "AI Assistant",
+      "resolvedText": "AI Assistant",
+      "isTruth": true
+    },
+    {
+      "id": "P0033",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 4509,
+      "target": "AI Assistant",
+      "resolvedText": "AI Assistant",
+      "isTruth": true
+    },
+    {
+      "id": "P0034",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 232,
+      "target": "AI Assistant",
+      "resolvedText": "AI Assistant",
+      "isTruth": true
+    },
+    {
+      "id": "P0035",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 5379,
+      "target": "Settings",
+      "resolvedText": "Settings",
+      "isTruth": false
+    },
+    {
+      "id": "P0036",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 252,
+      "target": "Settings",
+      "resolvedText": "Settings",
+      "isTruth": false
+    },
+    {
+      "id": "P0037",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 2683,
+      "target": "Settings",
+      "resolvedText": "Settings",
+      "isTruth": false
+    },
+    {
+      "id": "P0038",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 2623,
+      "target": "Settings",
+      "resolvedText": "Settings",
+      "isTruth": false
+    },
+    {
+      "id": "P0039",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 2615,
+      "target": "Settings",
+      "resolvedText": "Settings",
+      "isTruth": false
+    },
+    {
+      "id": "P0040",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 5374,
+      "target": "Project Overview",
+      "resolvedText": "Project Overview",
+      "isTruth": true
+    },
+    {
+      "id": "P0041",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 208,
+      "target": "Project Overview",
+      "resolvedText": "Project Overview",
+      "isTruth": true
+    },
+    {
+      "id": "P0042",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 212,
+      "target": "Project Overview",
+      "resolvedText": "Project Overview",
+      "isTruth": true
+    },
+    {
+      "id": "P0043",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 208,
+      "target": "Project Overview",
+      "resolvedText": "Project Overview",
+      "isTruth": true
+    },
+    {
+      "id": "P0044",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 207,
+      "target": "Project Overview",
+      "resolvedText": "Project Overview",
+      "isTruth": true
+    },
+    {
+      "id": "P0045",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "ollama-dom-healer",
+      "ms": 5363,
+      "target": "",
+      "resolvedText": "",
+      "isTruth": true
+    },
+    {
+      "id": "P0046",
+      "band": 2,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0047",
+      "band": 3,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0048",
+      "band": 4,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0049",
+      "band": 5,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0050",
+      "band": 1,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0051",
+      "band": 2,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0052",
+      "band": 3,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0053",
+      "band": 4,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0054",
+      "band": 5,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0055",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 5431,
+      "target": "",
+      "resolvedText": "Connect",
+      "isTruth": false
+    },
+    {
+      "id": "P0056",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 215,
+      "target": "",
+      "resolvedText": "Connect",
+      "isTruth": false
+    },
+    {
+      "id": "P0057",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 164,
+      "target": "",
+      "resolvedText": "Connect",
+      "isTruth": false
+    },
+    {
+      "id": "P0058",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 205,
+      "target": "",
+      "resolvedText": "Connect",
+      "isTruth": false
+    },
+    {
+      "id": "P0059",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 206,
+      "target": "",
+      "resolvedText": "Connect",
+      "isTruth": false
+    },
+    {
+      "id": "P0060",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 204,
+      "target": "",
+      "resolvedText": "Connect",
+      "isTruth": false
+    },
+    {
+      "id": "P0061",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 206,
+      "target": "",
+      "resolvedText": "Connect",
+      "isTruth": false
+    },
+    {
+      "id": "P0062",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 5306,
+      "target": "",
+      "resolvedText": "",
+      "isTruth": false
+    },
+    {
+      "id": "P0063",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 5298,
+      "target": "",
+      "resolvedText": "Connect",
+      "isTruth": false
+    },
+    {
+      "id": "P0064",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "ollama-dom-healer",
+      "ms": 211,
+      "target": "",
+      "resolvedText": "Connect",
+      "isTruth": false
+    }
+  ]
+}
