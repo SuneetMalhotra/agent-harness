@@ -9,6 +9,7 @@
 - **Node version:** v25.8.1 (package `engines.node`: `>=20.0.0`)
 - **Zenodo DOI:** 10.5281/zenodo.20576685 (concept DOI — resolves to the latest archived version)
 - **Reproduction command:** `npm run reproduce:paper`
+- **Benchmark environment (§6.2):** Supabase Studio image `studio:2026.06.03-sha-0bca601` (Supabase CLI 2.105.0); Healenium `hlm-backend 3.5.1` / `hlm-proxy 2.2.1` + Selenium grid (`chaos/healenium/docker-compose.yaml`); Node v25.8.1. Benchmark reproduced via `chaos/` (generator → scorer → healenium-duel).
 
 This document inventories every artifact the manuscript depends on.
 A reviewer should be able to verify each claim in §6.1 and §6.2 by
