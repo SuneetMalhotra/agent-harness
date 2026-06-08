@@ -124,13 +124,29 @@ async function resolveWithCascade(page, p, q) {
   const h = await page.$(`[data-heal-idx="${idx}"]`).catch(() => null);
   return { handle: h, strategy: 'dom-healer' };
 }
+async function resolveWithOllama(page, p, q) {
+  // open-weights DOM-healer: same candidate-picking task as the Claude cascade, via local Ollama.
+  const cands = await page.evaluate(() => {
+    const nodes = [...document.querySelectorAll('a,button,input,[role],[onclick],[tabindex],svg')].filter((n) => n.offsetParent !== null).slice(0, 80);
+    return nodes.map((n, i) => { n.setAttribute('data-heal-idx', String(i)); return { i, tag: n.tagName.toLowerCase(), role: n.getAttribute('role') || null, text: (n.innerText || n.value || '').trim().slice(0, 60), aria: n.getAttribute('aria-label') || n.getAttribute('title') || null, near: (n.parentElement?.innerText || '').trim().slice(0, 60) }; });
+  });
+  const prompt = `You are a self-healing test locator. The original selector broke. Target: role=${q.role}, text=${JSON.stringify(q.text)}, aria=${JSON.stringify(q.ariaLabel)}. Candidates (JSON): ${JSON.stringify(cands)}. Reply with ONLY the integer i of the candidate that is the SAME element as the target, or -1.`;
+  const body = JSON.stringify({ model: process.env.OLLAMA_MODEL || 'hermes3', prompt, stream: false, options: { temperature: 0 } });
+  let resp;
+  try { const out = execFileSync('curl', ['-s', 'http://localhost:11434/api/generate', '-d', body], { encoding: 'utf8', timeout: 120000, maxBuffer: 1 << 22 }); resp = JSON.parse(out).response || ''; }
+  catch { return { handle: null, strategy: 'ollama-error' }; }
+  const idx = parseInt((resp.match(/-?\d+/) || ['-1'])[0], 10);
+  if (idx < 0) return { handle: null, strategy: 'ollama-none' };
+  const h = await page.$(`[data-heal-idx="${idx}"]`).catch(() => null);
+  return { handle: h, strategy: 'ollama-dom-healer' };
+}
 // eslint-disable-next-line no-unused-vars
 async function resolveWithHealenium(page, p, q) {
   // TODO(wire): drive the same case through a Healenium-backed Selenium session and
   // return the element it resolved. Return { handle, strategy: 'healenium' }.
   throw new Error('healenium resolver not wired — implement resolveWithHealenium()');
 }
-const RESOLVERS = { 'brittle-only': resolveBrittleOnly, 'text-role': resolveTextRole, cascade: resolveWithCascade, healenium: resolveWithHealenium };
+const RESOLVERS = { 'brittle-only': resolveBrittleOnly, 'text-role': resolveTextRole, cascade: resolveWithCascade, ollama: resolveWithOllama, healenium: resolveWithHealenium };
 
 async function scoreOne(page, p, resolve) {
   const q = { role: p.groundTruth.role, text: p.groundTruth.text, ariaLabel: p.groundTruth.ariaLabel };
