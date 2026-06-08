@@ -197,7 +197,7 @@ cat results-mobile.json | jq '{metadata, testCases, healingEvents, recovered, un
   journal = {Journal of Systems and Software (submitted)},
   year    = {2026},
   note    = {Companion code: https://github.com/SuneetMalhotra/agent-harness
-             (release tag v1.4.2-jss-ready)}
+             (release tag v1.4.3-jss-ready)}
 }
 ```
 
