@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented here.
 
+## [1.4.1] - 2026-06-07
+
+Final pre-submission fixes from an independent JSS In-Practice review (verdict: Accept): abstract A/B reworded (p≈0.23 stated as directional/not-significant, no longer 'evidence'); all Supabase tables reconciled to one canonical common N=53 (Table 4 Claude 33/53 matches Table 2); §6.4 construct-validity confound named; Fig.1 caption -> substrate design; Healenium bypass footnote; Hermes-3 specified as Llama-3.1 8B; marker-survives-minify stated; latency-on-failure + Grafana-stack framing. No new experiments.
+
 ## [1.4.0] - 2026-06-07
 
 JSS-ready submission. Adds the empirical evidence that closes the round-2 reviews: a coupling A/B (§6.4 — cross-layer digest improves healing 60→68%, directional, McNemar p≈0.23) and generalization across a second application (Grafana) and a second, open-weights model family (Hermes-3) (§6.3 — LLM healer 55–68% across both). Identity-oracle benchmark, Healenium baseline, honest scope/contamination/false-heal disclosures. A simulated hostile JSS In-Practice review returns Accept (sole non-blocking future-work: a powered confirmatory A/B).
