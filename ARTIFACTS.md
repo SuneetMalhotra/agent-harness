@@ -4,8 +4,8 @@
 
 - **Manuscript:** "Cross-Layer Observability for LLM-Assisted Test Automation: A Reference Architecture with Web and Mobile Feasibility Studies"
 - **Target venue:** Journal of Systems and Software (Elsevier), In Practice / Applied Research Report track
-- **Final release tag:** `v1.5.0-jss-inpractice`
-- **Full commit hash:** resolve with `git rev-parse v1.5.0-jss-inpractice^{commit}`
+- **Final release tag:** `v1.5.1-jss-inpractice`
+- **Full commit hash:** resolve with `git rev-parse v1.5.1-jss-inpractice^{commit}`
 - **Node version:** v25.8.1 (package `engines.node`: `>=20.0.0`)
 - **Zenodo DOI:** 10.5281/zenodo.20576685 (concept DOI — resolves to the latest archived version)
 - **Reproduction command:** `npm run reproduce:paper`
@@ -92,6 +92,22 @@ npm run test:mobile         # 22 schema/reconciliation checks; exits 0 on pass
 
 The `results-mobile.json: comparison` section in the JSON output encodes
 the same comparison machine-readably.
+
+## §6.1 web feasibility run — files and result fields
+
+| Artifact | Path / field | Backs |
+|---|---|---|
+| Visual-assertion corpus (24 PNGs) | `visual-corpus/images/` | §6.1 visual-assertion κ |
+| Seeded ground-truth labels | `audit/packet/visual-assertion/test_cases_KEY.csv` | independent KEY for κ |
+| Live web run output | `results.json` | §6.1 numbers |
+| — visual-assertion verdicts | `results.json: visualAssertion.events[]` | κ = 0.667, precision/recall |
+| — healing events | `results.json: healing.events[]` | cache/DOM/vision recovery |
+| — pipeline review tallies | `results.json: pipelineReview` | 5-agent approve/changes/block |
+| — pipeline runtime | `results.json: pipelineRuntime.pipelineDurationSeconds` | ~27.8 min wall clock |
+| Visual-assertion audit protocol | `audit/visual-assertion-protocol.md` | human spot-audit procedure |
+| Rater instructions | `audit/visual-assertion-rater-instructions.md` | rater packet |
+| κ / rater-agreement analysis | `audit/packet/visual-assertion/analysis.py` | inter-rater + rater-vs-LLM |
+| Adversarial healing benchmark | `chaos/` | §6.2–§6.4 recovery, false-heal, A/B |
 
 ## Full paper-reproduction command
 
