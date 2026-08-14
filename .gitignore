@@ -11,3 +11,16 @@ results-*.json
 
 # results-mobile.json is committed as a referenced artifact (mobile feasibility study, paper §6.2)
 !results-mobile.json
+
+# Playwright storage state — carries nc_token / refresh_token session cookies.
+# Local-only auth for the NocoDB fixture; never publish.
+nc_state.json
+chaos/nc_state.json
+
+# One-off diagnostic scratch scripts, not part of the published method
+chaos/_armc_diag*.mjs
+chaos/_armc_login.mjs
+chaos/_armd_probe.mjs
+chaos/_armd_seed.mjs
+chaos/_armd_struct.mjs
+chaos/_smoke-*.json

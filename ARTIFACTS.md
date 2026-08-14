@@ -15,6 +15,49 @@ This document inventories every artifact the manuscript depends on.
 A reviewer should be able to verify each claim in §6.1 and §6.2 by
 inspecting the files below and running the documented commands.
 
+## Which result file backs which table
+
+The Supabase Studio benchmark was scored more than once during development, at different
+scoring loads. Several result files therefore exist for the same resolvers, and they do
+not agree. **This section is authoritative about which file backs a published figure.**
+
+| File | Status | Scored | Backs |
+|---|---|---|---|
+| `chaos/res-sb-allresolvers.json` | **AUTHORITATIVE** | 56 | Table 1 and Table 2 — brittle-only, text-role, cascade |
+| `chaos/res-sb-healenium.json` | **AUTHORITATIVE** | 57 | Table 1 — Healenium column |
+| `chaos/res-sb-brittle.json` | superseded | 50 | nothing published |
+| `chaos/res-sb-textrole.json` | corrected 2026-08-13 | 50 | nothing published |
+| `chaos/res-gate-efficacy-sb.json` | separate experiment | 59 | the gate-efficacy analysis, not Table 1 |
+
+The superseded per-resolver files are retained for provenance. **Do not compare them
+against the article** — they come from earlier runs at a different scoring load and will
+not reproduce the published percentages.
+
+Two corrections were made on 2026-08-13, after the R1 submission:
+
+- `res-sb-textrole.json` as previously committed reported `accuracy 0.70`
+  (35/50). That is wrong: the text-role resolver scores `0.34` on this corpus, which is
+  what Table 1 reports and what `res-sb-allresolvers.json` (0.339) independently gives.
+  The stale file was never the basis of a published figure, but its numbers contradicted
+  the article and, read alone, appeared to show the text heuristic outperforming the
+  LLM healer. Corrected in place.
+- `res-sb-brittle.json` reports `accuracy 0.10` where Table 1 reports 0% for the broken
+  selector. Table 1 follows `res-sb-allresolvers.json`, which gives `accuracy 0.0`.
+  Retained as superseded provenance.
+
+## Paired statistical tests
+
+`chaos/paired_tests.py` computes exact two-sided McNemar tests from the per-case rows in
+`res-sb-allresolvers.json`. Standard library only:
+
+```
+python3 chaos/paired_tests.py
+```
+
+Expected: cascade vs text-role `p = 8.554e-04`; cascade vs brittle-only `p = 5.821e-11`;
+text-role vs brittle-only `p = 3.815e-06`.
+
+
 ## Versioning
 
 ```bash

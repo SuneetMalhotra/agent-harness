@@ -1,0 +1,494 @@
+{
+  "resolver": "cascade",
+  "source": "chaos/perturb-supabase.json",
+  "scored": 50,
+  "accuracy": 0.7,
+  "successCount": 35,
+  "falseHealRate": 0.12,
+  "missRate": 0.18,
+  "meanTimeToHealMs": 5925,
+  "accuracyByBand": {
+    "1": "0.7 (7/10)",
+    "2": "0.7 (7/10)",
+    "3": "0.7 (7/10)",
+    "4": "0.7 (7/10)",
+    "5": "0.7 (7/10)"
+  },
+  "rows": [
+    {
+      "id": "P0000",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5306
+    },
+    {
+      "id": "P0001",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5893
+    },
+    {
+      "id": "P0002",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5346
+    },
+    {
+      "id": "P0003",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 16271
+    },
+    {
+      "id": "P0004",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 4692
+    },
+    {
+      "id": "P0005",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "false-heal",
+      "strategy": "dom-healer",
+      "ms": 9544
+    },
+    {
+      "id": "P0006",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "false-heal",
+      "strategy": "dom-healer",
+      "ms": 4673
+    },
+    {
+      "id": "P0007",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "false-heal",
+      "strategy": "dom-healer",
+      "ms": 7780
+    },
+    {
+      "id": "P0008",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "dom-healer",
+      "ms": 9762
+    },
+    {
+      "id": "P0009",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "false-heal",
+      "strategy": "dom-healer",
+      "ms": 4601
+    },
+    {
+      "id": "P0010",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 4502
+    },
+    {
+      "id": "P0011",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 4833
+    },
+    {
+      "id": "P0012",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5003
+    },
+    {
+      "id": "P0013",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 7661
+    },
+    {
+      "id": "P0014",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 7044
+    },
+    {
+      "id": "P0015",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5721
+    },
+    {
+      "id": "P0016",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5100
+    },
+    {
+      "id": "P0017",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 6369
+    },
+    {
+      "id": "P0018",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 8024
+    },
+    {
+      "id": "P0019",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5632
+    },
+    {
+      "id": "P0020",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 6158
+    },
+    {
+      "id": "P0021",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5279
+    },
+    {
+      "id": "P0022",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 4721
+    },
+    {
+      "id": "P0023",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5301
+    },
+    {
+      "id": "P0024",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 6068
+    },
+    {
+      "id": "P0025",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5074
+    },
+    {
+      "id": "P0026",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 7467
+    },
+    {
+      "id": "P0027",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5878
+    },
+    {
+      "id": "P0028",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 4737
+    },
+    {
+      "id": "P0029",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5627
+    },
+    {
+      "id": "P0030",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 4941
+    },
+    {
+      "id": "P0031",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5758
+    },
+    {
+      "id": "P0032",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 6704
+    },
+    {
+      "id": "P0033",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5461
+    },
+    {
+      "id": "P0034",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5216
+    },
+    {
+      "id": "P0035",
+      "band": 1,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0036",
+      "band": 2,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0037",
+      "band": 3,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0038",
+      "band": 4,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0039",
+      "band": 5,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0040",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5132
+    },
+    {
+      "id": "P0041",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 4825
+    },
+    {
+      "id": "P0042",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5313
+    },
+    {
+      "id": "P0043",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5018
+    },
+    {
+      "id": "P0044",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "success",
+      "strategy": "dom-healer",
+      "ms": 5314
+    },
+    {
+      "id": "P0045",
+      "band": 1,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0046",
+      "band": 2,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0047",
+      "band": 3,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0048",
+      "band": 4,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0049",
+      "band": 5,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0050",
+      "band": 1,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0051",
+      "band": 2,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0052",
+      "band": 3,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0053",
+      "band": 4,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0054",
+      "band": 5,
+      "outcome": "target-missing"
+    },
+    {
+      "id": "P0055",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "miss",
+      "strategy": "dom-healer-none",
+      "ms": 10238
+    },
+    {
+      "id": "P0056",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "miss",
+      "strategy": "dom-healer-none",
+      "ms": 9426
+    },
+    {
+      "id": "P0057",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "miss",
+      "strategy": "dom-healer-none",
+      "ms": 10014
+    },
+    {
+      "id": "P0058",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "false-heal",
+      "strategy": "dom-healer",
+      "ms": 8101
+    },
+    {
+      "id": "P0059",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "miss",
+      "strategy": "dom-healer-none",
+      "ms": 14798
+    },
+    {
+      "id": "P0060",
+      "band": 1,
+      "mutation": "rename-class",
+      "outcome": "miss",
+      "strategy": "dom-healer-none",
+      "ms": 9187
+    },
+    {
+      "id": "P0061",
+      "band": 2,
+      "mutation": "rename-id-testid",
+      "outcome": "miss",
+      "strategy": "dom-healer-none",
+      "ms": 8233
+    },
+    {
+      "id": "P0062",
+      "band": 3,
+      "mutation": "restructure-dom",
+      "outcome": "miss",
+      "strategy": "dom-healer-none",
+      "ms": 6689
+    },
+    {
+      "id": "P0063",
+      "band": 4,
+      "mutation": "retext-sibling",
+      "outcome": "miss",
+      "strategy": "dom-healer-none",
+      "ms": 8299
+    },
+    {
+      "id": "P0064",
+      "band": 5,
+      "mutation": "attr-reorder-minify",
+      "outcome": "miss",
+      "strategy": "dom-healer-none",
+      "ms": 7419
+    }
+  ]
+}
