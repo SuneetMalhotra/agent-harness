@@ -13,6 +13,7 @@ abstract: >-
 authors:
   - family-names: Malhotra
     given-names: Suneet
+    orcid: "https://orcid.org/0009-0003-8707-9590"
     website: https://suneetmalhotra.com
 keywords:
   - agentic software engineering
@@ -29,11 +30,22 @@ version: "1.5.2"
 date-released: "2026-06-07"
 license: MIT
 repository-code: "https://github.com/SuneetMalhotra/agent-harness"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20576685
+    description: "Zenodo concept DOI (all archived versions)"
 preferred-citation:
   type: article
-  title: "Cross-Layer Observability for LLM-Assisted Test Automation: A Reference Architecture and Web Feasibility Study"
+  title: "LLM Self-Healing of Web Locators as Assisted Triage: An Adversarial Benchmark, Deployment Lessons, and an Unconfirmed Cross-Layer Observability Blueprint"
   authors:
     - family-names: Malhotra
       given-names: Suneet
+      orcid: "https://orcid.org/0009-0003-8707-9590"
+  journal: "Journal of Systems and Software"
+  publisher:
+    name: Elsevier
   year: 2026
-  notes: "Companion article (in preparation, target venue: Journal of Systems and Software, Elsevier)."
+  start: 113157
+  doi: 10.1016/j.jss.2026.113157
+  url: "https://doi.org/10.1016/j.jss.2026.113157"
+  notes: "Journal pre-proof, available online 13 October 2026."
