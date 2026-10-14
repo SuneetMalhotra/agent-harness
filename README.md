@@ -2,9 +2,11 @@
 
 Reference implementation for the Agent Harness coupling pattern.
 
-Companion code for a *Journal of Systems and Software* (JSS) submission:
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.jss.2026.113157-blue)](https://doi.org/10.1016/j.jss.2026.113157) [![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.20576685-blue)](https://doi.org/10.5281/zenodo.20576685)
 
-> Malhotra, S. "Cross-Layer Observability for LLM-Assisted Test Automation: A Reference Architecture and Web Feasibility Study." Submitted to the *Journal of Systems and Software* (Elsevier), 2026.
+Companion code for an article published in the *Journal of Systems and Software* (Elsevier):
+
+> Malhotra, S. (2026). "LLM Self-Healing of Web Locators as Assisted Triage: An Adversarial Benchmark, Deployment Lessons, and an Unconfirmed Cross-Layer Observability Blueprint." *Journal of Systems and Software*, 113157. https://doi.org/10.1016/j.jss.2026.113157 (journal pre-proof, available online 13 October 2026). Pre-print: https://ssrn.com/abstract=6963910
 
 ---
 
@@ -190,14 +192,17 @@ cat results-mobile.json | jq '{metadata, testCases, healingEvents, recovered, un
 ## Citing this work
 
 ```bibtex
-@article{Malhotra2026CrossLayerObservability,
+@article{Malhotra2026LLMSelfHealing,
   author  = {Malhotra, Suneet},
-  title   = {Cross-Layer Observability for {LLM}-Assisted Test Automation:
-             A Reference Architecture with Web and Mobile Feasibility Studies},
-  journal = {Journal of Systems and Software (submitted)},
+  title   = {{LLM} Self-Healing of Web Locators as Assisted Triage: An Adversarial
+             Benchmark, Deployment Lessons, and an Unconfirmed Cross-Layer
+             Observability Blueprint},
+  journal = {Journal of Systems and Software},
+  pages   = {113157},
   year    = {2026},
-  note    = {Companion code: https://github.com/SuneetMalhotra/agent-harness
-             (release tag v1.5.2-jss-inpractice)}
+  doi     = {10.1016/j.jss.2026.113157},
+  note    = {Journal pre-proof. Companion code: https://github.com/SuneetMalhotra/agent-harness
+             (release tag v1.5.2-jss-inpractice; Zenodo DOI 10.5281/zenodo.20576685)}
 }
 ```
 
